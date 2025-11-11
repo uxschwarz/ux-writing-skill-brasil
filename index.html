@@ -135,7 +135,27 @@
 
         .terminal-trigger:hover {
             color: var(--ink);
-            background: rgba(232, 168, 124, 0.15);
+            background: rgba(186, 205, 217, 0.15);
+        }
+
+        .video-trigger {
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            letter-spacing: 0.2px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+
+        .video-trigger:hover {
+            color: var(--ink);
+            background: rgba(186, 205, 217, 0.15);
         }
 
         /* Hero */
@@ -738,6 +758,66 @@
             font-weight: 600;
         }
 
+        /* Video Modal Window */
+        .video-window {
+            position: fixed;
+            width: 800px;
+            max-width: 90vw;
+            background: #1a1614;
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(26, 22, 20, 0.3);
+            overflow: hidden;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-header {
+            padding: 12px 16px;
+            background: #141413;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: move;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .video-header:active {
+            cursor: grabbing;
+        }
+
+        .video-title {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .video-content {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            background: #1a1614;
+        }
+
+        .video-content iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-window {
+                width: 90vw;
+            }
+        }
+
         @media (max-width: 768px) {
             .terminal-window {
                 width: 90vw;
@@ -749,7 +829,8 @@
             }
 
             header nav a,
-            .terminal-trigger {
+            .terminal-trigger,
+            .video-trigger {
                 padding: 6px 12px;
                 font-size: 13px;
             }
@@ -764,6 +845,7 @@
                 <a href="https://github.com/content-designer/ux-writing-skill">Repository</a>
                 <a href="https://github.com/content-designer/ux-writing-skill/blob/main/docs/figma-integration.md">Figma</a>
                 <a href="https://github.com/content-designer/ux-writing-skill#usage-examples">Documentation</a>
+                <button class="video-trigger" onclick="toggleVideo()">▶</button>
                 <button class="terminal-trigger" onclick="toggleTerminal()">></button>
             </nav>
         </div>
@@ -965,6 +1047,19 @@
         </div>
     </div>
 
+    <!-- Video Window -->
+    <div class="video-window" id="video-window" style="top: 100px; left: 100px; display: none;">
+        <div class="video-header" id="video-header">
+            <div class="video-title">demo — ux-writing-skill</div>
+            <div class="terminal-controls">
+                <button class="terminal-control close" onclick="closeVideo()"></button>
+            </div>
+        </div>
+        <div class="video-content">
+            <iframe src="https://screen.studio/share/5WeHlEbQ" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <script>
         // Draggable terminal window
         let isDragging = false;
@@ -1047,6 +1142,81 @@
 
         function closeTerminal() {
             terminalWindow.style.display = 'none';
+        }
+
+        // Draggable video window
+        let isVideoDragging = false;
+        let videoCurrentX;
+        let videoCurrentY;
+        let videoInitialX;
+        let videoInitialY;
+        let videoXOffset = 0;
+        let videoYOffset = 0;
+
+        const videoWindow = document.getElementById('video-window');
+        const videoHeader = document.getElementById('video-header');
+
+        videoHeader.addEventListener('mousedown', videoDragStart);
+        document.addEventListener('mousemove', videoDrag);
+        document.addEventListener('mouseup', videoDragEnd);
+
+        // Touch events for mobile
+        videoHeader.addEventListener('touchstart', videoDragStart);
+        document.addEventListener('touchmove', videoDrag);
+        document.addEventListener('touchend', videoDragEnd);
+
+        function videoDragStart(e) {
+            if (e.type === 'touchstart') {
+                videoInitialX = e.touches[0].clientX - videoXOffset;
+                videoInitialY = e.touches[0].clientY - videoYOffset;
+            } else {
+                videoInitialX = e.clientX - videoXOffset;
+                videoInitialY = e.clientY - videoYOffset;
+            }
+
+            if (e.target === videoHeader || videoHeader.contains(e.target)) {
+                if (!e.target.classList.contains('terminal-control')) {
+                    isVideoDragging = true;
+                }
+            }
+        }
+
+        function videoDrag(e) {
+            if (isVideoDragging) {
+                e.preventDefault();
+
+                if (e.type === 'touchmove') {
+                    videoCurrentX = e.touches[0].clientX - videoInitialX;
+                    videoCurrentY = e.touches[0].clientY - videoInitialY;
+                } else {
+                    videoCurrentX = e.clientX - videoInitialX;
+                    videoCurrentY = e.clientY - videoInitialY;
+                }
+
+                videoXOffset = videoCurrentX;
+                videoYOffset = videoCurrentY;
+
+                setVideoTranslate(videoCurrentX, videoCurrentY, videoWindow);
+            }
+        }
+
+        function videoDragEnd(e) {
+            videoInitialX = videoCurrentX;
+            videoInitialY = videoCurrentY;
+            isVideoDragging = false;
+        }
+
+        function setVideoTranslate(xPos, yPos, el) {
+            el.style.transform = `translate(${xPos}px, ${yPos}px)`;
+        }
+
+        function toggleVideo() {
+            const isHidden = videoWindow.style.display === 'none';
+            videoWindow.style.display = isHidden ? 'flex' : 'none';
+        }
+
+        function closeVideo() {
+            videoWindow.style.display = 'none';
         }
     </script>
 </body>
