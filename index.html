@@ -1371,8 +1371,19 @@
 
             let newWidth = resizeStartWidth;
             let newHeight = resizeStartHeight;
-            let newLeft = resizeStartLeft;
-            let newTop = resizeStartTop;
+
+            // Get the initial offset values
+            let initialTranslateX, initialTranslateY;
+            if (resizeTarget === terminalWindow) {
+                initialTranslateX = xOffset;
+                initialTranslateY = yOffset;
+            } else if (resizeTarget === videoWindow) {
+                initialTranslateX = videoXOffset;
+                initialTranslateY = videoYOffset;
+            }
+
+            let translateAdjustX = 0;
+            let translateAdjustY = 0;
 
             // Handle different resize directions
             if (resizeHandle.classList.contains('resize-right') ||
@@ -1384,9 +1395,13 @@
             if (resizeHandle.classList.contains('resize-left') ||
                 resizeHandle.classList.contains('resize-top-left') ||
                 resizeHandle.classList.contains('resize-bottom-left')) {
-                newWidth = Math.max(400, resizeStartWidth - deltaX);
-                if (newWidth > 400) {
-                    newLeft = resizeStartLeft + deltaX;
+                const proposedWidth = resizeStartWidth - deltaX;
+                if (proposedWidth >= 400) {
+                    newWidth = proposedWidth;
+                    translateAdjustX = deltaX;
+                } else {
+                    newWidth = 400;
+                    translateAdjustX = resizeStartWidth - 400;
                 }
             }
 
@@ -1399,9 +1414,13 @@
             if (resizeHandle.classList.contains('resize-top') ||
                 resizeHandle.classList.contains('resize-top-left') ||
                 resizeHandle.classList.contains('resize-top-right')) {
-                newHeight = Math.max(300, resizeStartHeight - deltaY);
-                if (newHeight > 300) {
-                    newTop = resizeStartTop + deltaY;
+                const proposedHeight = resizeStartHeight - deltaY;
+                if (proposedHeight >= 300) {
+                    newHeight = proposedHeight;
+                    translateAdjustY = deltaY;
+                } else {
+                    newHeight = 300;
+                    translateAdjustY = resizeStartHeight - 300;
                 }
             }
 
@@ -1409,42 +1428,19 @@
             resizeTarget.style.width = newWidth + 'px';
             resizeTarget.style.height = newHeight + 'px';
 
-            // Update position if resizing from top or left
-            const currentTransform = resizeTarget.style.transform;
-            const transformMatch = currentTransform.match(/translate\(([^,]+),\s*([^)]+)\)/);
-            let currentTranslateX = 0;
-            let currentTranslateY = 0;
+            // Calculate new transform based on initial offset plus adjustment
+            const newTranslateX = initialTranslateX + translateAdjustX;
+            const newTranslateY = initialTranslateY + translateAdjustY;
 
-            if (transformMatch) {
-                currentTranslateX = parseFloat(transformMatch[1]);
-                currentTranslateY = parseFloat(transformMatch[2]);
-            }
-
-            if (resizeHandle.classList.contains('resize-left') ||
-                resizeHandle.classList.contains('resize-top-left') ||
-                resizeHandle.classList.contains('resize-bottom-left')) {
-                if (newWidth > 400) {
-                    currentTranslateX += deltaX;
-                }
-            }
-
-            if (resizeHandle.classList.contains('resize-top') ||
-                resizeHandle.classList.contains('resize-top-left') ||
-                resizeHandle.classList.contains('resize-top-right')) {
-                if (newHeight > 300) {
-                    currentTranslateY += deltaY;
-                }
-            }
-
-            resizeTarget.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px)`;
+            resizeTarget.style.transform = `translate(${newTranslateX}px, ${newTranslateY}px)`;
 
             // Update offsets for dragging
             if (resizeTarget === terminalWindow) {
-                xOffset = currentTranslateX;
-                yOffset = currentTranslateY;
+                xOffset = newTranslateX;
+                yOffset = newTranslateY;
             } else if (resizeTarget === videoWindow) {
-                videoXOffset = currentTranslateX;
-                videoYOffset = currentTranslateY;
+                videoXOffset = newTranslateX;
+                videoYOffset = newTranslateY;
             }
         }
 
