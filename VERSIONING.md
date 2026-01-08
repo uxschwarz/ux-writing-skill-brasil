@@ -12,47 +12,7 @@ This project follows [Semantic Versioning](https://semver.org/) (SemVer).
 
 ## Version History
 
-### v1.5.0 (January 2026)
-**OpenAI Codex Support**
-- Added OpenAI Codex CLI/IDE compatibility
-- Added Codex-specific installation and usage documentation
-- Added Codex Figma MCP integration guide (`docs/codex-figma-integration.md`)
-- Updated website to reflect multi-platform support
-- Various terminology fixes and documentation improvements
-
-### v1.4.0 (December 2025)
-**Smithery Registry**
-- Added Smithery badge for discoverability
-- Listed in Smithery skills registry
-
-### v1.3.0 (November 2025)
-**GitHub Pages Website & Distribution**
-- Added GitHub Pages website with interactive demo
-- Added video demonstration
-- Added auto-rebuild workflow for skill ZIP distribution
-- Improved download links and installation flow
-- Reorganized skill packaging
-
-### v1.2.0 (November 2025)
-**Figma Integration**
-- Added Figma integration guide for content designers (`docs/figma-integration.md`)
-- Improved installation instructions for non-technical users
-
-### v1.1.0 (November 2025)
-**Accessibility & Expanded Frameworks**
-- Added comprehensive accessibility guidelines (`references/accessibility-guidelines.md`)
-- Added research-backed benchmarks for content evaluation
-- Expanded SKILL.md with additional patterns and frameworks
-- Added CHANGELOG.md for tracking changes
-
-### v1.0.0 (November 2025)
-**Initial Release**
-- Core UX writing skill framework
-- Four quality standards: Purposeful, Concise, Conversational, Clear
-- Common UX patterns: buttons, errors, empty states, forms, notifications, onboarding
-- Voice and tone guidance
-- Reference materials and templates
-- CONTRIBUTING.md with contribution guidelines
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ## Creating a New Release
 
@@ -63,17 +23,17 @@ Update the version in `README.md`:
 **Status**: Production-ready • **Version**: X.Y.Z • **Last updated**: Month Year
 ```
 
-### 2. Update VERSIONING.md
+### 2. Update CHANGELOG.md
 
-Add a new entry to the Version History section above with:
+Add a new entry at the top of the changelog following the [Keep a Changelog](https://keepachangelog.com/) format:
 - Version number and date
-- Brief title describing the theme
-- Bullet points of key changes
+- Sections for Added, Changed, Removed, etc.
+- Bullet points describing changes
 
 ### 3. Commit Changes
 
 ```bash
-git add README.md VERSIONING.md
+git add README.md CHANGELOG.md
 git commit -m "Release vX.Y.Z: Brief description"
 ```
 
@@ -93,7 +53,7 @@ git push origin vX.Y.Z
 2. Click "Draft a new release"
 3. Select the tag you just pushed
 4. Add release title: `vX.Y.Z - Release Title`
-5. Copy the version notes from VERSIONING.md into the description
+5. Copy the version notes from CHANGELOG.md into the description
 6. Publish the release
 
 GitHub automatically creates downloadable ZIP and tarball artifacts for each release.
