@@ -5,6 +5,51 @@ All notable changes to the UX Writing Skill will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-01
+
+### Added
+- **OpenAI Codex Support**: Full compatibility with Codex CLI and IDE extensions
+- **Codex Installation Guide**: Step-by-step instructions for Codex users
+- **Codex Figma Integration**: New guide at `docs/codex-figma-integration.md`
+- **Multi-Platform Documentation**: Updated README and website for Claude + Codex
+
+### Changed
+- Renamed `docs/figma-integration.md` to `docs/claude-figma-integration.md` for clarity
+- Updated website to reflect multi-platform support
+- Various terminology fixes (Codex = CLI/IDE, not ChatGPT)
+
+---
+
+## [1.4.0] - 2025-12-24
+
+### Added
+- **Smithery Registry**: Listed in Smithery skills registry for discoverability
+- **Smithery Badge**: Added badge to README for easy installation
+
+---
+
+## [1.3.0] - 2025-11-11
+
+### Added
+- **GitHub Pages Website**: Interactive landing page at content-designer.github.io/ux-writing-skill
+- **Video Demonstration**: Embedded demo showing skill in action
+- **Auto-Rebuild Workflow**: GitHub Action to automatically rebuild skill ZIP on changes
+
+### Changed
+- Reorganized skill packaging for cleaner distribution
+- Improved download links and installation flow
+- Enhanced modal windows with drag and resize functionality
+
+---
+
+## [1.2.0] - 2025-11-10
+
+### Added
+- **Figma Integration Guide**: New guide at `docs/figma-integration.md` for reviewing UX copy directly from Figma designs
+- **Improved Installation Instructions**: Clearer steps for non-technical users
+
+---
+
 ## [1.1.0] - 2025-11-10
 
 ### Added
@@ -50,7 +95,7 @@ This update addresses key gaps identified through research of public content des
 
 ---
 
-## [1.0.0] - 2024-11-09
+## [1.0.0] - 2025-11-10
 
 ### Added
 - Initial release of UX Writing Skill
