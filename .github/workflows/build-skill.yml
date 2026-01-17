@@ -3,17 +3,27 @@ name: Build Skill Package
 on:
   release:
     types: [created]
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.ref }}
 
     - name: Build skill package
-      run: ./build-skill.sh
+      run: |
+        chmod +x ./build-skill.sh
+        ./build-skill.sh
 
     - name: Upload skill package as artifact
       uses: actions/upload-artifact@v4
