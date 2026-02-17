@@ -328,4 +328,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Pronto para produção • **Versão**: 1.5.0 • **Última atualização**: Janeiro de 2026
+**Status**: Habilitado para uso • **Versão**: 1.0.0 • **Última atualização**: Fevereiro de 2026
