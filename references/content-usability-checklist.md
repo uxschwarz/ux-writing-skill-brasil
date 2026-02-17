@@ -1,158 +1,158 @@
-# Content Usability Checklist
+# Checklist de Usabilidade de Conteúdo
 
-Use this checklist to evaluate UX text quality. Rate each criterion 0-10.
+Use este checklist para avaliar a qualidade de textos de UX. Avalie cada critério de 0 a 10.
 
-## Concise
+## Conciso
 
-**Every word has a distinct job**
-- No filler words like "basically", "actually", "just"
-- Each word adds meaning or clarity
-- Can't remove words without losing meaning
+**Cada palavra tem uma função distinta**
+- Sem palavras de preenchimento como "basicamente", "na verdade", "simplesmente"
+- Cada palavra adiciona significado ou clareza
+- Não é possível remover palavras sem perder o significado
 
-**High information density in minimal words**
-- Maximum meaning per word
-- Efficient phrasing
-- No redundancy
+**Alta densidade de informação em poucas palavras**
+- Máximo de significado por palavra
+- Formulação eficiente
+- Sem redundância
 
-**40-60 characters per line**
-- Optimal line length for readability
-- Breaks appropriately for scanning
-- Not too long (causes focus loss) or too short (causes back-and-forth eye movement)
+**40 a 60 caracteres por linha**
+- Comprimento de linha ideal para legibilidade
+- Quebras apropriadas para escaneabilidade
+- Nem muito longa (causa perda de foco) nem muito curta (causa movimento excessivo dos olhos)
 
-**Short sentences and paragraphs**
-- Less than 3-4 lines per paragraph
-- Sentences vary in length but average ~15-20 words
-- Broken into scannable chunks
+**Frases e parágrafos curtos**
+- Menos de 3 a 4 linhas por parágrafo
+- Frases variam em comprimento, com média de 15 a 20 palavras
+- Dividido em blocos escaneáveis
 
-**Front-loaded with signal words**
-- Most important words come first
-- Action words at start of sentences
-- Users see key information immediately
+**Início com palavras-sinal**
+- As palavras mais importantes vêm primeiro
+- Palavras de ação no início das frases
+- Usuários veem as informações-chave imediatamente
 
-**Ideas ordered by priority**
-- Most critical information first
-- Secondary details follow
-- Nice-to-know information last
+**Ideias ordenadas por prioridade**
+- Informação mais crítica primeiro
+- Detalhes secundários em seguida
+- Informações complementares por último
 
-## Purposeful
+## Proposital
 
-**User goals are clear and supported**
-- Text helps users complete their task
-- Addresses user's "why am I here?" question
-- Removes barriers to action
+**Objetivos do usuário são claros e suportados**
+- O texto ajuda os usuários a completar sua tarefa
+- Responde à pergunta "por que estou aqui?" do usuário
+- Remove barreiras para a ação
 
-**Business goals are met**
-- Supports conversion, engagement, or retention
-- Aligns with product objectives
-- Advances organizational goals
+**Objetivos de negócio são alcançados**
+- Suporta conversão, engajamento ou retenção
+- Alinha com os objetivos do produto
+- Avança os objetivos organizacionais
 
-**Brand voice is reflected**
-- Consistent with brand personality
-- Recognizable as coming from this product
-- Uses appropriate tone for context
+**Voz da marca está refletida**
+- Consistente com a personalidade da marca
+- Reconhecível como vindo deste produto
+- Usa tom adequado para o contexto
 
-**Value proposition is evident**
-- User benefit is clear
-- Explains "what's in it for me?"
-- Shows value before asking for action
+**Proposta de valor é evidente**
+- Benefício para o usuário é claro
+- Explica "o que eu ganho com isso?"
+- Mostra valor antes de pedir ação
 
-**Subject matter focuses on user benefit**
-- Written in second person ("you")
-- Emphasizes outcomes, not features
-- User-centered, not company-centered
+**O assunto foca no benefício para o usuário**
+- Escrito em segunda pessoa ("você")
+- Enfatiza resultados, não recursos
+- Centrado no usuário, não na empresa
 
-**Active, inviting framing**
-- Motivates action without being pushy
-- Matches user's intention and journey stage
-- Appropriate level of urgency
+**Enquadramento ativo e convidativo**
+- Motiva a ação sem ser insistente
+- Corresponde à intenção e ao estágio da jornada do usuário
+- Nível adequado de urgência
 
-## Conversational
+## Conversacional
 
-**Natural, spoken language**
-- Sounds like something you'd say aloud
-- Flows naturally when read
-- Not stiff or overly formal
+**Linguagem natural, falada**
+- Soa como algo que você diria em voz alta
+- Flui naturalmente quando lido
+- Não é rígido ou excessivamente formal
 
-**Active voice predominates**
-- Subject performs the action
-- Direct and energetic
-- Use passive only when it's clearer (rare cases)
+**Voz ativa predomina**
+- O sujeito executa a ação
+- Direto e enérgico
+- Use passiva apenas quando for mais claro (casos raros)
 
-**Connecting words included**
-- Prepositions present ("to", "from", "with")
-- Articles included ("a", "an", "the")
-- Not telegraphic or robotic
+**Palavras de conexão incluídas**
+- Preposições presentes ("para", "de", "com")
+- Artigos incluídos ("o", "a", "um", "uma")
+- Não telegráfico ou robótico
 
-**Familiar words and phrases**
-- Uses language your users use
-- Based on user research and testing
-- No unnecessary technical jargon
+**Palavras e frases familiares**
+- Usa a linguagem dos seus usuários
+- Baseado em pesquisa e testes com usuários
+- Sem jargão técnico desnecessário
 
-**Personality in appropriate moments**
-- Voice shines through when context allows
-- Not overly serious in light contexts
-- Not playful in serious moments
+**Personalidade nos momentos apropriados**
+- A voz brilha quando o contexto permite
+- Não excessivamente sério em contextos leves
+- Não brincalhão em momentos sérios
 
-## Clear
+## Claro
 
-**Accurate action words**
-- Specific verbs that describe the action
-- "Delete" not "Remove" for permanent deletion
-- "Save" not "OK" for saving changes
+**Verbos de ação precisos**
+- Verbos específicos que descrevem a ação
+- "Excluir" e não "Remover" para exclusão permanente
+- "Salvar" e não "OK" para salvar alterações
 
-**Command forms used appropriately**
-- Active imperative for buttons
-- Clear, direct instructions
-- Action-oriented language
+**Formas imperativas usadas adequadamente**
+- Imperativo afirmativo para botões
+- Instruções claras e diretas
+- Linguagem orientada à ação
 
-**Plain language**
-- 7th grade reading level for general audience
-- 10th grade for professional contexts
-- Avoids complex vocabulary and sentence structures
+**Linguagem simples**
+- Equivalente ao 8º ou 9º ano para público geral
+- Equivalente ao 1º ou 2º ano do Ensino Médio para contextos profissionais
+- Evita vocabulário complexo e estruturas de frase elaboradas
 
-**Meaningful, descriptive titles**
-- Titles tell you where you are
-- Not generic or vague
-- Provide context and orientation
+**Títulos significativos e descritivos**
+- Os títulos informam onde você está
+- Não genéricos ou vagos
+- Fornecem contexto e orientação
 
-**Consistent patterns and terminology**
-- Same word means same thing throughout
-- UI patterns applied consistently
-- Terminology documented in style guide
+**Padrões e terminologia consistentes**
+- Mesma palavra significa a mesma coisa em todo o produto
+- Padrões de UI aplicados de forma consistente
+- Terminologia documentada no guia de estilo
 
-## Scoring Guide
+## Guia de Pontuação
 
-**9-10**: Excellent — Best practice example
-**7-8**: Good — Minor improvements possible
-**5-6**: Adequate — Notable issues to address
-**3-4**: Needs work — Significant problems
-**0-2**: Poor — Major revision required
+**9-10**: Excelente — Exemplo de melhor prática
+**7-8**: Bom — Pequenas melhorias possíveis
+**5-6**: Adequado — Problemas notáveis a resolver
+**3-4**: Precisa de trabalho — Problemas significativos
+**0-2**: Ruim — Revisão maior necessária
 
-## How to Use This Checklist
+## Como Usar Este Checklist
 
-1. **Review individual pieces** — Evaluate specific UI strings, messages, or flows
-2. **Audit entire experiences** — Score major screens or user journeys
-3. **Compare options** — Rate different versions to choose the best
-4. **Track improvements** — Measure before and after edits
-5. **Build rationale** — Use scores to explain writing decisions
-6. **Focus efforts** — Identify lowest-scoring areas to improve first
+1. **Revise peças individuais** — Avalie strings específicas de UI, mensagens ou fluxos
+2. **Audite experiências completas** — Pontue telas principais ou jornadas de usuário
+3. **Compare opções** — Avalie versões diferentes para escolher a melhor
+4. **Acompanhe melhorias** — Meça antes e depois das edições
+5. **Construa justificativa** — Use as pontuações para explicar decisões de escrita
+6. **Concentre esforços** — Identifique as áreas com menor pontuação para melhorar primeiro
 
-## Example Evaluation
+## Exemplo de Avaliação
 
-**Text**: "An error occurred while processing your request. Please try again."
+**Texto**: "Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente."
 
-**Concise**: 6/10 — Wordy, could be "We couldn't process your request. Try again."
-**Purposeful**: 4/10 — Doesn't help user fix the problem or explain what happened
-**Conversational**: 5/10 — Somewhat robotic, "an error occurred" is system-speak
-**Clear**: 5/10 — Vague, doesn't specify what error or why
+**Conciso**: 6/10 — Verboso, poderia ser "Não conseguimos processar sua solicitação. Tente novamente."
+**Proposital**: 4/10 — Não ajuda o usuário a corrigir o problema ou explica o que aconteceu
+**Conversacional**: 5/10 — Um tanto robótico, "ocorreu um erro" é linguagem de sistema
+**Claro**: 5/10 — Vago, não especifica qual erro ou o porquê
 
-**Overall**: 5/10 — Adequate but needs significant improvement
+**Geral**: 5/10 — Adequado, mas precisa de melhoria significativa
 
-**Improved**: "We couldn't save your changes. Check your connection and try again."
+**Melhorado**: "Não foi possível salvar suas alterações. Verifique sua conexão e tente novamente."
 
-**Concise**: 9/10 — Brief, direct, no wasted words
-**Purposeful**: 8/10 — Suggests likely cause (connection) and next step
-**Conversational**: 9/10 — Natural, human phrasing
-**Clear**: 9/10 — Specific about what failed and what to do
+**Conciso**: 9/10 — Breve, direto, sem palavras desperdiçadas
+**Proposital**: 8/10 — Sugere a causa provável (conexão) e o próximo passo
+**Conversacional**: 9/10 — Formulação natural e humana
+**Claro**: 9/10 — Específico sobre o que falhou e o que fazer
 
-**Overall**: 9/10 — Excellent
+**Geral**: 9/10 — Excelente
