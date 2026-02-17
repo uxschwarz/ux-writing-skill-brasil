@@ -1,203 +1,202 @@
-# UX Writing Skill for Claude & Codex
+# Skill de UX Writing para Claude & Codex
 
 [![Run in Smithery](https://smithery.ai/badge/skills/content-designer)](https://smithery.ai/skills?ns=content-designer&utm_source=github&utm_medium=badge)
 
+> Escale a qualidade de conteúdo com a aplicação de design systems guiada por IA
 
-> Scale content quality through AI-powered design system enforcement
+**🌐 [Ver Site](https://content-designer.github.io/ux-writing-skill/)**
 
-**🌐 [View Website](https://content-designer.github.io/ux-writing-skill/)**
+Uma Skill de Agente que permite ao Claude e ao OpenAI Codex escrever e editar textos de interface centrados no usuário (UX text/microcopy) para produtos digitais. Esta skill transforma assistentes de IA em ferramentas especializadas de UX Writing que aplicam padrões, patterns e voz consistentes em todo o seu produto.
 
-An Agent Skill that enables Claude and OpenAI Codex to write and edit user-centered interface copy (UX text/microcopy) for digital products. This skill transforms AI assistants into specialized UX writing tools that apply consistent standards, patterns, and voice across your product.
+## O Problema
 
-## The Problem
+Design systems resolvem a consistência visual, mas a qualidade do conteúdo ainda depende de redatores individuais. Cada mensagem de erro, rótulo de botão e estado vazio exige revisão manual para garantir que seja claro, conciso, conversacional e proposital. Isso não escala.
 
-Design systems solve visual consistency, but content quality still depends on individual writers. Every error message, button label, and empty state requires manual review to ensure it's clear, concise, conversational, and purposeful. This doesn't scale.
+## A Solução
 
-## The Solution
+Esta Skill de Agente empacota a expertise de UX Writing em um sistema que o Claude pode aplicar automaticamente. Em vez de pedir "melhore isso", você pode contar com melhorias consistentes e embasadas em evidências em toda a interface do seu produto.
 
-This Agent Skill packages UX writing expertise into a system that Claude can apply automatically. Instead of asking "make this better," you can rely on consistent, evidence-based improvements across your entire product interface.
+## O Que Torna Esta Skill Diferente
 
-## What Makes This Different
+**Pensamento sistêmico, não guia de estilo**: Não é uma lista de dicas de escrita. É um framework para avaliar e melhorar textos de UX baseado em quatro padrões de qualidade mensuráveis.
 
-**Systems thinking, not style guides**: This isn't a list of writing tips. It's a framework for evaluating and improving UX text based on four measurable quality standards.
+**Divulgação progressiva**: Os materiais de referência são carregados apenas quando necessários, mantendo o contexto do Claude eficiente enquanto fornece expertise profunda sob demanda.
 
-**Progressive disclosure**: Reference materials are loaded only when needed, keeping Claude's context efficient while providing deep expertise on demand.
+**Padrões comprovados**: Construído a partir de boas práticas reais de UX Writing, com exemplos em diferentes vozes de produto e contextos.
 
-**Proven patterns**: Built from real-world UX writing best practices, with examples across different product voices and contexts.
+**Imediatamente acionável**: Cada padrão inclui exemplos concretos de antes/depois e pontuação em relação aos padrões de qualidade.
 
-**Immediately actionable**: Every pattern includes concrete before/after examples and scoring against quality standards.
+## O Que Você Recebe
 
-## What You Get
+### Framework Principal
+- **Quatro padrões de qualidade**: Proposital, Conciso, Conversacional, Claro
+- **Padrões comuns de UX**: Botões, erros, estados vazios, formulários, notificações, onboarding
+- **Processo de edição**: Abordagem sistemática para melhorar qualquer texto de interface
+- **Guia de voz e tom**: Adapte o conteúdo à personalidade da marca e ao contexto
+- **Diretrizes de acessibilidade**: Escreva para leitores de tela, acessibilidade cognitiva e conformidade com WCAG
+- **Benchmarks embasados em pesquisa**: Metas de comprimento de frase, taxas de compreensão, níveis de leitura
 
-### Core Framework
-- **Four quality standards**: Purposeful, Concise, Conversational, Clear
-- **Common UX patterns**: Buttons, errors, empty states, forms, notifications, onboarding
-- **Editing process**: Systematic approach to improving any interface text
-- **Voice and tone guidance**: Adapt content to brand personality and context
-- **Accessibility guidelines**: Write for screen readers, cognitive accessibility, and WCAG compliance
-- **Research-backed benchmarks**: Sentence length targets, comprehension rates, reading levels
+### Materiais de Referência
+- **Diretrizes de acessibilidade**: Guia completo para escrever textos de UX inclusivos e acessíveis
+- **Modelo de quadro de voz**: Estabeleça uma personalidade de marca consistente
+- **Checklist de usabilidade de conteúdo**: Avalie a qualidade do texto com framework de pontuação
+- **Exemplos detalhados de padrões**: Veja como diferentes vozes aplicam os mesmos padrões
 
-### Reference Materials
-- **Accessibility guidelines**: Comprehensive guide for writing inclusive, accessible UX text
-- **Voice chart template**: Establish consistent brand personality
-- **Content usability checklist**: Evaluate text quality with scoring framework
-- **Detailed pattern examples**: See how different voices apply the same patterns
+### Ferramentas Práticas
+- **Melhorias do mundo real**: Transformações antes/depois com análise
+- **Modelos preenchíveis**: Mensagens de erro, estados vazios, fluxos de onboarding
+- **Padrões expandidos de erros**: Erros de validação, sistema, bloqueantes e de permissão com exemplos
+- **Framework de adaptação de tom**: Mapeie estados emocionais para tons apropriados
+- **Referência rápida**: Padrões comuns e anti-padrões
 
-### Practical Tools
-- **Real-world improvements**: Before/after transformations with analysis
-- **Fillable templates**: Error messages, empty states, onboarding flows
-- **Expanded error patterns**: Validation, system, blocking, and permission errors with examples
-- **Tone adaptation framework**: Map emotional states to appropriate tone
-- **Quick reference**: Common patterns and anti-patterns
+## Casos de Uso
 
-## Use Cases
+**Para designers de conteúdo**: Aplique padrões consistentes de UX Writing em todo o produto sem memorizar cada regra.
 
-**For content designers**: Apply consistent UX writing standards across your product without memorizing every rule.
+**Para equipes de produto**: Permita que não-redatores criem textos de interface que seguem seu design system.
 
-**For product teams**: Enable non-writers to create interface copy that follows your design system.
+**Para equipes de design system**: Aplique diretrizes de conteúdo em escala sem se tornar um gargalo.
 
-**For design system teams**: Enforce content guidelines at scale without becoming a bottleneck.
+**Para produtos em estágio inicial**: Construa qualidade de conteúdo desde o início com padrões comprovados.
 
-**For early-stage products**: Build content quality in from the start with proven patterns.
+## Instalação
 
-## Installation
+### O Que Você Precisa
 
-### What You Need
+Esta skill funciona com **Claude Desktop**, **Claude Code** e **Codex** (CLI e extensões de IDE). Escolha o método de instalação que corresponde à sua configuração.
 
-This skill works with **Claude Desktop**, **Claude Code**, and **Codex** (CLI and IDE extensions). Choose the installation method that matches your setup.
+**Nota:** Esta skill funciona com Codex CLI/IDE, não com o ChatGPT. O ChatGPT não pode instalar ou usar skills.
 
-**Note:** This skill works with Codex CLI/IDE, not ChatGPT. ChatGPT cannot install or use skills.
+### Instalação Rápida (Claude Desktop)
 
-### Quick Install (Claude Desktop)
+Se você usa o Claude Desktop, a instalação é simples:
 
-If you're using Claude Desktop, installation is simple:
+1. **Baixe** [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip) — contém apenas os arquivos da skill e a documentação
+2. Abra o **Claude Desktop**
+3. Vá em **Configurações → Capacidades → Skills**
+4. Clique em **Carregar skill** e selecione **ux-writing-skill.zip**
+5. **Faça upload do arquivo ZIP diretamente** — não o extraia antes
+6. Comece a usar a skill imediatamente!
 
-1. **Download** [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip) — this contains just the skill files and documentation
-2. Open **Claude Desktop**
-3. Go to **Settings → Capabilities → Skills**
-4. Click **Upload skill** and select **ux-writing-skill.zip**
-5. **Upload the ZIP file directly** — do not extract it first
-6. Start using the skill immediately!
+O ZIP contém apenas os arquivos relevantes da skill: `SKILL.md` mais a documentação de suporte em `docs/`, `examples/`, `references/` e `templates/`.
 
-The ZIP contains only skill-relevant files: `SKILL.md` plus supporting documentation in `docs/`, `examples/`, `references/`, and `templates/`.
+### Instalação Manual (Claude Code)
 
-### Manual Install (Claude Code)
+Se você usa o Claude Code, siga estes passos:
 
-If you're using Claude Code, follow these steps:
+**Passo 1: Baixe a Skill**
 
-**Step 1: Download the Skill**
+1. Baixe [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
+2. Extraia o arquivo ZIP (duplo clique no Mac, clique direito → Extrair no Windows)
 
-1. Download [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
-2. Extract the ZIP file (double-click on Mac, right-click → Extract on Windows)
+**Passo 2: Copie para a Pasta de Skills**
 
-**Step 2: Copy to Skills Folder**
-
-Copy the extracted folder to your Claude skills directory:
+Copie a pasta extraída para o diretório de skills do Claude:
 
 - **Mac/Linux**: `~/.claude/skills/`
 - **Windows**: `%USERPROFILE%\.claude\skills\`
 
-Create the directory if it doesn't exist.
+Crie o diretório se não existir.
 
-**Step 3: Restart Claude Code**
+**Passo 3: Reinicie o Claude Code**
 
-Quit and reopen Claude Code to activate the skill.
+Feche e reabra o Claude Code para ativar a skill.
 
-**Verify It's Working**
+**Verifique se Está Funcionando**
 
-Try asking Claude:
+Tente perguntar ao Claude:
 ```
-Write an error message for when a payment fails
+Escreva uma mensagem de erro para quando um pagamento falhar
 ```
 
-Claude will apply UX writing best practices and create a clear, empathetic error message.
+O Claude aplicará as boas práticas de UX Writing e criará uma mensagem de erro clara e empática.
 
-### Install in Codex (CLI/IDE)
+### Instalação no Codex (CLI/IDE)
 
-If you're using Codex CLI or IDE extensions, installation is straightforward:
+Se você usa Codex CLI ou extensões de IDE, a instalação é direta:
 
-**Step 1: Download the Skill**
+**Passo 1: Baixe a Skill**
 
-1. Download [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
-2. Extract the ZIP file
+1. Baixe [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
+2. Extraia o arquivo ZIP
 
-**Step 2: Copy to Codex Skills Folder**
+**Passo 2: Copie para a Pasta de Skills do Codex**
 
-Copy the extracted folder to your Codex skills directory:
+Copie a pasta extraída para o diretório de skills do Codex:
 
 - **Mac/Linux**: `~/.codex/skills/`
 - **Windows**: `%USERPROFILE%\.codex\skills\`
 
-Create the directory if it doesn't exist.
+Crie o diretório se não existir.
 
-**Step 3: Restart Codex**
+**Passo 3: Reinicie o Codex**
 
-Quit and reopen Codex (or your IDE with Codex extension) to activate the skill.
+Feche e reabra o Codex (ou seu IDE com extensão Codex) para ativar a skill.
 
-**Verify It's Working**
+**Verifique se Está Funcionando**
 
-Try asking in Codex:
+Tente perguntar no Codex:
 ```
-Write an error message for when a payment fails
+Escreva uma mensagem de erro para quando um pagamento falhar
 ```
 
-Codex will apply UX writing best practices and create a clear, empathetic error message.
+O Codex aplicará as boas práticas de UX Writing e criará uma mensagem de erro clara e empática.
 
-**Alternative: Use the Built-in Skill Creator**
+**Alternativa: Use o Criador de Skills Integrado**
 
-You can also use Codex's built-in skill creator:
-1. In Codex CLI or IDE, type `$skill-creator`
-2. Provide the path to the extracted skill folder
-3. Follow the prompts to install
+Você também pode usar o criador de skills integrado do Codex:
+1. No Codex CLI ou IDE, digite `$skill-creator`
+2. Forneça o caminho para a pasta extraída da skill
+3. Siga as instruções para instalar
 
-### For Teams: Project Installation
+### Para Equipes: Instalação no Projeto
 
-Want your whole team to use this skill automatically?
+Quer que toda a sua equipe use esta skill automaticamente?
 
-**For Claude Code:**
-1. Copy the `ux-writing` folder to `.claude/skills/` in your project's root directory
-2. Commit it to your repository
-3. When teammates pull the code, they'll automatically get the skill
-4. **Note**: Project skills only work when Claude Code is opened in that project folder
+**Para Claude Code:**
+1. Copie a pasta `ux-writing` para `.claude/skills/` no diretório raiz do seu projeto
+2. Faça commit no seu repositório
+3. Quando os colegas fizerem pull, receberão a skill automaticamente
+4. **Nota**: As skills de projeto funcionam apenas quando o Claude Code é aberto naquela pasta de projeto
 
-**For Codex:**
-1. Copy the `ux-writing` folder to `.codex/skills/` in your project's root directory
-2. Commit it to your repository
-3. When teammates pull the code, they'll automatically get the skill
+**Para Codex:**
+1. Copie a pasta `ux-writing` para `.codex/skills/` no diretório raiz do seu projeto
+2. Faça commit no seu repositório
+3. Quando os colegas fizerem pull, receberão a skill automaticamente
 
-## Figma Integration
+## Integração com Figma
 
-**Review and improve UX copy directly from your Figma designs!**
+**Revise e melhore textos de UX diretamente nos seus designs do Figma!**
 
-Connect this skill to Figma through Claude Code or Codex to analyze mockups, audit copy, and suggest improvements based on UX writing best practices. Perfect for:
-- Content designers reviewing flows before launch
-- Product teams iterating on copy in designs
-- Design QA and accessibility audits
-- Cross-platform consistency checks
+Conecte esta skill ao Figma através do Claude Code ou Codex para analisar mockups, auditar textos e sugerir melhorias com base nas boas práticas de UX Writing. Perfeito para:
+- Designers de conteúdo revisando fluxos antes do lançamento
+- Equipes de produto iterando textos nos designs
+- QA de design e auditorias de acessibilidade
+- Verificações de consistência entre plataformas
 
-### Quick Start with Claude Code
+### Início Rápido com Claude Code
 
-1. **Connect Figma to Claude Code** (one-time setup):
+1. **Conecte o Figma ao Claude Code** (configuração única):
    ```bash
    claude mcp add --transport http figma https://mcp.figma.com/mcp
    ```
-   Restart Claude Code and authenticate with Figma when prompted.
+   Reinicie o Claude Code e autentique-se com o Figma quando solicitado.
 
-2. **Share a Figma frame link** with Claude:
+2. **Compartilhe um link de frame do Figma** com o Claude:
    ```
-   Review the UX copy in this login screen:
+   Revise o texto de UX nesta tela de login:
    https://www.figma.com/file/abc123/Design?node-id=123-456
 
-   Check for accessibility, clarity, and tone.
+   Verifique acessibilidade, clareza e tom.
    ```
 
-3. **Get instant feedback** with specific improvements based on the four quality standards.
+3. **Receba feedback instantâneo** com melhorias específicas baseadas nos quatro padrões de qualidade.
 
-**📖 Full Claude Code setup guide:** [docs/claude-figma-integration.md](docs/claude-figma-integration.md)
+**📖 Guia completo de configuração para Claude Code:** [docs/claude-figma-integration.md](docs/claude-figma-integration.md)
 
-### Quick Start with Codex
+### Início Rápido com Codex
 
-1. **Configure Codex MCP** - Add to `~/.codex/config.toml`:
+1. **Configure o Codex MCP** — Adicione ao `~/.codex/config.toml`:
    ```toml
    [features]
    rmcp_client = true
@@ -206,142 +205,142 @@ Connect this skill to Figma through Claude Code or Codex to analyze mockups, aud
    url = "https://mcp.figma.com/mcp"
    ```
 
-2. **Install and authenticate**:
+2. **Instale e autentique**:
    ```bash
    npm i -g @openai/codex
    codex mcp login figma
    ```
 
-3. **Restart your IDE** and test with a Figma Dev Mode link.
+3. **Reinicie seu IDE** e teste com um link do Dev Mode do Figma.
 
-**📖 Full Codex setup guide:** [docs/codex-figma-integration.md](docs/codex-figma-integration.md)
+**📖 Guia completo de configuração para Codex:** [docs/codex-figma-integration.md](docs/codex-figma-integration.md)
 
-## Usage Examples
+## Exemplos de Uso
 
-### Basic Usage
-
-```
-Write an error message for when a payment fails
-```
-
-Claude applies the skill automatically and generates clear, actionable error messages following best practices.
-
-### Editing Existing Copy
+### Uso Básico
 
 ```
-Review this button label: "Submit your information for processing"
+Escreva uma mensagem de erro para quando um pagamento falhar
 ```
 
-Claude evaluates against the four quality standards and suggests improvements.
+O Claude aplica a skill automaticamente e gera mensagens de erro claras e acionáveis seguindo as boas práticas.
 
-### Creating Consistent Patterns
-
-```
-Create empty state copy for a task list, keeping voice consistent with:
-- Purposeful, Concise, Conversational, Clear
-- Professional but friendly tone
-```
-
-Claude applies the appropriate patterns and maintains voice consistency.
-
-### Evaluating Quality
+### Editando Textos Existentes
 
 ```
-Score this error message:
-"An error occurred. Please try again later."
+Revise este rótulo de botão: "Envie suas informações para processamento"
 ```
 
-Claude uses the content usability checklist to provide detailed scoring and improvement suggestions.
+O Claude avalia em relação aos quatro padrões de qualidade e sugere melhorias.
 
-## How It Works
+### Criando Padrões Consistentes
 
-This skill uses **model-invoked activation** — Claude and Codex automatically decide when to use it based on your request. You don't need to explicitly call the skill; it activates when you:
+```
+Crie o texto do estado vazio para uma lista de tarefas, mantendo a voz consistente com:
+- Proposital, Conciso, Conversacional, Claro
+- Tom profissional mas amigável
+```
 
-- Write or edit interface copy
-- Create error messages, notifications, or empty states
-- Work on button labels, form fields, or instructions
-- Review product content for consistency
-- Establish voice and tone guidelines
+O Claude aplica os padrões adequados e mantém a consistência de voz.
 
-The AI loads reference materials progressively, using only what's needed for your specific task to maintain efficient context usage.
+### Avaliando Qualidade
 
-**In Codex CLI/IDE**, you can also explicitly invoke the skill using `$ux-writing` or through the `/skills` command.
+```
+Pontue esta mensagem de erro:
+"Ocorreu um erro. Por favor, tente novamente mais tarde."
+```
 
-## What You'll Learn
+O Claude usa o checklist de usabilidade de conteúdo para fornecer pontuação detalhada e sugestões de melhoria.
 
-Using this skill exposes the systematic thinking behind effective UX writing:
+## Como Funciona
 
-- How to evaluate content objectively with scoring frameworks
-- Why certain patterns work across different product contexts
-- How voice stays consistent while tone adapts to situations
-- The difference between writing for clarity vs. writing for personality
+Esta skill usa **ativação invocada pelo modelo** — o Claude e o Codex decidem automaticamente quando usá-la com base na sua solicitação. Você não precisa chamar a skill explicitamente; ela é ativada quando você:
 
-## For Content Design Teams
+- Escreve ou edita textos de interface
+- Cria mensagens de erro, notificações ou estados vazios
+- Trabalha em rótulos de botão, campos de formulário ou instruções
+- Revisa conteúdo do produto para consistência
+- Estabelece diretrizes de voz e tom
 
-This skill can serve as:
+A IA carrega os materiais de referência progressivamente, usando apenas o que é necessário para sua tarefa específica, mantendo o uso eficiente do contexto.
 
-- **Onboarding tool**: New team members learn patterns faster
-- **Quality baseline**: Consistent standards across all writers
-- **Efficiency multiplier**: Generate first drafts that follow guidelines
-- **System documentation**: Reference materials that never go stale
+**No Codex CLI/IDE**, você também pode invocar a skill explicitamente usando `$ux-writing` ou através do comando `/skills`.
 
-## Credits
+## O Que Você Vai Aprender
 
-Built by [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer at Stripe, based on established UX writing principles from:
+Usar esta skill expõe o pensamento sistemático por trás de um UX Writing eficaz:
 
-- Content Design by Sarah Richards
-- Strategic Writing for UX by Torrey Podmajersky  
-- Nicely Said by Kate Kiefer Lee and Nicole Fenton
-- Google Material Design writing guidelines
-- Years of practical application building design systems
+- Como avaliar conteúdo objetivamente com frameworks de pontuação
+- Por que certos padrões funcionam em diferentes contextos de produto
+- Como a voz se mantém consistente enquanto o tom se adapta a situações
+- A diferença entre escrever para clareza vs. escrever para personalidade
 
-## Contributing
+## Para Equipes de Design de Conteúdo
 
-Contributions welcome! If you have:
+Esta skill pode servir como:
 
-- Additional reference patterns
-- More real-world examples
-- Template improvements
-- Translations to other languages
+- **Ferramenta de onboarding**: Novos membros da equipe aprendem padrões mais rapidamente
+- **Baseline de qualidade**: Padrões consistentes entre todos os redatores
+- **Multiplicador de eficiência**: Gere primeiros rascunhos que seguem as diretrizes
+- **Documentação do sistema**: Materiais de referência que nunca ficam desatualizados
 
-Please open an issue or submit a pull request.
+## Créditos
 
-### Building the Skill Package
+Construído por [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer no Stripe, baseado em princípios estabelecidos de UX Writing de:
 
-If you're contributing or want to build the skill ZIP locally:
+- Content Design de Sarah Richards
+- Strategic Writing for UX de Torrey Podmajersky
+- Nicely Said de Kate Kiefer Lee e Nicole Fenton
+- Diretrizes de escrita do Google Material Design
+- Anos de aplicação prática na construção de design systems
+
+## Contribuindo
+
+Contribuições são bem-vindas! Se você tem:
+
+- Padrões de referência adicionais
+- Mais exemplos do mundo real
+- Melhorias de templates
+- Traduções para outros idiomas
+
+Abra uma issue ou envie um pull request.
+
+### Compilando o Pacote da Skill
+
+Se você está contribuindo ou quer compilar o ZIP da skill localmente:
 
 ```bash
 ./build-skill.sh
 ```
 
-This creates `dist/ux-writing-skill.zip` containing only the skill files (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
+Isso cria `dist/ux-writing-skill.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
 
-The build script excludes repository files like `README.md`, `CONTRIBUTING.md`, `index.html`, and the demo video — these live on GitHub but aren't needed in the skill package.
+O script de build exclui arquivos do repositório como `README.md`, `CONTRIBUTING.md`, `index.html` e o vídeo demonstrativo — estes ficam no GitHub mas não são necessários no pacote da skill.
 
-## License
+## Licença
 
-MIT License — use this skill freely in your projects and teams.
+Licença MIT — use esta skill livremente em seus projetos e equipes.
 
-## Related Work
+## Trabalhos Relacionados
 
-Looking for more Agent Skills?
+Procurando mais Agent Skills?
 
-**For Claude:**
-- Browse the [Claude Code Skills collection](https://github.com/anthropics/skills)
-- Learn about [Agent Skills architecture](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
-- Read [best practices for authoring skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/best-practices)
+**Para Claude:**
+- Navegue pela [coleção de Skills do Claude Code](https://github.com/anthropics/skills)
+- Aprenda sobre a [arquitetura de Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
+- Leia as [boas práticas para criar skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/best-practices)
 
-**For Codex (CLI/IDE):**
-- Explore [Codex Skills documentation](https://developers.openai.com/codex/skills/)
-- Learn how to [create custom skills](https://developers.openai.com/codex/skills/create-skill)
-- Join the [OpenAI Developer Community](https://community.openai.com/) to discuss skills
+**Para Codex (CLI/IDE):**
+- Explore a [documentação de Skills do Codex](https://developers.openai.com/codex/skills/)
+- Aprenda a [criar skills personalizadas](https://developers.openai.com/codex/skills/create-skill)
+- Participe da [Comunidade de Desenvolvedores OpenAI](https://community.openai.com/) para discutir skills
 
-## Why This Matters
+## Por Que Isso Importa
 
-Content is infrastructure. Every button label, error message, and empty state shapes how people understand and use your product. Good UX writing shouldn't depend on having an expert review every string. 
+Conteúdo é infraestrutura. Cada rótulo de botão, mensagem de erro e estado vazio molda como as pessoas entendem e usam seu produto. Um bom UX Writing não deveria depender de um especialista revisando cada string.
 
-This skill makes UX writing excellence systematic, scalable, and consistent — exactly what design systems do for visual design.
+Esta skill torna a excelência em UX Writing sistemática, escalável e consistente — exatamente o que os design systems fazem pelo design visual.
 
 ---
 
-**Status**: Production-ready • **Version**: 1.5.0 • **Last updated**: January 2026
+**Status**: Pronto para produção • **Versão**: 1.5.0 • **Última atualização**: Janeiro de 2026
