@@ -1,86 +1,86 @@
-# Versioning Guide
+# Guia de Versionamento
 
-This project follows [Semantic Versioning](https://semver.org/) (SemVer).
+Este projeto segue o [Semantic Versioning](https://semver.org/) (SemVer).
 
-## Version Format
+## Formato de Versão
 
-**MAJOR.MINOR.PATCH** (e.g., `1.2.0`)
+**MAIOR.MENOR.PATCH** (ex.: `1.2.0`)
 
-- **MAJOR**: Breaking changes to skill structure or incompatible API changes
-- **MINOR**: New features, patterns, or capabilities (backward-compatible)
-- **PATCH**: Bug fixes, documentation updates, minor improvements
+- **MAIOR**: Mudanças que quebram compatibilidade na estrutura da skill ou alterações incompatíveis na API
+- **MENOR**: Novos recursos, padrões ou capacidades (compatíveis com versões anteriores)
+- **PATCH**: Correções de bugs, atualizações de documentação, pequenas melhorias
 
-## Version History
+## Histórico de Versões
 
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+Consulte o [CHANGELOG.md](CHANGELOG.md) para o histórico detalhado de versões.
 
-## Creating a New Release
+## Criando um Novo Lançamento
 
-### 1. Update Version Number
+### 1. Atualize o Número de Versão
 
-Update the version in `README.md`:
+Atualize a versão no `README.md`:
 ```markdown
-**Status**: Production-ready • **Version**: X.Y.Z • **Last updated**: Month Year
+**Status**: Pronto para produção • **Versão**: X.Y.Z • **Última atualização**: Mês Ano
 ```
 
-### 2. Update CHANGELOG.md
+### 2. Atualize o CHANGELOG.md
 
-Add a new entry at the top of the changelog following the [Keep a Changelog](https://keepachangelog.com/) format:
-- Version number and date
-- Sections for Added, Changed, Removed, etc.
-- Bullet points describing changes
+Adicione uma nova entrada no topo do changelog seguindo o formato do [Keep a Changelog](https://keepachangelog.com/):
+- Número da versão e data
+- Seções para Adicionado, Alterado, Removido, etc.
+- Marcadores descrevendo as mudanças
 
-### 3. Commit Changes
+### 3. Faça Commit das Alterações
 
 ```bash
 git add README.md CHANGELOG.md
-git commit -m "Release vX.Y.Z: Brief description"
+git commit -m "Release vX.Y.Z: Breve descrição"
 ```
 
-### 4. Create and Push Tag
+### 4. Crie e Envie a Tag
 
 ```bash
-# Create annotated tag
-git tag -a vX.Y.Z -m "Release vX.Y.Z: Brief description"
+# Criar tag anotada
+git tag -a vX.Y.Z -m "Release vX.Y.Z: Breve descrição"
 
-# Push tag to GitHub
+# Enviar tag para o GitHub
 git push origin vX.Y.Z
 ```
 
-### 5. Create GitHub Release
+### 5. Crie o Release no GitHub
 
-1. Go to [Releases](https://github.com/content-designer/ux-writing-skill/releases)
-2. Click "Draft a new release"
-3. Select the tag you just pushed
-4. Add release title: `vX.Y.Z - Release Title`
-5. Copy the version notes from CHANGELOG.md into the description
-6. Publish the release
+1. Acesse [Releases](https://github.com/content-designer/ux-writing-skill/releases)
+2. Clique em "Draft a new release"
+3. Selecione a tag que você acabou de enviar
+4. Adicione o título do release: `vX.Y.Z - Título do Release`
+5. Copie as notas da versão do CHANGELOG.md para a descrição
+6. Publique o release
 
-GitHub automatically creates downloadable ZIP and tarball artifacts for each release.
+O GitHub cria automaticamente artefatos ZIP e tarball para download em cada release.
 
-## When to Bump Versions
+## Quando Incrementar as Versões
 
-### Bump MAJOR (1.x.x → 2.0.0) when:
-- Changing SKILL.md structure in breaking ways
-- Removing or renaming core reference files
-- Changing the skill's fundamental approach
+### Incremente a versão MAIOR (1.x.x → 2.0.0) quando:
+- Alterar a estrutura do SKILL.md de forma que quebre compatibilidade
+- Remover ou renomear arquivos de referência fundamentais
+- Mudar a abordagem fundamental da skill
 
-### Bump MINOR (x.1.x → x.2.0) when:
-- Adding new reference documents
-- Adding new pattern categories
-- Adding support for new platforms (e.g., Codex)
-- Adding significant new features
+### Incremente a versão MENOR (x.1.x → x.2.0) quando:
+- Adicionar novos documentos de referência
+- Adicionar novas categorias de padrões
+- Adicionar suporte a novas plataformas (ex.: Codex)
+- Adicionar novos recursos significativos
 
-### Bump PATCH (x.x.1 → x.x.2) when:
-- Fixing typos or errors
-- Clarifying existing documentation
-- Minor improvements to examples
-- Bug fixes in templates
+### Incremente o PATCH (x.x.1 → x.x.2) quando:
+- Corrigir erros de digitação ou erros
+- Esclarecer documentação existente
+- Pequenas melhorias nos exemplos
+- Correções de bugs nos templates
 
-## Accessing Previous Versions
+## Acessando Versões Anteriores
 
-Users can access any version via GitHub:
+Os usuários podem acessar qualquer versão pelo GitHub:
 
-- **Releases page**: https://github.com/content-designer/ux-writing-skill/releases
-- **Direct download**: https://github.com/content-designer/ux-writing-skill/releases/tag/vX.Y.Z
-- **ZIP archive**: https://github.com/content-designer/ux-writing-skill/archive/refs/tags/vX.Y.Z.zip
+- **Página de Releases**: https://github.com/content-designer/ux-writing-skill/releases
+- **Download direto**: https://github.com/content-designer/ux-writing-skill/releases/tag/vX.Y.Z
+- **Arquivo ZIP**: https://github.com/content-designer/ux-writing-skill/archive/refs/tags/vX.Y.Z.zip
