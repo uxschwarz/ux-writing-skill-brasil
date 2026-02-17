@@ -271,7 +271,7 @@ Usar esta skill expõe uma execução básica sistemática por trás de um UX Wr
 
 ## Créditos
 
-Versão brasileira em português: construída, iterada e remodelada por da Skill originalmente construída por [Stephanie Schwarz]([https://www.linkedin.com/in/christopher-greer/](https://www.linkedin.com/in/uxschwarz/)), Content Designer na HelloFresh.
+Versão brasileira em português: construída, iterada e remodelada por da Skill originalmente construída por [Stephanie Schwarz](https://www.linkedin.com/in/uxschwarz/), Content Designer na HelloFresh.
 Inspirada pela Skill desenvolvida por [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer no Stripe. Adaptação dos materiais base para o português autorizada pelo criador original.
 
 Baseada em princípios estabelecidos de UX Writing de:
