@@ -1,426 +1,426 @@
-# UX Text Patterns — Detailed Examples
+# Padrões de Texto de UX — Exemplos Detalhados
 
-This document provides extended examples of common UX text patterns applied across three different product voices: TAPP Transit (helpful, efficient, trustworthy), 'appee Social Game (playful, competitive, rewarding), and Sturgeon Club (sophisticated, exclusive, elegant).
+Este documento fornece exemplos estendidos de padrões comuns de texto de UX aplicados em três vozes diferentes de produto: METROZ Transporte (prestativo, eficiente, confiável), Snapee Social (brincalhão, competitivo, recompensador) e Clube Verano (sofisticado, exclusivo, elegante).
 
-## Titles
+## Títulos
 
-### Brand Title
-Identifies the product/organization
+### Título de Marca
+Identifica o produto/organização
 
-**TAPP Transit**: "TAPP"
-**'appee**: "'appee"
-**Sturgeon Club**: "The Sturgeon Club"
+**METROZ Transporte**: "METROZ"
+**Snapee**: "Snapee"
+**Clube Verano**: "Clube Verano"
 
-### Content Title
-Reflects what's on the screen
+### Título de Conteúdo
+Reflete o que está na tela
 
-**TAPP Transit**: "Your routes", "Bus schedule", "Payment methods"
-**'appee**: "Your photos", "Leaderboard", "Daily challenge"
-**Sturgeon Club**: "Your reservations", "Member directory", "Event calendar"
+**METROZ Transporte**: "Suas rotas", "Horários de ônibus", "Formas de pagamento"
+**Snapee**: "Suas fotos", "Ranking", "Desafio diário"
+**Clube Verano**: "Suas reservas", "Diretório de membros", "Agenda de eventos"
 
-### Category Title (Ambiguous Task)
-Covers multiple related actions
+### Título de Categoria (Tarefa Ambígua)
+Abrange múltiplas ações relacionadas
 
-**TAPP Transit**: "Trip planning", "Account settings", "Help and support"
-**'appee**: "Profile settings", "Game stats", "Photo gallery"
-**Sturgeon Club**: "Membership benefits", "Venue access", "Concierge services"
+**METROZ Transporte**: "Planejamento de viagem", "Configurações da conta", "Ajuda e suporte"
+**Snapee**: "Configurações do perfil", "Estatísticas", "Galeria de fotos"
+**Clube Verano**: "Benefícios do membro", "Acesso às instalações", "Serviços de concierge"
 
-### Task Title (Single Action)
-Acts as instruction for one task
+### Título de Tarefa (Ação Única)
+Funciona como instrução para uma tarefa
 
-**TAPP Transit**: "Buy a day pass", "Report a problem", "Change your email"
-**'appee**: "Upload a photo", "Vote on photos", "Invite a friend"
-**Sturgeon Club**: "Reserve a table", "Update your preferences", "Download your invoice"
+**METROZ Transporte**: "Comprar passe diário", "Reportar problema", "Alterar e-mail"
+**Snapee**: "Enviar foto", "Votar nas fotos", "Convidar amigo"
+**Clube Verano**: "Reservar mesa", "Atualizar preferências", "Baixar nota fiscal"
 
 ---
 
-## Buttons
+## Botões
 
-### Primary Actions
+### Ações Primárias
 
-**TAPP Transit**:
-- "Buy pass"
-- "Track bus"
-- "Plan trip"
-- "Report issue"
+**METROZ Transporte**:
+- "Comprar passe"
+- "Rastrear ônibus"
+- "Planejar viagem"
+- "Reportar problema"
 
-**'appee**:
-- "Upload photo"
-- "Vote now"
-- "Challenge friend"
-- "Claim reward"
+**Snapee**:
+- "Enviar foto"
+- "Votar agora"
+- "Desafiar amigo"
+- "Resgatar recompensa"
 
-**Sturgeon Club**:
-- "Reserve table"
-- "View details"
-- "Confirm attendance"
-- "Request service"
+**Clube Verano**:
+- "Reservar mesa"
+- "Ver detalhes"
+- "Confirmar presença"
+- "Solicitar serviço"
 
-### Secondary Actions
+### Ações Secundárias
 
-**TAPP Transit**:
-- "View schedule"
-- "Cancel"
-- "Go back"
-- "Skip"
+**METROZ Transporte**:
+- "Ver horários"
+- "Cancelar"
+- "Voltar"
+- "Pular"
 
-**'appee**:
-- "See rules"
-- "Maybe later"
-- "Pass"
-- "View profile"
+**Snapee**:
+- "Ver regras"
+- "Talvez depois"
+- "Passar"
+- "Ver perfil"
 
-**Sturgeon Club**:
-- "Learn more"
-- "Decline"
-- "Return"
-- "Not now"
+**Clube Verano**:
+- "Saiba mais"
+- "Recusar"
+- "Voltar"
+- "Agora não"
 
-### Destructive Actions
+### Ações Destrutivas
 
-**TAPP Transit**:
-- "Delete payment method"
-- "Cancel trip"
-- "Remove favorite"
+**METROZ Transporte**:
+- "Excluir forma de pagamento"
+- "Cancelar viagem"
+- "Remover favorito"
 
-**'appee**:
-- "Delete photo"
-- "Leave game"
-- "Remove friend"
+**Snapee**:
+- "Excluir foto"
+- "Sair do jogo"
+- "Remover amigo"
 
-**Sturgeon Club**:
-- "Cancel reservation"
-- "Remove guest"
-- "Close account"
+**Clube Verano**:
+- "Cancelar reserva"
+- "Remover convidado"
+- "Encerrar conta"
 
 ---
 
 ## Links
 
-### Navigational Links
+### Links de Navegação
 
-**TAPP Transit**:
-- "See all routes"
-- "View trip history"
-- "Check real-time updates"
+**METROZ Transporte**:
+- "Ver todas as rotas"
+- "Ver histórico de viagens"
+- "Verificar atualizações em tempo real"
 
-**'appee**:
-- "Browse all challenges"
-- "See your stats"
-- "View friend activity"
+**Snapee**:
+- "Ver todos os desafios"
+- "Ver suas estatísticas"
+- "Ver atividade dos amigos"
 
-**Sturgeon Club**:
-- "Explore member benefits"
-- "View upcoming events"
-- "Access your membership card"
+**Clube Verano**:
+- "Explorar benefícios do membro"
+- "Ver próximos eventos"
+- "Acessar sua carteirinha"
 
-### Contextual Links
+### Links Contextuais
 
-**TAPP Transit**:
-- "Learn about fare options"
-- "Get help with passes"
-- "Contact support"
+**METROZ Transporte**:
+- "Saiba mais sobre opções de tarifa"
+- "Obter ajuda com passes"
+- "Falar com o suporte"
 
-**'appee**:
-- "How scoring works"
-- "Tips for better photos"
-- "Report a problem"
+**Snapee**:
+- "Como a pontuação funciona"
+- "Dicas para melhores fotos"
+- "Reportar um problema"
 
-**Sturgeon Club**:
-- "Terms of membership"
-- "Dress code requirements"
-- "Concierge contacts"
-
----
-
-## Error Messages
-
-### Inline Errors
-
-**TAPP Transit**:
-- "Email must include @"
-- "Card number is incomplete"
-- "Pick a future date"
-
-**'appee**:
-- "Username already taken"
-- "Photo must be under 10MB"
-- "Needs at least 3 characters"
-
-**Sturgeon Club**:
-- "Email address required"
-- "Valid phone number required"
-- "Select a date"
-
-### Detour Errors
-
-**TAPP Transit**:
-**Title**: "Can't buy pass"
-**Body**: "Your payment didn't go through. Check your card details and try again."
-**Action**: "Update card"
-
-**'appee**:
-**Title**: "Upload failed"
-**Body**: "Your photo couldn't be uploaded. Check your connection and try again."
-**Action**: "Retry upload"
-
-**Sturgeon Club**:
-**Title**: "Reservation unavailable"
-**Body**: "This time slot is no longer available. Please select another time."
-**Action**: "Choose different time"
-
-### Blocking Errors
-
-**TAPP Transit**:
-**Title**: "Service temporarily unavailable"
-**Body**: "We're updating our systems and will be back online in about 15 minutes. Your saved trips and passes are safe."
-**Action**: "Check status"
-
-**'appee**:
-**Title**: "Update required"
-**Body**: "You need the latest version of 'appee to continue playing. Update now to access new challenges and features."
-**Action**: "Update app"
-
-**Sturgeon Club**:
-**Title**: "Membership renewal required"
-**Body**: "Your membership expired on March 15. Renew your membership to continue accessing club services."
-**Action**: "Renew membership"
+**Clube Verano**:
+- "Termos de associação"
+- "Requisitos de traje"
+- "Contatos do concierge"
 
 ---
 
-## Success Messages
+## Mensagens de Erro
 
-### Simple Confirmation
+### Erros Inline
 
-**TAPP Transit**:
-- "Pass purchased"
-- "Favorite added"
-- "Route saved"
-- "Email updated"
+**METROZ Transporte**:
+- "O e-mail deve conter @"
+- "Número do cartão está incompleto"
+- "Escolha uma data no futuro"
 
-**'appee**:
-- "Photo uploaded"
-- "Vote recorded"
-- "Friend added"
-- "Profile saved"
+**Snapee**:
+- "Nome de usuário já está em uso"
+- "A foto deve ter menos de 10 MB"
+- "Mínimo de 3 caracteres"
 
-**Sturgeon Club**:
-- "Reservation confirmed"
-- "Preferences updated"
-- "Guest added"
-- "Payment processed"
+**Clube Verano**:
+- "Endereço de e-mail obrigatório"
+- "Número de telefone válido obrigatório"
+- "Selecione uma data"
 
-### Detailed Success
+### Erros de Desvio (Recuperáveis)
 
-**TAPP Transit**:
-**Title**: "Trip saved"
-**Body**: "You'll get a reminder 30 minutes before your bus arrives."
+**METROZ Transporte**:
+**Título**: "Não foi possível comprar o passe"
+**Corpo**: "Seu pagamento não foi processado. Confira os dados do cartão e tente novamente."
+**Ação**: "Atualizar cartão"
 
-**'appee**:
-**Title**: "Challenge complete!"
-**Body**: "You earned 50 points. Check the leaderboard to see your ranking."
+**Snapee**:
+**Título**: "Falha no envio"
+**Corpo**: "Não foi possível enviar sua foto. Verifique a conexão e tente novamente."
+**Ação**: "Tentar novamente"
 
-**Sturgeon Club**:
-**Title**: "Reservation confirmed"
-**Body**: "Table for 4 on Saturday, May 20 at 7:30 PM. You'll receive a reminder the day before."
+**Clube Verano**:
+**Título**: "Reserva indisponível"
+**Corpo**: "Este horário não está mais disponível. Selecione outro horário."
+**Ação**: "Escolher outro horário"
 
----
+### Erros Bloqueantes
 
-## Empty States
+**METROZ Transporte**:
+**Título**: "Serviço temporariamente indisponível"
+**Corpo**: "Estamos atualizando nossos sistemas e voltaremos em cerca de 15 minutos. Suas viagens salvas e passes estão seguros."
+**Ação**: "Verificar status"
 
-### First-Use Empty State
+**Snapee**:
+**Título**: "Atualização necessária"
+**Corpo**: "Você precisa da versão mais recente do Snapee para continuar. Atualize agora para acessar novos desafios e recursos."
+**Ação**: "Atualizar app"
 
-**TAPP Transit**:
-**Title**: "No saved routes yet"
-**Body**: "Save your frequent trips for quick access."
-**Action**: "Plan a trip"
-
-**'appee**:
-**Title**: "No photos yet"
-**Body**: "Upload your first photo to start earning points."
-**Action**: "Upload photo"
-
-**Sturgeon Club**:
-**Title**: "No upcoming reservations"
-**Body**: "Reserve a table at any of our exclusive venues."
-**Action**: "Make reservation"
-
-### User-Cleared Empty State
-
-**TAPP Transit**:
-**Title**: "All caught up"
-**Body**: "You've completed all your trips for today."
-
-**'appee**:
-**Title**: "You're all done!"
-**Body**: "You've voted on all today's photos. New challenges arrive tomorrow."
-
-**Sturgeon Club**:
-**Title**: "No pending requests"
-**Body**: "You're all set. We'll notify you when we process your reservation."
-
-### Error Empty State
-
-**TAPP Transit**:
-**Title**: "No results found"
-**Body**: "Try a different search or browse all routes."
-**Action**: "See all routes"
-
-**'appee**:
-**Title**: "No photos match your search"
-**Body**: "Try different keywords or browse all photos."
-**Action**: "Browse photos"
-
-**Sturgeon Club**:
-**Title**: "No events match your criteria"
-**Body**: "Adjust your filters or view all upcoming events."
-**Action**: "View all events"
+**Clube Verano**:
+**Título**: "Renovação da associação necessária"
+**Corpo**: "Sua associação expirou em 15 de março. Renove para continuar acessando os serviços do clube."
+**Ação**: "Renovar associação"
 
 ---
 
-## Notifications
+## Mensagens de Sucesso
 
-### Action-Required
+### Confirmação Simples
 
-**TAPP Transit**:
-**Title**: "Your bus is arriving"
-**Body**: "Route 42 to Downtown arrives in 2 minutes at Bay St."
+**METROZ Transporte**:
+- "Passe comprado"
+- "Favorito adicionado"
+- "Rota salva"
+- "E-mail atualizado"
 
-**'appee**:
-**Title**: "New challenge available"
-**Body**: "Today's theme: Sunset. Upload by midnight to compete."
+**Snapee**:
+- "Foto enviada"
+- "Voto registrado"
+- "Amigo adicionado"
+- "Perfil salvo"
 
-**Sturgeon Club**:
-**Title**: "Reservation reminder"
-**Body**: "Your reservation is tonight at 7:30 PM. Confirm or modify by 5 PM."
-**Actions**: "Confirm" | "Modify"
+**Clube Verano**:
+- "Reserva confirmada"
+- "Preferências atualizadas"
+- "Convidado adicionado"
+- "Pagamento processado"
 
-### Passive
+### Sucesso Detalhado
 
-**TAPP Transit**:
-**Title**: "Service update"
-**Body**: "Route 15 is running 5 minutes late due to traffic."
+**METROZ Transporte**:
+**Título**: "Viagem salva"
+**Corpo**: "Você receberá um lembrete 30 minutos antes do seu ônibus chegar."
 
-**'appee**:
-**Title**: "You earned a badge"
-**Body**: "Weekly Warrior: Uploaded photos 7 days in a row."
+**Snapee**:
+**Título**: "Desafio completo!"
+**Corpo**: "Você ganhou 50 pontos. Veja o ranking para descobrir sua posição."
 
-**Sturgeon Club**:
-**Title**: "New event announced"
-**Body**: "Wine tasting on June 15. Reserve your spot before it fills."
-
----
-
-## Form Fields
-
-### Labels
-
-**TAPP Transit**: "Email address", "Card number", "Expiration date", "Security code"
-**'appee**: "Username", "Display name", "Bio", "Profile photo"
-**Sturgeon Club**: "Member name", "Phone number", "Dietary preferences", "Guest names"
-
-### Instructions (Helper Text)
-
-**TAPP Transit**:
-- "We'll send trip updates to this email"
-- "This card will be saved securely for future purchases"
-- "Shown on your receipts and account"
-
-**'appee**:
-- "Choose a unique name others will see"
-- "Tell other players about yourself"
-- "Upload a photo that represents you"
-
-**Sturgeon Club**:
-- "Required for reservation confirmations"
-- "We'll contact you about events and updates"
-- "Help us prepare the perfect dining experience"
-
-### Placeholder Text
-
-**TAPP Transit**: "name@example.com", "4111 1111 1111 1111", "MM/YY"
-**'appee**: "PhotoPro2024", "About me...", "Add caption"
-**Sturgeon Club**: "John Smith", "(555) 555-5555", "Guest name"
+**Clube Verano**:
+**Título**: "Reserva confirmada"
+**Corpo**: "Mesa para 4 pessoas no sábado, 20 de maio, às 19h30. Você receberá um lembrete no dia anterior."
 
 ---
 
-## Controls
+## Estados Vazios
 
-### Toggle Switches
+### Estado Vazio de Primeiro Uso
 
-**TAPP Transit**:
-- **Name**: "Real-time updates"
-- **Description**: "Get notifications when your bus is arriving"
+**METROZ Transporte**:
+**Título**: "Nenhuma rota salva ainda"
+**Corpo**: "Salve suas viagens frequentes para acesso rápido."
+**Botão**: "Planejar viagem"
 
-**'appee**:
-- **Name**: "Push notifications"
-- **Description**: "Get notified about new challenges and friend activity"
+**Snapee**:
+**Título**: "Nenhuma foto ainda"
+**Corpo**: "Envie sua primeira foto para começar a acumular pontos."
+**Botão**: "Enviar foto"
 
-**Sturgeon Club**:
-- **Name**: "Event reminders"
-- **Description**: "Receive notifications about upcoming reservations and events"
+**Clube Verano**:
+**Título**: "Nenhuma reserva futura"
+**Corpo**: "Reserve uma mesa em qualquer uma das nossas instalações exclusivas."
+**Botão**: "Fazer reserva"
 
-### Checkboxes
+### Estado Vazio Limpo pelo Usuário
 
-**TAPP Transit**:
-- "Remember this payment method"
-- "Include accessibility information"
-- "Show express routes only"
+**METROZ Transporte**:
+**Título**: "Tudo em dia"
+**Corpo**: "Você completou todas as viagens de hoje."
 
-**'appee**:
-- "Make profile public"
-- "Allow friend requests"
-- "Share scores on leaderboard"
+**Snapee**:
+**Título**: "Você terminou tudo!"
+**Corpo**: "Você votou em todas as fotos de hoje. Novos desafios chegam amanhã."
 
-**Sturgeon Club**:
-- "Send event invitations"
-- "Include guests in communications"
-- "Opt in to exclusive offers"
+**Clube Verano**:
+**Título**: "Nenhuma solicitação pendente"
+**Corpo**: "Está tudo certo. Avisaremos quando sua reserva for processada."
 
----
+### Estado Vazio de Erro/Sem Resultados
 
-## Instructions
+**METROZ Transporte**:
+**Título**: "Nenhum resultado encontrado"
+**Corpo**: "Tente um termo diferente ou veja todas as rotas."
+**Botão**: "Ver todas as rotas"
 
-### Static Instructions
+**Snapee**:
+**Título**: "Nenhuma foto corresponde à sua busca"
+**Corpo**: "Tente palavras diferentes ou navegue por todas as fotos."
+**Botão**: "Ver todas as fotos"
 
-**TAPP Transit**: "Tap your card when you board and when you exit."
-**'appee**: "Upload one photo per day to earn points."
-**Sturgeon Club**: "Present your membership card upon arrival."
-
-### On-Demand Instructions
-
-**TAPP Transit**: 
-**Trigger**: Help icon next to "Transfer"
-**Content**: "Switch to another bus or train at connecting stops. Your pass covers transfers within 2 hours."
-
-**'appee**:
-**Trigger**: Question mark next to "Challenge rules"
-**Content**: "Upload a photo matching today's theme by midnight. Other players vote on entries. Top 10 photos earn bonus points."
-
-**Sturgeon Club**:
-**Trigger**: Info icon next to "Guest policy"
-**Content**: "Members may bring up to 3 guests per visit. Guest names must be provided 24 hours in advance for evening reservations."
+**Clube Verano**:
+**Título**: "Nenhum evento corresponde aos seus critérios"
+**Corpo**: "Ajuste os filtros ou veja todos os próximos eventos."
+**Botão**: "Ver todos os eventos"
 
 ---
 
-## Key Differences by Voice
+## Notificações
 
-**TAPP Transit (Helpful, Efficient, Trustworthy)**:
-- Direct, clear, informative
-- Focuses on practical information
-- Anticipates user needs
-- Transparent about problems
+### Ação Necessária
 
-**'appee (Playful, Competitive, Rewarding)**:
-- Energetic, encouraging language
-- Emphasizes achievement and competition
-- Celebrates user actions
-- Uses exclamation points appropriately
+**METROZ Transporte**:
+**Título**: "Seu ônibus está chegando"
+**Corpo**: "Linha 42 para o Centro chega em 2 minutos na Av. Paulista."
 
-**Sturgeon Club (Sophisticated, Exclusive, Elegant)**:
-- Polished, refined tone
-- Emphasizes service and quality
-- More formal phrasing
-- Sophisticated word choices
+**Snapee**:
+**Título**: "Novo desafio disponível"
+**Corpo**: "Tema de hoje: Pôr do sol. Envie até meia-noite para competir."
 
-All three maintain the core UX principles: purposeful, concise, conversational (within voice), and clear.
+**Clube Verano**:
+**Título**: "Lembrete de reserva"
+**Corpo**: "Sua reserva é hoje às 19h30. Confirme ou altere até às 17h."
+**Ações**: "Confirmar" | "Alterar"
+
+### Passiva
+
+**METROZ Transporte**:
+**Título**: "Atualização de serviço"
+**Corpo**: "A Linha 15 está com 5 minutos de atraso por congestionamento."
+
+**Snapee**:
+**Título**: "Você ganhou um emblema"
+**Corpo**: "Guerreiro Semanal: Fotos enviadas por 7 dias seguidos."
+
+**Clube Verano**:
+**Título**: "Novo evento anunciado"
+**Corpo**: "Degustação de vinhos em 15 de junho. Reserve seu lugar antes que esgote."
+
+---
+
+## Campos de Formulário
+
+### Rótulos
+
+**METROZ Transporte**: "Endereço de e-mail", "Número do cartão", "Data de vencimento", "Código de segurança"
+**Snapee**: "Nome de usuário", "Nome de exibição", "Bio", "Foto do perfil"
+**Clube Verano**: "Nome do membro", "Número de telefone", "Preferências alimentares", "Nomes dos convidados"
+
+### Instruções (Texto de Ajuda)
+
+**METROZ Transporte**:
+- "Enviaremos as atualizações de viagem para este e-mail"
+- "Este cartão será salvo com segurança para compras futuras"
+- "Exibido nos seus recibos e conta"
+
+**Snapee**:
+- "Escolha um nome único que outros verão"
+- "Fale sobre você para outros jogadores"
+- "Envie uma foto que represente você"
+
+**Clube Verano**:
+- "Necessário para confirmações de reserva"
+- "Entraremos em contato sobre eventos e novidades"
+- "Nos ajude a preparar a experiência gastronômica perfeita"
+
+### Texto de Placeholder
+
+**METROZ Transporte**: "nome@exemplo.com.br", "4111 1111 1111 1111", "MM/AA"
+**Snapee**: "FotoMestre2024", "Sobre mim...", "Adicionar legenda"
+**Clube Verano**: "João Silva", "(11) 99999-9999", "Nome do convidado"
+
+---
+
+## Controles
+
+### Interruptores (Toggle)
+
+**METROZ Transporte**:
+- **Nome**: "Atualizações em tempo real"
+- **Descrição**: "Receba notificações quando seu ônibus estiver chegando"
+
+**Snapee**:
+- **Nome**: "Notificações push"
+- **Descrição**: "Seja notificado sobre novos desafios e atividade de amigos"
+
+**Clube Verano**:
+- **Nome**: "Lembretes de eventos"
+- **Descrição**: "Receba notificações sobre reservas e eventos futuros"
+
+### Caixas de Seleção
+
+**METROZ Transporte**:
+- "Lembrar esta forma de pagamento"
+- "Incluir informações de acessibilidade"
+- "Mostrar apenas linhas expressas"
+
+**Snapee**:
+- "Tornar perfil público"
+- "Permitir solicitações de amizade"
+- "Compartilhar pontuações no ranking"
+
+**Clube Verano**:
+- "Enviar convites para eventos"
+- "Incluir convidados nas comunicações"
+- "Receber ofertas exclusivas"
+
+---
+
+## Instruções
+
+### Instruções Estáticas
+
+**METROZ Transporte**: "Toque o cartão ao embarcar e ao desembarcar."
+**Snapee**: "Envie uma foto por dia para acumular pontos."
+**Clube Verano**: "Apresente sua carteirinha de membro na chegada."
+
+### Instruções Sob Demanda
+
+**METROZ Transporte**:
+**Gatilho**: Ícone de ajuda ao lado de "Integração"
+**Conteúdo**: "Transfira para outro ônibus ou trem nas conexões. Seu passe cobre integrações em até 2 horas."
+
+**Snapee**:
+**Gatilho**: Ponto de interrogação ao lado de "Regras do desafio"
+**Conteúdo**: "Envie uma foto com o tema do dia até meia-noite. Outros jogadores votam nas inscrições. As 10 melhores fotos ganham pontos extras."
+
+**Clube Verano**:
+**Gatilho**: Ícone de informação ao lado de "Política de convidados"
+**Conteúdo**: "Membros podem trazer até 3 convidados por visita. Os nomes dos convidados devem ser informados com 24 horas de antecedência para reservas noturnas."
+
+---
+
+## Principais Diferenças por Voz
+
+**METROZ Transporte (Prestativo, Eficiente, Confiável)**:
+- Direto, claro, informativo
+- Foca em informações práticas
+- Antecipa as necessidades do usuário
+- Transparente sobre problemas
+
+**Snapee (Brincalhão, Competitivo, Recompensador)**:
+- Linguagem enérgica e encorajadora
+- Enfatiza conquistas e competição
+- Celebra as ações do usuário
+- Usa pontos de exclamação com moderação
+
+**Clube Verano (Sofisticado, Exclusivo, Elegante)**:
+- Tom refinado e polido
+- Enfatiza serviço e qualidade
+- Fraseado mais formal
+- Escolhas de palavras sofisticadas
+
+As três vozes mantêm os princípios fundamentais de UX: proposital, conciso, conversacional (dentro da voz) e claro.
