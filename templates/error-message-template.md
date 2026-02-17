@@ -1,132 +1,132 @@
-# Error Message Template
+# Modelo de Mensagem de Erro
 
-Use this template to write clear, actionable error messages that help users recover.
+Use este modelo para escrever mensagens de erro claras e acionáveis que ajudem os usuários a se recuperar.
 
-## Structure
-
-```
-[What failed] [Why it might have failed, if known] [What to do next]
-```
-
-## Template
-
-### Inline Error (Form Validation)
-**Format**: Brief, immediate correction guidance
+## Estrutura
 
 ```
-[Field requirement or constraint]
+[O que falhou] [Por que pode ter falhado, se conhecido] [O que fazer a seguir]
 ```
 
-**Examples:**
-- Email must include @
-- Password needs 8+ characters
-- Card number is incomplete
-- Choose a future date
+## Modelo
+
+### Erro Inline (Validação de Formulário)
+**Formato**: Orientação breve e imediata para correção
+
+```
+[Requisito ou restrição do campo]
+```
+
+**Exemplos:**
+- O e-mail deve conter @
+- A senha precisa de 8+ caracteres
+- Número do cartão está incompleto
+- Escolha uma data no futuro
 
 ---
 
-### Detour Error (Recoverable Problem)
-**Format**: Problem + Solution
+### Erro de Desvio (Problema Recuperável)
+**Formato**: Problema + Solução
 
 ```
-**Title**: [Action that failed]
-**Body**: [Brief explanation]. [Recovery instruction].
-**Button**: [Specific recovery action]
+**Título**: [Ação que falhou]
+**Corpo**: [Breve explicação]. [Instrução de recuperação].
+**Botão**: [Ação específica de recuperação]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: Can't save changes
-**Body**: Check your internet connection and try again.
-**Button**: Retry
-```
-
----
-
-### Blocking Error (System Issue)
-**Format**: Clear explanation + Timeline + Reassurance
-
-```
-**Title**: [What's unavailable]
-**Body**: [Why it's unavailable]. [When it will be available]. [Reassurance about user data].
-**Button**: [Status check or alternative action]
-```
-
-**Example:**
-```
-**Title**: Service temporarily unavailable  
-**Body**: We're updating our systems and will be back in about 15 minutes. Your data is safe.
-**Button**: Check status
+**Título**: Não foi possível salvar as alterações
+**Corpo**: Verifique sua conexão com a internet e tente novamente.
+**Botão**: Tentar novamente
 ```
 
 ---
 
-## Error Message Checklist
-
-Before finalizing an error message, verify:
-
-- [ ] **Avoids blame** — No "invalid," "illegal," "wrong," "error"
-- [ ] **Empathetic tone** — Acknowledge user frustration
-- [ ] **Specific problem** — Not generic "something went wrong"
-- [ ] **Clear recovery** — Tell user exactly what to do
-- [ ] **Front-loaded** — Most important info first
-- [ ] **Active voice** — "We couldn't save" not "changes could not be saved"
-- [ ] **Human language** — Not system codes or technical jargon
-
-## Voice Variations by Context
-
-### High-Stakes Error (Payment, Security, Data Loss)
-**Tone**: Serious, clear, reassuring
+### Erro Bloqueante (Problema do Sistema)
+**Formato**: Explicação clara + Prazo + Reasseguramento
 
 ```
-We couldn't process your payment. Your card wasn't charged. Check your card details and try again.
+**Título**: [O que está indisponível]
+**Corpo**: [Por que está indisponível]. [Quando estará disponível]. [Reasseguramento sobre os dados do usuário].
+**Botão**: [Verificação de status ou ação alternativa]
 ```
 
-### Low-Stakes Error (Optional Feature, Nice-to-Have)
-**Tone**: Light, helpful, not dramatic
-
+**Exemplo:**
 ```
-Couldn't load preview. Refresh to try again.
-```
-
-### First-Time User Error
-**Tone**: Educational, patient
-
-```
-Profile photo must be under 5MB. Try a smaller file or compress your image.
+**Título**: Serviço temporariamente indisponível
+**Corpo**: Estamos atualizando nossos sistemas e voltaremos em cerca de 15 minutos. Seus dados estão seguros.
+**Botão**: Verificar status
 ```
 
-## Common Mistakes to Avoid
+---
 
-❌ **Vague**: "An error occurred"
-✅ **Specific**: "We couldn't save your changes"
+## Checklist de Mensagem de Erro
 
-❌ **Blaming**: "Invalid email address"
-✅ **Guiding**: "Email must include @"
+Antes de finalizar uma mensagem de erro, verifique:
 
-❌ **Technical**: "ERR_CONNECTION_TIMEOUT"
-✅ **Human**: "Connection timed out. Check your internet and try again."
+- [ ] **Evita culpabilizar** — Sem "inválido", "ilegal", "errado", "erro"
+- [ ] **Tom empático** — Reconhece a frustração do usuário
+- [ ] **Problema específico** — Não genérico como "algo deu errado"
+- [ ] **Recuperação clara** — Diz exatamente o que fazer
+- [ ] **Informação no início** — Informação mais importante primeiro
+- [ ] **Voz ativa** — "Não conseguimos salvar" e não "as alterações não puderam ser salvas"
+- [ ] **Linguagem humana** — Sem códigos de sistema ou jargão técnico
 
-❌ **No solution**: "Upload failed"
-✅ **Actionable**: "Upload failed. Check your file size and try again."
+## Variações de Voz por Contexto
 
-❌ **Passive**: "Your request could not be processed"
-✅ **Active**: "We couldn't process your request"
+### Erro de Alto Risco (Pagamento, Segurança, Perda de Dados)
+**Tom**: Sério, claro, tranquilizador
 
-## Quick Fill Template
+```
+Não conseguimos processar seu pagamento. Seu cartão não foi cobrado. Confira os dados do cartão e tente novamente.
+```
 
-Use this for rapid error message drafting:
+### Erro de Baixo Risco (Recurso Opcional, Nice-to-Have)
+**Tom**: Leve, prestativo, sem drama
 
-**What failed:**
-**Why (if known):**
-**What user should do:**
+```
+Não foi possível carregar a prévia. Atualize a página para tentar novamente.
+```
 
-**Draft:**
-[What failed]. [Why, if known]. [Next action].
+### Erro para Usuário de Primeiro Acesso
+**Tom**: Educativo, paciente
 
-**Example filled:**
-- What failed: Couldn't send invite
-- Why: Email bounced
-- What to do: Check spelling
+```
+A foto do perfil deve ter menos de 5 MB. Tente um arquivo menor ou comprima sua imagem.
+```
 
-Draft: "Couldn't send invite. Check the email address and try again."
+## Erros Comuns a Evitar
+
+❌ **Vago**: "Ocorreu um erro"
+✅ **Específico**: "Não foi possível salvar suas alterações"
+
+❌ **Culpabilizador**: "Endereço de e-mail inválido"
+✅ **Orientador**: "O e-mail deve conter @"
+
+❌ **Técnico**: "ERR_CONNECTION_TIMEOUT"
+✅ **Humano**: "Conexão expirou. Verifique sua internet e tente novamente."
+
+❌ **Sem solução**: "Falha no envio"
+✅ **Acionável**: "Falha no envio. Verifique o tamanho do arquivo e tente novamente."
+
+❌ **Passivo**: "Sua solicitação não pôde ser processada"
+✅ **Ativo**: "Não conseguimos processar sua solicitação"
+
+## Modelo de Preenchimento Rápido
+
+Use este modelo para redigir mensagens de erro rapidamente:
+
+**O que falhou:**
+**Por quê (se conhecido):**
+**O que o usuário deve fazer:**
+
+**Rascunho:**
+[O que falhou]. [Por quê, se conhecido]. [Próxima ação].
+
+**Exemplo preenchido:**
+- O que falhou: Não conseguimos enviar o convite
+- Por quê: E-mail retornou
+- O que fazer: Verificar a grafia
+
+Rascunho: "Não foi possível enviar o convite. Confira o endereço de e-mail e tente novamente."
