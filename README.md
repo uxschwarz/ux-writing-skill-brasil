@@ -1,32 +1,28 @@
 # Skill de UX Writing para Claude & Codex
 
-[![Run in Smithery](https://smithery.ai/badge/skills/content-designer)](https://smithery.ai/skills?ns=content-designer&utm_source=github&utm_medium=badge)
+> Escale a qualidade do seu conteúdo com a aplicação de design systems guiada por IA
 
-> Escale a qualidade de conteúdo com a aplicação de design systems guiada por IA
+Uma Skill que permite ao Claude Code e ao OpenAI Codex escrever e editar textos de interface centrados no usuário (UX text/microcopy) para produtos digitais. Esta skill transforma assistentes de IA em ferramentas especializadas de UX Writing que aplicam padrões, patterns e voz consistentes em todo o seu produto.
 
-**🌐 [Ver Site](https://content-designer.github.io/ux-writing-skill/)**
-
-Uma Skill de Agente que permite ao Claude e ao OpenAI Codex escrever e editar textos de interface centrados no usuário (UX text/microcopy) para produtos digitais. Esta skill transforma assistentes de IA em ferramentas especializadas de UX Writing que aplicam padrões, patterns e voz consistentes em todo o seu produto.
-
-## O Problema
+## O problema
 
 Design systems resolvem a consistência visual, mas a qualidade do conteúdo ainda depende de redatores individuais. Cada mensagem de erro, rótulo de botão e estado vazio exige revisão manual para garantir que seja claro, conciso, conversacional e proposital. Isso não escala.
 
-## A Solução
+## A solução
 
-Esta Skill de Agente empacota a expertise de UX Writing em um sistema que o Claude pode aplicar automaticamente. Em vez de pedir "melhore isso", você pode contar com melhorias consistentes e embasadas em evidências em toda a interface do seu produto.
+Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a IA pode aplicar automaticamente. Em vez de pedir "melhore isso", você pode contar com melhorias consistentes e embasadas em evidências gerais de mercado.
 
-## O Que Torna Esta Skill Diferente
+## O que torna esta Skill diferente
 
 **Pensamento sistêmico, não guia de estilo**: Não é uma lista de dicas de escrita. É um framework para avaliar e melhorar textos de UX baseado em quatro padrões de qualidade mensuráveis.
 
-**Divulgação progressiva**: Os materiais de referência são carregados apenas quando necessários, mantendo o contexto do Claude eficiente enquanto fornece expertise profunda sob demanda.
+**Divulgação progressiva**: Os materiais de referência são carregados apenas quando necessários, mantendo o contexto do Claude eficiente enquanto fornece auxílio sob demanda.
 
 **Padrões comprovados**: Construído a partir de boas práticas reais de UX Writing, com exemplos em diferentes vozes de produto e contextos.
 
 **Imediatamente acionável**: Cada padrão inclui exemplos concretos de antes/depois e pontuação em relação aos padrões de qualidade.
 
-## O Que Você Recebe
+## O que você recebe
 
 ### Framework Principal
 - **Quatro padrões de qualidade**: Proposital, Conciso, Conversacional, Claro
@@ -53,15 +49,15 @@ Esta Skill de Agente empacota a expertise de UX Writing em um sistema que o Clau
 
 **Para designers de conteúdo**: Aplique padrões consistentes de UX Writing em todo o produto sem memorizar cada regra.
 
-**Para equipes de produto**: Permita que não-redatores criem textos de interface que seguem seu design system.
+**Para redatores de produto**: Permita que não-redatores criem textos de interface que seguem seu design system.
 
-**Para equipes de design system**: Aplique diretrizes de conteúdo em escala sem se tornar um gargalo.
+**Para EUquipes de UX Writing**: Aplique diretrizes de conteúdo em escala sem se tornar um gargalo.
 
-**Para produtos em estágio inicial**: Construa qualidade de conteúdo desde o início com padrões comprovados.
+**Para produtos em estágio inicial**: Construa qualidade de conteúdo desde o início com padrões comprovados - sem lorem ipsum.
 
 ## Instalação
 
-### O Que Você Precisa
+### O que você precisa
 
 Esta skill funciona com **Claude Desktop**, **Claude Code** e **Codex** (CLI e extensões de IDE). Escolha o método de instalação que corresponde à sua configuração.
 
@@ -71,10 +67,10 @@ Esta skill funciona com **Claude Desktop**, **Claude Code** e **Codex** (CLI e e
 
 Se você usa o Claude Desktop, a instalação é simples:
 
-1. **Baixe** [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip) — contém apenas os arquivos da skill e a documentação
+1. **Baixe** [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip) — contém apenas os arquivos da skill e a documentação
 2. Abra o **Claude Desktop**
 3. Vá em **Configurações → Capacidades → Skills**
-4. Clique em **Carregar skill** e selecione **ux-writing-skill.zip**
+4. Clique em **Carregar skill** e selecione **ux-writing-skill-brasil.zip**
 5. **Faça upload do arquivo ZIP diretamente** — não o extraia antes
 6. Comece a usar a skill imediatamente!
 
@@ -86,7 +82,7 @@ Se você usa o Claude Code, siga estes passos:
 
 **Passo 1: Baixe a Skill**
 
-1. Baixe [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
+1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip)
 2. Extraia o arquivo ZIP (duplo clique no Mac, clique direito → Extrair no Windows)
 
 **Passo 2: Copie para a Pasta de Skills**
@@ -117,7 +113,7 @@ Se você usa Codex CLI ou extensões de IDE, a instalação é direta:
 
 **Passo 1: Baixe a Skill**
 
-1. Baixe [ux-writing-skill.zip](https://github.com/content-designer/ux-writing-skill/raw/main/dist/ux-writing-skill.zip)
+1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip)
 2. Extraia o arquivo ZIP
 
 **Passo 2: Copie para a Pasta de Skills do Codex**
@@ -255,7 +251,6 @@ O Claude usa o checklist de usabilidade de conteúdo para fornecer pontuação d
 ## Como Funciona
 
 Esta skill usa **ativação invocada pelo modelo** — o Claude e o Codex decidem automaticamente quando usá-la com base na sua solicitação. Você não precisa chamar a skill explicitamente; ela é ativada quando você:
-
 - Escreve ou edita textos de interface
 - Cria mensagens de erro, notificações ou estados vazios
 - Trabalha em rótulos de botão, campos de formulário ou instruções
@@ -266,28 +261,20 @@ A IA carrega os materiais de referência progressivamente, usando apenas o que �
 
 **No Codex CLI/IDE**, você também pode invocar a skill explicitamente usando `$ux-writing` ou através do comando `/skills`.
 
-## O Que Você Vai Aprender
+## O que você vai aprender
 
-Usar esta skill expõe o pensamento sistemático por trás de um UX Writing eficaz:
-
+Usar esta skill expõe uma execução básica sistemática por trás de um UX Writing eficiente:
 - Como avaliar conteúdo objetivamente com frameworks de pontuação
 - Por que certos padrões funcionam em diferentes contextos de produto
 - Como a voz se mantém consistente enquanto o tom se adapta a situações
 - A diferença entre escrever para clareza vs. escrever para personalidade
 
-## Para Equipes de Design de Conteúdo
-
-Esta skill pode servir como:
-
-- **Ferramenta de onboarding**: Novos membros da equipe aprendem padrões mais rapidamente
-- **Baseline de qualidade**: Padrões consistentes entre todos os redatores
-- **Multiplicador de eficiência**: Gere primeiros rascunhos que seguem as diretrizes
-- **Documentação do sistema**: Materiais de referência que nunca ficam desatualizados
-
 ## Créditos
 
-Construído por [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer no Stripe, baseado em princípios estabelecidos de UX Writing de:
+Versão brasileira em português: construída, iterada e remodelada por da Skill originalmente construída por [Stephanie Schwarz]([https://www.linkedin.com/in/christopher-greer/](https://www.linkedin.com/in/uxschwarz/)), Content Designer na HelloFresh.
+Inspirada pela Skill desenvolvida por [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer no Stripe. Adaptação dos materiais base para o português autorizada pelo criador original.
 
+Baseada em princípios estabelecidos de UX Writing de:
 - Content Design de Sarah Richards
 - Strategic Writing for UX de Torrey Podmajersky
 - Nicely Said de Kate Kiefer Lee e Nicole Fenton
@@ -297,7 +284,6 @@ Construído por [Christopher Greer](https://www.linkedin.com/in/christopher-gree
 ## Contribuindo
 
 Contribuições são bem-vindas! Se você tem:
-
 - Padrões de referência adicionais
 - Mais exemplos do mundo real
 - Melhorias de templates
@@ -305,7 +291,7 @@ Contribuições são bem-vindas! Se você tem:
 
 Abra uma issue ou envie um pull request.
 
-### Compilando o Pacote da Skill
+### Compilando o pacote da Skill
 
 Se você está contribuindo ou quer compilar o ZIP da skill localmente:
 
@@ -313,12 +299,11 @@ Se você está contribuindo ou quer compilar o ZIP da skill localmente:
 ./build-skill.sh
 ```
 
-Isso cria `dist/ux-writing-skill.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
+Isso cria `dist/ux-writing-skill-brasil.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
 
 O script de build exclui arquivos do repositório como `README.md`, `CONTRIBUTING.md`, `index.html` e o vídeo demonstrativo — estes ficam no GitHub mas não são necessários no pacote da skill.
 
 ## Licença
-
 Licença MIT — use esta skill livremente em seus projetos e equipes.
 
 ## Trabalhos Relacionados
@@ -335,7 +320,7 @@ Procurando mais Agent Skills?
 - Aprenda a [criar skills personalizadas](https://developers.openai.com/codex/skills/create-skill)
 - Participe da [Comunidade de Desenvolvedores OpenAI](https://community.openai.com/) para discutir skills
 
-## Por Que Isso Importa
+## Por que isso importa
 
 Conteúdo é infraestrutura. Cada rótulo de botão, mensagem de erro e estado vazio molda como as pessoas entendem e usam seu produto. Um bom UX Writing não deveria depender de um especialista revisando cada string.
 
