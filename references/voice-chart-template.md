@@ -1,132 +1,132 @@
-# Voice Chart Template
+# Modelo de Quadro de Voz
 
-A voice chart helps establish consistent brand personality across all UX text. Use this template to define your product's voice.
+Um quadro de voz ajuda a estabelecer uma personalidade de marca consistente em todos os textos de UX. Use este modelo para definir a voz do seu produto.
 
-## Structure
+## Estrutura
 
-A voice chart contains three key elements for each brand concept:
+Um quadro de voz contém três elementos-chave para cada conceito da marca:
 
-1. **Concept** — A core brand principle or value
-2. **Voice Characteristics** — Adjectives describing how the concept manifests in writing
-3. **Examples** — Concrete do/don't pairs showing the voice in action
+1. **Conceito** — Um princípio ou valor fundamental da marca
+2. **Características de Voz** — Adjetivos descrevendo como o conceito se manifesta na escrita
+3. **Exemplos** — Pares concretos de "como fazer/o que evitar" mostrando a voz em ação
 
-## Template
+## Modelo
 
-### Concept 1: [Brand Principle]
+### Conceito 1: [Princípio da Marca]
 
-**Voice characteristics**: [Adjective 1], [Adjective 2], [Adjective 3]
+**Características de voz**: [Adjetivo 1], [Adjetivo 2], [Adjetivo 3]
 
-**Description**: [1-2 sentences explaining what this means for the writing]
+**Descrição**: [1 a 2 frases explicando o que isso significa para a escrita]
 
-**Do**:
-- Example of text that embodies this concept
-- Another example showing this voice
+**Como fazer**:
+- Exemplo de texto que incorpora este conceito
+- Outro exemplo mostrando esta voz
 
-**Don't**:
-- Example of what to avoid
-- Counter-example that violates this voice
-
----
-
-### Concept 2: [Brand Principle]
-
-**Voice characteristics**: [Adjective 1], [Adjective 2], [Adjective 3]
-
-**Description**: [1-2 sentences explaining what this means for the writing]
-
-**Do**:
-- Example of text that embodies this concept
-- Another example showing this voice
-
-**Don't**:
-- Example of what to avoid
-- Counter-example that violates this voice
+**O que evitar**:
+- Exemplo do que não fazer
+- Contraexemplo que viola esta voz
 
 ---
 
-### Concept 3: [Brand Principle]
+### Conceito 2: [Princípio da Marca]
 
-**Voice characteristics**: [Adjective 1], [Adjective 2], [Adjective 3]
+**Características de voz**: [Adjetivo 1], [Adjetivo 2], [Adjetivo 3]
 
-**Description**: [1-2 sentences explaining what this means for the writing]
+**Descrição**: [1 a 2 frases explicando o que isso significa para a escrita]
 
-**Do**:
-- Example of text that embodies this concept
-- Another example showing this voice
+**Como fazer**:
+- Exemplo de texto que incorpora este conceito
+- Outro exemplo mostrando esta voz
 
-**Don't**:
-- Example of what to avoid
-- Counter-example that violates this voice
-
----
-
-## Example: TAPP Transit System
-
-### Concept 1: Helpful
-
-**Voice characteristics**: Friendly, supportive, clear
-
-**Description**: TAPP is a companion that helps riders navigate the transit system with confidence. We anticipate questions and provide clear guidance.
-
-**Do**:
-- "Your bus arrives in 5 minutes at Bay St."
-- "Tap your card when you board and when you exit."
-
-**Don't**:
-- "Arrival: 5 min"
-- "Payment required at entry and exit points."
+**O que evitar**:
+- Exemplo do que não fazer
+- Contraexemplo que viola esta voz
 
 ---
 
-### Concept 2: Efficient
+### Conceito 3: [Princípio da Marca]
 
-**Voice characteristics**: Concise, direct, scannable
+**Características de voz**: [Adjetivo 1], [Adjetivo 2], [Adjetivo 3]
 
-**Description**: Riders are often in a hurry. We respect their time by being brief and front-loading important information.
+**Descrição**: [1 a 2 frases explicando o que isso significa para a escrita]
 
-**Do**:
-- "Route delayed 10 minutes due to traffic"
-- "Transfer at Main St for Line 3"
+**Como fazer**:
+- Exemplo de texto que incorpora este conceito
+- Outro exemplo mostrando esta voz
 
-**Don't**:
-- "Due to unexpected traffic conditions, your route is experiencing delays of approximately 10 minutes"
-- "You can transfer to Line 3 if you get off at Main St"
-
----
-
-### Concept 3: Trustworthy
-
-**Voice characteristics**: Honest, transparent, reliable
-
-**Description**: Riders depend on TAPP to get where they need to go. We're upfront about problems and provide accurate information.
-
-**Do**:
-- "This route is currently unavailable. Use Route 42 instead."
-- "Your payment didn't go through. Update your card to continue."
-
-**Don't**:
-- "Service interruption on this route."
-- "Payment error. Try again."
+**O que evitar**:
+- Exemplo do que não fazer
+- Contraexemplo que viola esta voz
 
 ---
 
-## Tips for Creating Your Voice Chart
+## Exemplo: Sistema de Transporte METROZ
 
-1. **Base it on brand values** — Review mission, vision, values, and personality
-2. **Use 3-5 concepts** — Enough to guide, not so many you can't remember
-3. **Be specific with examples** — Show actual interface text, not abstract descriptions
-4. **Test against real scenarios** — Apply to buttons, errors, and notifications
-5. **Share with your team** — Voice only works if everyone uses it consistently
-6. **Update as you learn** — Refine based on user research and team feedback
+### Conceito 1: Prestativo
 
-## Common Voice Characteristics
+**Características de voz**: Amigável, solidário, claro
 
-**Positive tones**: Friendly, encouraging, optimistic, warm, enthusiastic, cheerful, supportive, welcoming, inspiring
+**Descrição**: O METROZ é um companheiro que ajuda os passageiros a navegar pelo sistema de transporte com confiança. Antecipamos dúvidas e fornecemos orientação clara.
 
-**Neutral tones**: Professional, straightforward, clear, direct, informative, practical, matter-of-fact, efficient
+**Como fazer**:
+- "Seu ônibus chega em 5 minutos na Av. Paulista."
+- "Valide o bilhete ao embarcar e ao desembarcar."
 
-**Cautious/Serious tones**: Careful, thoughtful, measured, precise, formal, reserved, respectful
+**O que evitar**:
+- "Chegada: 5 min"
+- "Validação necessária na entrada e saída."
 
-**Personality traits**: Playful, witty, conversational, casual, technical, sophisticated, humble, confident, empowering
+---
 
-Choose characteristics that align with your brand and serve your users' needs in context.
+### Conceito 2: Eficiente
+
+**Características de voz**: Conciso, direto, escaneável
+
+**Descrição**: Os passageiros geralmente estão com pressa. Respeitamos o tempo deles sendo breves e colocando as informações mais importantes no início.
+
+**Como fazer**:
+- "Linha atrasada 10 minutos por congestionamento"
+- "Integre na Estação Central para a Linha 4"
+
+**O que evitar**:
+- "Devido a condições de tráfego inesperadas, sua linha está com atrasos de aproximadamente 10 minutos"
+- "Você pode integrar para a Linha 4 desembarcando na Estação Central"
+
+---
+
+### Conceito 3: Confiável
+
+**Características de voz**: Honesto, transparente, seguro
+
+**Descrição**: Os passageiros dependem do METROZ para chegar onde precisam. Somos diretos sobre problemas e fornecemos informações precisas.
+
+**Como fazer**:
+- "Esta linha está indisponível. Use a Linha 42 como alternativa."
+- "Seu pagamento não foi processado. Atualize o cartão para continuar."
+
+**O que evitar**:
+- "Interrupção de serviço nesta linha."
+- "Erro de pagamento. Tente novamente."
+
+---
+
+## Dicas para Criar Seu Quadro de Voz
+
+1. **Baseie-se nos valores da marca** — Revise missão, visão, valores e personalidade
+2. **Use de 3 a 5 conceitos** — O suficiente para orientar, mas não tanto que seja difícil lembrar
+3. **Seja específico com os exemplos** — Mostre texto real de interface, não descrições abstratas
+4. **Teste em cenários reais** — Aplique a botões, erros e notificações
+5. **Compartilhe com sua equipe** — A voz só funciona se todos a usarem de forma consistente
+6. **Atualize conforme aprende** — Refine com base em pesquisas com usuários e feedback da equipe
+
+## Características de Voz Comuns
+
+**Tons positivos**: Amigável, encorajador, otimista, acolhedor, entusiasmado, alegre, solidário, inspirador
+
+**Tons neutros**: Profissional, direto, claro, informativo, prático, objetivo, eficiente
+
+**Tons cautelosos/sérios**: Cuidadoso, ponderado, preciso, formal, reservado, respeitoso
+
+**Traços de personalidade**: Brincalhão, bem-humorado, conversacional, casual, técnico, sofisticado, humilde, confiante, empoderador
+
+Escolha características que estejam alinhadas com sua marca e atendam às necessidades dos usuários em cada contexto.
