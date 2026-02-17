@@ -1,303 +1,303 @@
-# Onboarding Flow Template
+# Modelo de Fluxo de Onboarding
 
-Use this template to design clear, encouraging onboarding experiences that help users succeed quickly.
+Use este modelo para projetar experiências de onboarding claras e encorajadoras que ajudem os usuários a ter sucesso rapidamente.
 
-## Onboarding Principles
+## Princípios de Onboarding
 
-1. **Show value early** — Help users succeed in their first session
-2. **Progressive disclosure** — Don't overwhelm with all features at once
-3. **Optional whenever possible** — Let users skip and explore
-4. **Celebrate small wins** — Acknowledge each completed step
-5. **Be concise** — Users want to start using the product, not read about it
+1. **Mostre valor cedo** — Ajude os usuários a ter sucesso na primeira sessão
+2. **Divulgação progressiva** — Não sobrecarregue com todos os recursos de uma vez
+3. **Opcional sempre que possível** — Deixe os usuários pular e explorar
+4. **Celebre pequenas conquistas** — Reconheça cada etapa concluída
+5. **Seja conciso** — Os usuários querem usar o produto, não ler sobre ele
 
-## Core Flow Structure
-
-```
-Welcome → Setup → First Success → Next Steps
-```
-
-Each step should answer:
-- **Where am I?** (Progress indicator)
-- **What do I do here?** (Clear instruction)
-- **Why does this matter?** (Benefit to user)
-- **Can I skip this?** (Exit option)
-
-## Template: Welcome Screen
-
-**Purpose**: Orient user and set expectations
+## Estrutura do Fluxo Principal
 
 ```
-**Headline**: [Welcome + value proposition]
-**Body**: [2-3 benefits, bulleted]
-**Primary CTA**: [Get started action]
-**Secondary CTA**: [Sign in, if applicable]
+Boas-vindas → Configuração → Primeiro Sucesso → Próximos Passos
 ```
 
-**Example:**
-```
-**Headline**: Welcome to TaskFlow
-**Body**: 
-• Organize projects with your team
-• Track progress in real time  
-• Never miss a deadline
+Cada etapa deve responder:
+- **Onde estou?** (Indicador de progresso)
+- **O que faço aqui?** (Instrução clara)
+- **Por que isso importa?** (Benefício para o usuário)
+- **Posso pular?** (Opção de saída)
 
-**Primary CTA**: Create account
-**Secondary CTA**: Sign in
+## Modelo: Tela de Boas-vindas
+
+**Objetivo**: Orientar o usuário e definir expectativas
+
+```
+**Título**: [Boas-vindas + proposta de valor]
+**Corpo**: [2 a 3 benefícios, em lista]
+**CTA Primário**: [Ação para começar]
+**CTA Secundário**: [Entrar, se aplicável]
+```
+
+**Exemplo:**
+```
+**Título**: Bem-vindo ao FluxoTask
+**Corpo**:
+• Organize projetos com sua equipe
+• Acompanhe o progresso em tempo real
+• Nunca perca um prazo
+
+**CTA Primário**: Criar conta
+**CTA Secundário**: Entrar
 ```
 
 ---
 
-## Template: Account Setup
+## Modelo: Configuração da Conta
 
-**Purpose**: Collect essential information only
+**Objetivo**: Coletar apenas as informações essenciais
 
 ```
-**Title**: [Action-oriented title]
-**Body**: [Why this information is needed]
-**Fields**: [Minimum required fields]
-**Primary CTA**: [Continue/Next action]
-**Secondary CTA**: [Skip, if truly optional]
+**Título**: [Título orientado à ação]
+**Corpo**: [Por que essas informações são necessárias]
+**Campos**: [Mínimo de campos obrigatórios]
+**CTA Primário**: [Ação de continuar/avançar]
+**CTA Secundário**: [Pular, se realmente opcional]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: Tell us about yourself
-**Body**: We'll personalize your experience.
+**Título**: Fale um pouco sobre você
+**Corpo**: Vamos personalizar sua experiência.
 
-**Fields**:
-- Name
-- Email  
-- Password
+**Campos**:
+- Nome
+- E-mail
+- Senha
 
-**Primary CTA**: Continue
-**Secondary CTA**: I'll do this later
+**CTA Primário**: Continuar
+**CTA Secundário**: Fazer isso depois
 ```
 
-**Best practices:**
-- Only ask for what you absolutely need now
-- Explain why each field is required
-- Use smart defaults when possible
-- Allow skipping optional steps
+**Boas práticas:**
+- Peça apenas o que você absolutamente precisa agora
+- Explique por que cada campo é obrigatório
+- Use padrões inteligentes quando possível
+- Permita pular etapas opcionais
 
 ---
 
-## Template: Feature Introduction
+## Modelo: Introdução de Recurso
 
-**Purpose**: Teach one feature at a time through action
+**Objetivo**: Ensinar um recurso por vez por meio da ação
 
 ```
-**Title**: [Feature name + benefit]
-**Body**: [Brief explanation, 1-2 sentences]
-**Visual**: [Screenshot or illustration]
-**Primary CTA**: [Action to try the feature]
-**Secondary CTA**: Skip / Next
-**Progress**: [X of Y steps]
+**Título**: [Nome do recurso + benefício]
+**Corpo**: [Breve explicação, 1 a 2 frases]
+**Visual**: [Captura de tela ou ilustração]
+**CTA Primário**: [Ação para experimentar o recurso]
+**CTA Secundário**: Pular / Avançar
+**Progresso**: [X de Y etapas]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: Create your first project
-**Body**: Projects help you organize related tasks and collaborate with your team.
+**Título**: Crie seu primeiro projeto
+**Corpo**: Projetos ajudam a organizar tarefas relacionadas e colaborar com sua equipe.
 
-[Visual: Screenshot of project view]
+[Visual: Captura de tela da visualização do projeto]
 
-**Primary CTA**: Create project
-**Secondary CTA**: Skip for now
-**Progress**: Step 2 of 4
+**CTA Primário**: Criar projeto
+**CTA Secundário**: Pular por enquanto
+**Progresso**: Etapa 2 de 4
 ```
 
-**Best practices:**
-- Show, don't tell (use visuals)
-- Let users try immediately
-- Keep explanations under 20 words
-- Always allow skipping
+**Boas práticas:**
+- Mostre, não apenas conte (use visuais)
+- Deixe os usuários experimentar imediatamente
+- Mantenha as explicações com menos de 20 palavras
+- Permita sempre pular
 
 ---
 
-## Template: First Success / Completion
+## Modelo: Primeiro Sucesso / Conclusão
 
-**Purpose**: Celebrate user's first win, encourage next action
+**Objetivo**: Celebrar a primeira conquista do usuário, incentivar a próxima ação
 
 ```
-**Title**: [Celebratory statement]
-**Body**: [What they accomplished + what's possible next]
-**Primary CTA**: [Next natural action]
-**Secondary CTA**: [Alternative or exit to product]
+**Título**: [Declaração comemorativa]
+**Corpo**: [O que realizaram + o que é possível a seguir]
+**CTA Primário**: [Próxima ação natural]
+**CTA Secundário**: [Alternativa ou saída para o produto]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: You're all set!
-**Body**: You created your first project. Ready to invite your team?
+**Título**: Tudo pronto!
+**Corpo**: Você criou seu primeiro projeto. Que tal convidar sua equipe?
 
-**Primary CTA**: Invite team members
-**Secondary CTA**: Explore on my own
+**CTA Primário**: Convidar membros da equipe
+**CTA Secundário**: Explorar por conta própria
 ```
 
-**Best practices:**
-- Use exclamation points sparingly (once per flow max)
-- Make the celebration feel earned
-- Suggest logical next step
-- Provide exit to main product
+**Boas práticas:**
+- Use pontos de exclamação com moderação (no máximo uma vez por fluxo)
+- Faça a celebração parecer merecida
+- Sugira o próximo passo lógico
+- Ofereça saída para o produto principal
 
 ---
 
-## Onboarding Step Checklist
+## Checklist de Etapa de Onboarding
 
-For each step in your onboarding flow, verify:
+Para cada etapa do seu fluxo de onboarding, verifique:
 
-- [ ] **Single focus** — One action or concept per step
-- [ ] **Clear value** — User knows why this matters
-- [ ] **Actionable** — User knows exactly what to do
-- [ ] **Skipable** — Optional steps can be skipped
-- [ ] **Progress visible** — User knows how many steps remain
-- [ ] **Concise** — Body text under 30 words
-- [ ] **Appropriate tone** — Encouraging without being patronizing
+- [ ] **Foco único** — Uma ação ou conceito por etapa
+- [ ] **Valor claro** — O usuário sabe por que isso importa
+- [ ] **Acionável** — O usuário sabe exatamente o que fazer
+- [ ] **Pode ser pulado** — Etapas opcionais podem ser ignoradas
+- [ ] **Progresso visível** — O usuário sabe quantas etapas restam
+- [ ] **Conciso** — Texto de corpo com menos de 30 palavras
+- [ ] **Tom adequado** — Encorajador sem ser condescendente
 
-## Content Patterns by Step Type
+## Padrões de Conteúdo por Tipo de Etapa
 
-### Welcome/Introduction
-**Pattern**: "Welcome to [Product]. [Do X to achieve Y]."
+### Boas-vindas/Introdução
+**Padrão**: "Bem-vindo(a) ao [Produto]. [Faça X para alcançar Y]."
 
-Examples:
-- "Welcome to Notion. Create beautiful docs, wikis, and projects."
-- "Welcome to Figma. Design, prototype, and collaborate in real time."
+Exemplos:
+- "Bem-vindo ao Notion. Crie documentos, wikis e projetos lindos."
+- "Bem-vinda ao Figma. Crie, prototipe e colabore em tempo real."
 
-### Permission Request
-**Pattern**: "Enable [permission] to [specific benefit]"
+### Solicitação de Permissão
+**Padrão**: "Ative [permissão] para [benefício específico]"
 
-Examples:
-- "Enable notifications to stay updated on team activity"
-- "Allow camera access to scan documents instantly"
+Exemplos:
+- "Ative as notificações para acompanhar a atividade da equipe"
+- "Permita o acesso à câmera para digitalizar documentos instantaneamente"
 
-### Feature Tutorial
-**Pattern**: "[Action]. [Brief benefit]."
+### Tutorial de Recurso
+**Padrão**: "[Ação]. [Breve benefício]."
 
-Examples:
-- "Add your first task. Stay organized and never miss a deadline."
-- "Create a workspace. Collaborate with your team in one place."
+Exemplos:
+- "Adicione sua primeira tarefa. Mantenha-se organizado e nunca perca um prazo."
+- "Crie um espaço de trabalho. Colabore com sua equipe em um só lugar."
 
-### Completion
-**Pattern**: "[Celebration]! [What's now possible]. [Optional: Next step]"
+### Conclusão
+**Padrão**: "[Comemoração]! [O que agora é possível]. [Opcional: Próximo passo]"
 
-Examples:
-- "You're ready to go! Start creating, or invite teammates to collaborate."
-- "Setup complete! Your workspace is ready for your team."
+Exemplos:
+- "Está pronto para começar! Comece a criar ou convide colegas para colaborar."
+- "Configuração completa! Seu espaço de trabalho está pronto para sua equipe."
 
-## Tone Variations
+## Variações de Tom
 
-### Professional/B2B
+### Profissional/B2B
 ```
-**Title**: Set up your workspace
-**Body**: Add team members and create your first project.
-**CTA**: Continue setup
-```
-
-### Consumer/Casual
-```
-**Title**: Let's get you started!
-**Body**: This will only take a minute.
-**CTA**: Let's go
+**Título**: Configure seu espaço de trabalho
+**Corpo**: Adicione membros da equipe e crie seu primeiro projeto.
+**CTA**: Continuar configuração
 ```
 
-### Technical/Developer
+### Consumidor/Descontraído
 ```
-**Title**: Configure your environment
-**Body**: Connect your repository to start deploying.
-**CTA**: Connect repo
-```
-
-## Multi-Screen Flow Example
-
-### Screen 1: Welcome
-```
-**Welcome to WriteRight**
-
-Write better, faster with AI-powered editing.
-
-• Fix grammar instantly
-• Improve clarity and tone
-• Write with confidence
-
-[Get started]
+**Título**: Vamos começar!
+**Corpo**: Vai levar só um minutinho.
+**CTA**: Bora lá
 ```
 
-### Screen 2: Setup
+### Técnico/Desenvolvedor
 ```
-**What brings you to WriteRight?** (2 of 4)
-
-Select all that apply:
-□ Business writing
-□ Creative writing  
-□ Student papers
-□ Personal projects
-
-[Continue] [Skip]
+**Título**: Configure seu ambiente
+**Corpo**: Conecte seu repositório para começar a fazer deploy.
+**CTA**: Conectar repositório
 ```
 
-### Screen 3: First Action
+## Exemplo de Fluxo Multi-tela
+
+### Tela 1: Boas-vindas
 ```
-**Try it out** (3 of 4)
+**Bem-vindo ao EscritaMelhor**
 
-Paste any text below and watch WriteRight improve it.
+Escreva melhor e mais rápido com edição assistida por IA.
 
-[Text input box]
+• Corrija gramática instantaneamente
+• Melhore a clareza e o tom
+• Escreva com confiança
 
-[Analyze my writing] [Skip]
-```
-
-### Screen 4: Success
-```
-**Nice work!**
-
-You improved your first piece of writing. Ready to write your next masterpiece?
-
-[Start writing] [See tips]
+[Começar]
 ```
 
-## Common Mistakes to Avoid
+### Tela 2: Configuração
+```
+**O que te traz ao EscritaMelhor?** (2 de 4)
 
-❌ **Too many steps**: 10+ screens before using the product
-✅ **Focused flow**: 3-5 steps to first value
+Selecione tudo que se aplica:
+□ Textos profissionais
+□ Escrita criativa
+□ Trabalhos acadêmicos
+□ Projetos pessoais
 
-❌ **Feature dump**: "Here are 47 things you can do!"
-✅ **Progressive disclosure**: One key feature at a time
+[Continuar] [Pular]
+```
 
-❌ **No skip option**: Forcing users through every screen
-✅ **Respect choice**: Skip available for optional features
+### Tela 3: Primeira Ação
+```
+**Experimente** (3 de 4)
 
-❌ **Passive voice**: "Your account has been created"
-✅ **Active voice**: "You created your account!"
+Cole qualquer texto abaixo e veja o EscritaMelhor melhorá-lo.
 
-❌ **Corporate speak**: "Facilitate enhanced productivity"
-✅ **Plain language**: "Get more done"
+[Caixa de texto]
 
-## Quick Flow Builder
+[Analisar meu texto] [Pular]
+```
 
-Use this to draft a basic onboarding flow:
+### Tela 4: Sucesso
+```
+**Ótimo trabalho!**
 
-**Product name:**
-**Core value (one sentence):**
-**Key features to introduce (pick 2-3):**
+Você melhorou seu primeiro texto. Pronto para criar seu próximo?
+
+[Começar a escrever] [Ver dicas]
+```
+
+## Erros Comuns a Evitar
+
+❌ **Muitas etapas**: 10+ telas antes de usar o produto
+✅ **Fluxo focado**: 3 a 5 etapas até o primeiro valor
+
+❌ **Despejo de recursos**: "Aqui estão 47 coisas que você pode fazer!"
+✅ **Divulgação progressiva**: Um recurso-chave por vez
+
+❌ **Sem opção de pular**: Forçar usuários por cada tela
+✅ **Respeite a escolha**: Pulo disponível para recursos opcionais
+
+❌ **Voz passiva**: "Sua conta foi criada"
+✅ **Voz ativa**: "Você criou sua conta!"
+
+❌ **Linguagem corporativa**: "Facilitar a produtividade aprimorada"
+✅ **Linguagem simples**: "Faça mais em menos tempo"
+
+## Construtor Rápido de Fluxo
+
+Use este modelo para rascunhar um fluxo básico de onboarding:
+
+**Nome do produto:**
+**Valor central (uma frase):**
+**Principais recursos para apresentar (escolha 2 a 3):**
 1.
 2.
 3.
 
-**First user action that shows value:**
-**Celebration/success moment:**
+**Primeira ação do usuário que mostra valor:**
+**Momento de celebração/sucesso:**
 
-**Draft flow:**
-1. Welcome → [Value prop]
-2. Setup → [Essential info only]
-3. Feature 1 → [Try it action]
-4. Feature 2 → [Try it action]
-5. Success → [Celebrate + next step]
+**Rascunho do fluxo:**
+1. Boas-vindas → [Proposta de valor]
+2. Configuração → [Apenas informações essenciais]
+3. Recurso 1 → [Ação para experimentar]
+4. Recurso 2 → [Ação para experimentar]
+5. Sucesso → [Celebre + próximo passo]
 
-## Testing Your Onboarding
+## Testando seu Onboarding
 
-Questions to answer:
-1. Can users complete onboarding in under 2 minutes?
-2. Do users achieve something meaningful in their first session?
-3. Can users skip optional steps without confusion?
-4. Is the tone encouraging without being condescending?
-5. Does each screen have a single, clear purpose?
+Perguntas para responder:
+1. Os usuários conseguem concluir o onboarding em menos de 2 minutos?
+2. Os usuários realizam algo significativo na primeira sessão?
+3. Os usuários podem pular etapas opcionais sem confusão?
+4. O tom é encorajador sem ser condescendente?
+5. Cada tela tem um único objetivo claro?
