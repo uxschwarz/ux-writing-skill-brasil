@@ -1,28 +1,28 @@
-# Using UX Writing Skill with Codex + Figma MCP
+# Usando a Skill de UX Writing com Codex + Figma MCP
 
-Connect this skill to Figma through Codex so you can review and improve UX copy directly from your designs. Perfect for content designers, product designers, and anyone who needs to audit or enhance UX text in Figma mockups.
+Conecte esta skill ao Figma através do Codex para revisar e melhorar textos de UX diretamente dos seus designs. Perfeito para designers de conteúdo, product designers e qualquer pessoa que precise auditar ou aprimorar textos de UX em mockups do Figma.
 
-## What You Can Do
+## O Que Você Pode Fazer
 
-Once connected, you can:
-- **Share Figma design links** with Codex and get instant UX writing feedback
-- **Audit existing designs** for accessibility, clarity, and tone
-- **Review entire flows** for consistency and voice
-- **Get specific suggestions** based on the four quality standards (purposeful, concise, conversational, clear)
+Uma vez conectado, você pode:
+- **Compartilhar links de designs do Figma** com o Codex e receber feedback instantâneo de UX Writing
+- **Auditar designs existentes** para verificar acessibilidade, clareza e tom
+- **Revisar fluxos inteiros** para consistência e voz
+- **Obter sugestões específicas** baseadas nos quatro padrões de qualidade (proposital, conciso, conversacional, claro)
 
-## Setup: Connect Figma MCP to Codex
+## Configuração: Conectar Figma MCP ao Codex
 
-### Requirements
+### Requisitos
 
-- Codex CLI or IDE extension installed
-- Figma account
-- Internet connection
+- Codex CLI ou extensão de IDE instalado
+- Conta no Figma
+- Conexão com a internet
 
-### Step-by-Step Setup
+### Configuração Passo a Passo
 
-**Step 1: Configure Codex for MCP**
+**Passo 1: Configurar o Codex para MCP**
 
-Open your Codex configuration file at `~/.codex/config.toml` and add these lines:
+Abra seu arquivo de configuração do Codex em `~/.codex/config.toml` e adicione estas linhas:
 
 ```toml
 [features]
@@ -32,364 +32,364 @@ rmcp_client = true
 url = "https://mcp.figma.com/mcp"
 ```
 
-**Step 2: Install Codex CLI**
+**Passo 2: Instalar o Codex CLI**
 
-If you haven't already installed the Codex CLI, install it via npm:
+Se ainda não instalou o Codex CLI, instale via npm:
 
 ```bash
 npm i -g @openai/codex
 ```
 
-**Step 3: Authenticate with Figma**
+**Passo 3: Autenticar com o Figma**
 
-Login to Figma via the Codex CLI:
+Faça login no Figma através do Codex CLI:
 
 ```bash
 codex mcp login figma
 ```
 
-This will open a browser window for authentication. Follow the prompts to allow Codex to access your Figma account.
+Uma janela do navegador vai abrir para autenticação. Siga as instruções para permitir que o Codex acesse sua conta do Figma.
 
-**Step 4: Restart Your IDE**
+**Passo 4: Reiniciar Seu IDE**
 
-If you're using Codex in an IDE (VS Code, etc.), completely restart the IDE to activate the MCP connection.
+Se você usa o Codex em um IDE (VS Code, etc.), reinicie completamente o IDE para ativar a conexão MCP.
 
-**Step 5: Verify Connection**
+**Passo 5: Verificar a Conexão**
 
-Test the Figma MCP connection:
-1. Open a Figma file in your browser
-2. Switch to **Dev Mode** (Shift + D)
-3. Select any frame or component
-4. Copy the section link from Dev Mode
-5. Paste the link into Codex in your IDE or CLI
+Teste a conexão MCP do Figma:
+1. Abra um arquivo do Figma no navegador
+2. Mude para o **Dev Mode** (Shift + D)
+3. Selecione qualquer frame ou componente
+4. Copie o link da seção no Dev Mode
+5. Cole o link no Codex no seu IDE ou CLI
 
-Ask Codex to review the UX copy, and it should be able to access the Figma frame.
-
----
-
-## How to Use with UX Writing Skill
-
-### Method 1: Review Existing Figma Designs
-
-**Step 1: Get Your Figma Link**
-
-1. Open your design in Figma (web or desktop app)
-2. Switch to **Dev Mode** (Shift + D)
-3. Select the frame you want to review
-4. Copy the section link from Dev Mode
-
-**Step 2: Share with Codex**
-
-In Codex CLI or your IDE, paste the link along with your request:
-
-```
-Review the UX copy in this checkout flow:
-[Figma section link]
-
-Using the UX Writing Skill, check for:
-- Error messages (should be empathetic and actionable)
-- Button labels (should be specific verbs)
-- Form field labels (should be clear and accessible)
-- Overall tone (should be helpful and professional)
-```
-
-**Step 3: Get Detailed Feedback**
-
-Codex will:
-1. Access the Figma design through MCP
-2. Extract all text elements
-3. Apply the UX Writing Skill automatically
-4. Provide specific, actionable feedback based on the four quality standards
+Peça ao Codex para revisar o texto de UX e ele deve conseguir acessar o frame do Figma.
 
 ---
 
-## Example Workflows for Content Designers
+## Como Usar com a Skill de UX Writing
 
-### 1. Quick UX Audit Before Launch
+### Método 1: Revisar Designs Existentes do Figma
 
-```
-I need to review this feature before launch:
-[Figma section link]
+**Passo 1: Obter Seu Link do Figma**
 
-Using the UX Writing Skill, audit all copy for:
-- Accessibility issues (screen reader compatibility, reading level)
-- Sentence length (should be under 20 words)
-- Button specificity (no generic "Submit" or "OK" buttons)
-- Error message quality (explain problem + solution)
-- Voice consistency
+1. Abra seu design no Figma (app web ou desktop)
+2. Mude para o **Dev Mode** (Shift + D)
+3. Selecione o frame que deseja revisar
+4. Copie o link da seção no Dev Mode
 
-Give me a prioritized list of issues to fix.
-```
+**Passo 2: Compartilhar com o Codex**
 
-### 2. Voice and Tone Validation
+No Codex CLI ou no seu IDE, cole o link junto com sua solicitação:
 
 ```
-Review the tone in these onboarding screens:
-[Figma section link]
+Revise o texto de UX neste fluxo de checkout:
+[Link da seção do Figma]
 
-Our product voice is: helpful, friendly, professional
-
-Check if all the copy matches this voice and suggest improvements
-where it doesn't. Use the tone adaptation framework from the UX Writing Skill.
+Usando a Skill de UX Writing, verifique:
+- Mensagens de erro (devem ser empáticas e acionáveis)
+- Rótulos dos botões (devem ser verbos específicos)
+- Rótulos dos campos do formulário (devem ser claros e acessíveis)
+- Tom geral (deve ser útil e profissional)
 ```
 
-### 3. Comprehensive Accessibility Check
+**Passo 3: Receber Feedback Detalhado**
+
+O Codex vai:
+1. Acessar o design do Figma através do MCP
+2. Extrair todos os elementos de texto
+3. Aplicar a Skill de UX Writing automaticamente
+4. Fornecer feedback específico e acionável baseado nos quatro padrões de qualidade
+
+---
+
+## Exemplos de Fluxos para Designers de Conteúdo
+
+### 1. Auditoria Rápida Antes do Lançamento
 
 ```
-Audit this form for accessibility:
-[Figma section link]
+Preciso revisar este recurso antes do lançamento:
+[Link da seção do Figma]
 
-Using accessibility guidelines from the UX Writing Skill, check:
-- Screen reader compatibility
-- Form labels (visible, not placeholder-only)
-- Error messages (descriptive and actionable)
-- Plain language (7th-8th grade reading level)
-- Link text (descriptive, not "click here")
+Usando a Skill de UX Writing, audite todos os textos:
+- Problemas de acessibilidade (compatibilidade com leitor de tela, nível de leitura)
+- Comprimento das frases (deve ser menor que 20 palavras)
+- Especificidade dos botões (sem "Enviar" ou "OK" genéricos)
+- Qualidade das mensagens de erro (explique o problema + solução)
+- Consistência de voz
+
+Forneça uma lista priorizada de problemas a corrigir.
 ```
 
-### 4. Before/After Analysis with Scoring
+### 2. Validação de Voz e Tom
 
 ```
-Here's my current empty state: [Figma section link]
+Revise o tom nestas telas de onboarding:
+[Link da seção do Figma]
 
-Using the UX Writing Skill:
-1. Score the current copy against the 4 quality standards (purposeful, concise, conversational, clear)
-2. Identify specific problems
-3. Provide rewritten version with improvements
-4. Explain what changed and why
+A voz do nosso produto é: útil, amigável, profissional
+
+Verifique se todos os textos correspondem a essa voz e sugira melhorias
+onde não corresponderem. Use o framework de adaptação de tom da Skill de UX Writing.
 ```
 
-### 5. Multi-Platform Consistency Check
+### 3. Verificação Completa de Acessibilidade
 
 ```
-Compare copy across these platform designs:
-- Web: [Figma link 1]
-- iOS: [Figma link 2]
-- Android: [Figma link 3]
+Audite este formulário quanto à acessibilidade:
+[Link da seção do Figma]
 
-Check for:
-- Terminology consistency
-- Tone consistency
-- Platform-specific conventions (e.g., "tap" vs "click")
-- Character count appropriateness for each platform
+Usando as diretrizes de acessibilidade da Skill de UX Writing, verifique:
+- Compatibilidade com leitor de tela
+- Rótulos de formulário (visíveis, não apenas placeholder)
+- Mensagens de erro (descritivas e acionáveis)
+- Linguagem simples (equivalente ao 8º/9º ano)
+- Texto de link (descritivo, não "clique aqui")
+```
+
+### 4. Análise Antes/Depois com Pontuação
+
+```
+Aqui está meu estado vazio atual: [Link da seção do Figma]
+
+Usando a Skill de UX Writing:
+1. Avalie o texto atual em relação aos 4 padrões de qualidade (proposital, conciso, conversacional, claro)
+2. Identifique problemas específicos
+3. Forneça versão reescrita com melhorias
+4. Explique o que mudou e por quê
+```
+
+### 5. Verificação de Consistência entre Plataformas
+
+```
+Compare os textos entre estes designs de plataforma:
+- Web: [Link do Figma 1]
+- iOS: [Link do Figma 2]
+- Android: [Link do Figma 3]
+
+Verifique:
+- Consistência de terminologia
+- Consistência de tom
+- Convenções específicas da plataforma (ex.: "toque" vs. "clique")
+- Adequação da contagem de caracteres para cada plataforma
 ```
 
 ---
 
-## Tips for Best Results
+## Dicas para Melhores Resultados
 
-### Be Explicit About Using the UX Writing Skill
+### Seja Explícito sobre Usar a Skill de UX Writing
 
-For best results, explicitly mention the UX Writing Skill in your prompts:
+Para melhores resultados, mencione explicitamente a Skill de UX Writing nos seus prompts:
 
-❌ **Too vague:**
-> "Review this design: [link]"
+❌ **Muito vago:**
+> "Revise este design: [link]"
 
-✅ **Better:**
-> "Using the UX Writing Skill, review error messages in this form: [link]. Check against the four quality standards."
+✅ **Melhor:**
+> "Usando a Skill de UX Writing, revise as mensagens de erro neste formulário: [link]. Verifique em relação aos quatro padrões de qualidade."
 
-### Reference Specific Frameworks
+### Referencie Frameworks Específicos
 
-The UX Writing Skill includes several frameworks you can call out:
-
-```
-Use the tone adaptation framework to suggest appropriate tone for this error state: [link]
-```
+A Skill de UX Writing inclui vários frameworks que você pode mencionar:
 
 ```
-Apply the content usability checklist to score this copy: [link]
+Use o framework de adaptação de tom para sugerir o tom adequado para este estado de erro: [link]
 ```
 
 ```
-Check this against the accessibility guidelines in the UX Writing Skill
+Aplique o checklist de usabilidade de conteúdo para avaliar este texto: [link]
 ```
 
-### Ask for Specific Patterns
-
 ```
-Review all buttons in this flow: [link]
-
-Check that they follow the button pattern:
-- Active imperative verbs
-- [Verb] [object] format
-- Specific, not generic
-- Under 25 characters
+Verifique este texto em relação às diretrizes de acessibilidade da Skill de UX Writing
 ```
 
-### Use Codex's Explicit Skill Invocation
-
-In Codex CLI/IDE, you can explicitly invoke the UX Writing Skill:
+### Solicite Padrões Específicos
 
 ```
-$ux-writing Review the UX copy in this design: [Figma link]
+Revise todos os botões neste fluxo: [link]
+
+Verifique se seguem o padrão de botões:
+- Verbos no imperativo afirmativo
+- Formato [Verbo] [objeto]
+- Específico, não genérico
+- Menos de 25 caracteres
 ```
 
-Or use the `/skills` command to select it from the available skills list.
+### Use a Invocação Explícita de Skills do Codex
+
+No Codex CLI/IDE, você pode invocar explicitamente a Skill de UX Writing:
+
+```
+$ux-writing Revise o texto de UX neste design: [Link do Figma]
+```
+
+Ou use o comando `/skills` para selecioná-la na lista de skills disponíveis.
 
 ---
 
-## Troubleshooting
+## Solução de Problemas
 
-### "I don't have access to that Figma file"
+### "Não tenho acesso a esse arquivo do Figma"
 
-**Solutions:**
-1. Make sure the Figma file is set to "Anyone with the link can view"
-2. Check that you're signed into the same Figma account you authenticated with
-3. Try copying the link again from Dev Mode (might have been truncated or expired)
-4. Make sure you're using the section link from Dev Mode, not just the file URL
+**Soluções:**
+1. Verifique se o arquivo do Figma está configurado para "Qualquer pessoa com o link pode visualizar"
+2. Confira se você está logado na mesma conta do Figma com a qual autenticou
+3. Tente copiar o link novamente do Dev Mode (pode ter sido truncado ou expirado)
+4. Certifique-se de usar o link da seção do Dev Mode, não apenas a URL do arquivo
 
-### "MCP connection failed"
+### "Falha na conexão MCP"
 
-**Solutions:**
-1. Verify your `~/.codex/config.toml` has the correct configuration
-2. Make sure you ran `codex mcp login figma` successfully
-3. Check that `rmcp_client = true` is set in the `[features]` section
-4. Restart your IDE completely (not just reload window)
-5. Try re-authenticating: `codex mcp login figma`
+**Soluções:**
+1. Verifique se seu `~/.codex/config.toml` tem a configuração correta
+2. Certifique-se de ter executado `codex mcp login figma` com sucesso
+3. Confirme que `rmcp_client = true` está definido na seção `[features]`
+4. Reinicie completamente seu IDE (não apenas recarregue a janela)
+5. Tente se autenticar novamente: `codex mcp login figma`
 
-### "Codex doesn't seem to use the UX Writing Skill"
+### "O Codex não parece usar a Skill de UX Writing"
 
-**Solution:**
+**Solução:**
 
-Be more explicit in your prompt:
-
-```
-Using the UX Writing Skill, review this design: [link]
-
-Apply the four quality standards:
-1. Purposeful
-2. Concise
-3. Conversational
-4. Clear
-```
-
-Or use explicit invocation:
+Seja mais explícito no seu prompt:
 
 ```
-$ux-writing analyze the UX copy in this frame: [link]
+Usando a Skill de UX Writing, revise este design: [link]
+
+Aplique os quatro padrões de qualidade:
+1. Proposital
+2. Conciso
+3. Conversacional
+4. Claro
 ```
 
-### "The skill isn't installed in Codex"
+Ou use invocação explícita:
 
-**Solution:**
+```
+$ux-writing analise o texto de UX neste frame: [link]
+```
 
-Verify the skill is in the correct location:
+### "A skill não está instalada no Codex"
+
+**Solução:**
+
+Verifique se a skill está no local correto:
 - **Mac/Linux**: `~/.codex/skills/ux-writing/SKILL.md`
 - **Windows**: `%USERPROFILE%\.codex\skills\ux-writing\SKILL.md`
 
-Restart Codex after installation.
+Reinicie o Codex após a instalação.
 
-Check installed skills using the `/skills` command in Codex.
-
----
-
-## Example: Complete UX Audit Workflow
-
-Here's a real-world example of conducting a comprehensive UX writing audit:
-
-```
-I'm reviewing our checkout flow before launch. Here are the 4 key frames:
-
-1. Cart: [Figma Dev Mode link]
-2. Shipping: [Figma Dev Mode link]
-3. Payment: [Figma Dev Mode link]
-4. Confirmation: [Figma Dev Mode link]
-
-Using the UX Writing Skill, perform a complete audit:
-
-**Check for:**
-- All 4 quality standards (purposeful, concise, conversational, clear)
-- Accessibility (screen readers, reading level, plain language)
-- Error messages (empathetic, actionable, specific)
-- Form labels (visible, descriptive, not placeholder-only)
-- Button labels (specific verbs, not generic)
-- Voice consistency across all screens
-- Appropriate tone for context
-
-**Provide:**
-1. Overall score (1-10) with explanation
-2. Critical issues (must fix before launch)
-3. Recommended improvements (nice to have)
-4. Rewritten copy for any critical issues
-5. Summary of patterns used well
-
-Format as a design review report.
-```
+Verifique as skills instaladas usando o comando `/skills` no Codex.
 
 ---
 
-## Advanced Usage
+## Exemplo: Fluxo Completo de Auditoria de UX
 
-### Create a Content Pattern Library
-
-```
-Review all designs in our product at these key flows: [multiple Figma links]
-
-Extract and document our content patterns:
-- Button naming conventions we use
-- Error message structure
-- Empty state patterns
-- Success message patterns
-- Voice characteristics (with examples)
-
-Create a pattern library I can share with the team.
-```
-
-### Build a Voice Chart from Existing Designs
+Aqui está um exemplo real de como conduzir uma auditoria completa de UX Writing:
 
 ```
-Analyze the copy in these designs: [multiple Figma links]
+Estou revisando nosso fluxo de checkout antes do lançamento. Aqui estão os 4 frames principais:
 
-Using the voice chart template from the UX Writing Skill, create a voice chart showing:
-- 3-5 key brand concepts
-- Voice characteristics for each
-- Do/Don't examples from our actual product
-- Tone variations for different contexts
-```
+1. Carrinho: [Link do Figma Dev Mode]
+2. Entrega: [Link do Figma Dev Mode]
+3. Pagamento: [Link do Figma Dev Mode]
+4. Confirmação: [Link do Figma Dev Mode]
 
-### Automated Copy Testing
+Usando a Skill de UX Writing, realize uma auditoria completa:
 
-```
-Every week, I'll share new designs with you. For each design:
-1. Extract all copy
-2. Run it through the content usability checklist
-3. Flag anything scoring below 7/10
-4. Provide specific fixes
-5. Track improvements over time
+**Verifique:**
+- Todos os 4 padrões de qualidade (proposital, conciso, conversacional, claro)
+- Acessibilidade (leitores de tela, nível de leitura, linguagem simples)
+- Mensagens de erro (empáticas, acionáveis, específicas)
+- Rótulos de formulário (visíveis, descritivos, não apenas placeholder)
+- Rótulos de botão (verbos específicos, não genéricos)
+- Consistência de voz em todas as telas
+- Tom adequado para o contexto
+
+**Forneça:**
+1. Pontuação geral (1 a 10) com explicação
+2. Problemas críticos (devem ser corrigidos antes do lançamento)
+3. Melhorias recomendadas (desejável ter)
+4. Texto reescrito para quaisquer problemas críticos
+5. Resumo dos padrões bem utilizados
+
+Formate como um relatório de revisão de design.
 ```
 
 ---
 
-## Resources
+## Uso Avançado
 
-### Official Documentation
-- **Codex Skills**: [developers.openai.com/codex/skills](https://developers.openai.com/codex/skills/)
-- **Codex MCP Documentation**: Check Codex docs for MCP server configuration
+### Criar uma Biblioteca de Padrões de Conteúdo
 
-### UX Writing Skill Documentation
-- **Main README**: See the repository README.md for installation and overview
-- **SKILL.md**: Core frameworks and patterns
-- **Reference Materials**:
+```
+Revise todos os designs do nosso produto nestes fluxos principais: [múltiplos links do Figma]
+
+Extraia e documente nossos padrões de conteúdo:
+- Convenções de nomenclatura de botões que usamos
+- Estrutura de mensagens de erro
+- Padrões de estado vazio
+- Padrões de mensagens de sucesso
+- Características de voz (com exemplos)
+
+Crie uma biblioteca de padrões para compartilhar com a equipe.
+```
+
+### Construir um Quadro de Voz a Partir de Designs Existentes
+
+```
+Analise os textos nestes designs: [múltiplos links do Figma]
+
+Usando o modelo de quadro de voz da Skill de UX Writing, crie um quadro de voz mostrando:
+- 3 a 5 conceitos-chave da marca
+- Características de voz para cada um
+- Exemplos do que fazer/evitar do nosso produto real
+- Variações de tom para diferentes contextos
+```
+
+### Testes Automatizados de Texto
+
+```
+Toda semana, compartilharei novos designs com você. Para cada design:
+1. Extraia todos os textos
+2. Aplique o checklist de usabilidade de conteúdo
+3. Sinalize qualquer coisa com pontuação abaixo de 7/10
+4. Forneça correções específicas
+5. Acompanhe melhorias ao longo do tempo
+```
+
+---
+
+## Recursos
+
+### Documentação Oficial
+- **Skills do Codex**: [developers.openai.com/codex/skills](https://developers.openai.com/codex/skills/)
+- **Documentação MCP do Codex**: Consulte a documentação do Codex para configuração do servidor MCP
+
+### Documentação da Skill de UX Writing
+- **README principal**: Consulte o README.md do repositório para instalação e visão geral
+- **SKILL.md**: Frameworks e padrões fundamentais
+- **Materiais de Referência**:
   - `references/accessibility-guidelines.md`
   - `references/voice-chart-template.md`
   - `references/content-usability-checklist.md`
   - `references/patterns-detailed.md`
 
-### Community
-- Browse the [OpenAI Developer Forum](https://community.openai.com/) for Codex discussions
-- Learn about [creating custom skills](https://developers.openai.com/codex/skills/create-skill)
+### Comunidade
+- Explore o [Fórum de Desenvolvedores OpenAI](https://community.openai.com/) para discussões sobre o Codex
+- Aprenda sobre [como criar skills personalizadas](https://developers.openai.com/codex/skills/create-skill)
 
 ---
 
-## Feedback & Contributions
+## Feedback e Contribuições
 
-Have ideas for improving this integration? Found effective workflows? We'd love to hear:
-- Real-world examples of UX improvements from Figma reviews via Codex
-- Tips for content design teams using Codex + Figma MCP + UX Writing Skill
-- Additional prompts or patterns that work well
+Tem ideias para melhorar esta integração? Encontrou fluxos eficazes? Adoraríamos ouvir:
+- Exemplos reais de melhorias de UX de revisões do Figma via Codex
+- Dicas para equipes de design de conteúdo usando Codex + Figma MCP + Skill de UX Writing
+- Prompts ou padrões adicionais que funcionam bem
 
-Open an issue or submit a pull request to share your insights!
+Abra uma issue ou envie um pull request para compartilhar suas descobertas!
 
 ---
 
-**Happy designing and writing!** 🎨✍️
+**Bons designs e boas escritas!** 🎨✍️
