@@ -1,423 +1,422 @@
-# Using UX Writing Skill with Figma
+# Usando a Skill de UX Writing com Figma
 
-Connect this skill to Figma so Claude can review and improve copy directly from your designs. Perfect for content designers, product designers, and anyone who needs to audit or enhance UX text in Figma mockups.
+Conecte esta skill ao Figma para que o Claude possa revisar e melhorar textos diretamente dos seus designs. Perfeito para designers de conteúdo, product designers e qualquer pessoa que precise auditar ou aprimorar textos de UX em mockups do Figma.
 
-## What You Can Do
+## O Que Você Pode Fazer
 
-Once connected, you can:
-- **Share Figma frame links** with Claude and get instant UX writing feedback
-- **Audit existing designs** for accessibility, clarity, and tone
-- **Generate improved copy** that follows best practices
-- **Review entire flows** for consistency and voice
-- **Get specific suggestions** based on the four quality standards
+Uma vez conectado, você pode:
+- **Compartilhar links de frames do Figma** com o Claude e receber feedback instantâneo de UX Writing
+- **Auditar designs existentes** para verificar acessibilidade, clareza e tom
+- **Gerar textos melhorados** que seguem as boas práticas
+- **Revisar fluxos inteiros** para consistência e voz
+- **Obter sugestões específicas** baseadas nos quatro padrões de qualidade
 
-## Quick Example
+## Exemplo Rápido
 
 ```
-Here's my login screen: [Figma link]
+Aqui está minha tela de login: [link do Figma]
 
-Review all the UX copy using the UX Writing Skill. Check for:
-- Accessibility (screen reader compatibility, plain language)
-- Error message clarity
-- Button labels
-- Tone consistency
+Revise todo o texto de UX usando a Skill de UX Writing. Verifique:
+- Acessibilidade (compatibilidade com leitor de tela, linguagem simples)
+- Clareza das mensagens de erro
+- Rótulos dos botões
+- Consistência de tom
 ```
 
-Claude will analyze the design, identify all text elements, and provide detailed feedback with specific improvements.
+O Claude vai analisar o design, identificar todos os elementos de texto e fornecer feedback detalhado com melhorias específicas.
 
 ---
 
-## Setup: Connect Figma to Claude Code
+## Configuração: Conectar Figma ao Claude Code
 
-There are two ways to connect Figma to Claude Code. **Choose the Remote Server option** unless you have specific requirements for the Desktop Server.
+Existem duas formas de conectar o Figma ao Claude Code. **Escolha a opção Servidor Remoto** a menos que você tenha requisitos específicos para o Servidor Desktop.
 
-### Option 1: Remote Server (Recommended)
+### Opção 1: Servidor Remoto (Recomendado)
 
-**Best for:** Quick setup, working from anywhere, no Figma desktop app needed
+**Indicado para:** Configuração rápida, trabalho de qualquer lugar, sem necessidade do app desktop do Figma
 
-**Requirements:**
-- Claude Code installed
-- Figma account (Starter, Professional, Organization, or Enterprise plan)
-- Internet connection
+**Requisitos:**
+- Claude Code instalado
+- Conta no Figma (plano Starter, Professional, Organization ou Enterprise)
+- Conexão com a internet
 
-**Setup Steps:**
+**Passos de Configuração:**
 
-**Step 1: Install Figma MCP**
+**Passo 1: Instalar o MCP do Figma**
 
-1. Open your terminal (Terminal on Mac, Command Prompt or PowerShell on Windows)
-2. Copy and paste this command:
+1. Abra seu terminal (Terminal no Mac, Prompt de Comando ou PowerShell no Windows)
+2. Copie e cole este comando:
    ```bash
    claude mcp add --transport http figma https://mcp.figma.com/mcp
    ```
-3. Press Enter and wait for it to complete
+3. Pressione Enter e aguarde a conclusão
 
-**Step 2: Restart Claude Code**
+**Passo 2: Reiniciar o Claude Code**
 
-1. Completely quit Claude Code (don't just close the window)
-2. Reopen Claude Code
+1. Feche completamente o Claude Code (não apenas a janela)
+2. Reabra o Claude Code
 
-**Step 3: Authenticate with Figma**
+**Passo 3: Autenticar com o Figma**
 
-1. In Claude Code, type: `/mcp`
-2. Press Enter to see your MCP servers
-3. Find the "figma-remote-mcp" server
-4. If it shows "disconnected", press Enter on that line
-5. A browser window will open asking you to allow access
-6. Click **"Allow access"** to connect Claude Code to your Figma account
+1. No Claude Code, digite: `/mcp`
+2. Pressione Enter para ver seus servidores MCP
+3. Encontre o servidor "figma-remote-mcp"
+4. Se aparecer como "desconectado", pressione Enter nessa linha
+5. Uma janela do navegador vai abrir pedindo para permitir o acesso
+6. Clique em **"Permitir acesso"** para conectar o Claude Code à sua conta do Figma
 
-**Step 4: Verify It's Working**
+**Passo 4: Verificar se Está Funcionando**
 
-Type in Claude Code:
+Digite no Claude Code:
 ```
-Do you have access to Figma?
+Você tem acesso ao Figma?
 ```
 
-Claude should confirm it can access Figma and explain what it can do.
+O Claude deve confirmar que pode acessar o Figma e explicar o que consegue fazer.
 
 ---
 
-### Option 2: Desktop Server
+### Opção 2: Servidor Desktop
 
-**Best for:** Working locally, no internet dependency once set up
+**Indicado para:** Trabalho local, sem dependência de internet após a configuração
 
-**Requirements:**
-- Figma desktop app (latest version)
-- Claude Code installed
-- Dev Mode access in Figma
+**Requisitos:**
+- App desktop do Figma (versão mais recente)
+- Claude Code instalado
+- Acesso ao Dev Mode no Figma
 
-**Setup Steps:**
+**Passos de Configuração:**
 
-**Step 1: Enable MCP in Figma Desktop**
+**Passo 1: Habilitar MCP no Figma Desktop**
 
-1. Open the Figma desktop app
-2. Open any design file
-3. Press `Shift + D` to switch to **Dev Mode**
-4. In the right panel (Inspect panel), scroll to the **MCP server** section
-5. Click **"Enable desktop MCP server"**
-6. You'll see a confirmation message at the bottom
+1. Abra o app desktop do Figma
+2. Abra qualquer arquivo de design
+3. Pressione `Shift + D` para entrar no **Dev Mode**
+4. No painel direito (painel Inspect), role até a seção **MCP server**
+5. Clique em **"Enable desktop MCP server"**
+6. Uma mensagem de confirmação aparecerá na parte inferior
 
-**Step 2: Connect Claude Code**
+**Passo 2: Conectar ao Claude Code**
 
-1. Open your terminal
-2. Copy and paste this command:
+1. Abra seu terminal
+2. Copie e cole este comando:
    ```bash
    claude mcp add --transport http figma-desktop http://127.0.0.1:3845/mcp
    ```
-3. Press Enter
+3. Pressione Enter
 
-**Step 3: Restart Claude Code**
+**Passo 3: Reiniciar o Claude Code**
 
-1. Completely quit Claude Code
-2. Reopen Claude Code
+1. Feche completamente o Claude Code
+2. Reabra o Claude Code
 
-**Step 4: Verify It's Working**
+**Passo 4: Verificar se Está Funcionando**
 
-Type in Claude Code:
+Digite no Claude Code:
 ```
-Do you have access to Figma?
+Você tem acesso ao Figma?
 ```
 
-Claude should confirm the connection.
+O Claude deve confirmar a conexão.
 
-**Note:** The Figma desktop app must be running with Dev Mode enabled for this to work.
+**Nota:** O app desktop do Figma deve estar em execução com o Dev Mode habilitado para que isso funcione.
 
 ---
 
-## How to Use with UX Writing Skill
+## Como Usar com a Skill de UX Writing
 
-### Method 1: Share Figma Links
+### Método 1: Compartilhar Links do Figma
 
-**Step 1: Get the Figma Link**
+**Passo 1: Obter o Link do Figma**
 
-1. Open your design in Figma (web or desktop app)
-2. Select the frame you want to review
-3. Right-click and select **"Copy link"**
-   - Or use the share button in the top right
-   - Or just copy the URL from your browser
+1. Abra seu design no Figma (app web ou desktop)
+2. Selecione o frame que deseja revisar
+3. Clique com o botão direito e selecione **"Copiar link"**
+   - Ou use o botão de compartilhar no canto superior direito
+   - Ou copie a URL diretamente do navegador
 
-**Step 2: Share with Claude**
+**Passo 2: Compartilhar com o Claude**
 
-Paste the link in Claude Code along with your request:
+Cole o link no Claude Code junto com sua solicitação:
 
 ```
-Review the UX copy in this login screen:
+Revise o texto de UX nesta tela de login:
 https://www.figma.com/file/abc123/Design?node-id=123-456
 
-Focus on:
-- Button labels
-- Error messages
-- Form field labels
+Foque em:
+- Rótulos dos botões
+- Mensagens de erro
+- Rótulos dos campos do formulário
 ```
 
-**Step 3: Get Feedback**
+**Passo 3: Receber Feedback**
 
-Claude will:
-1. Access the Figma frame
-2. Extract all text elements
-3. Apply the UX Writing Skill automatically
-4. Provide specific, actionable feedback
+O Claude vai:
+1. Acessar o frame do Figma
+2. Extrair todos os elementos de texto
+3. Aplicar a Skill de UX Writing automaticamente
+4. Fornecer feedback específico e acionável
 
 ---
 
-### Method 2: Ask for Multi-Frame Analysis
+### Método 2: Solicitar Análise de Múltiplos Frames
 
-Review entire user flows:
+Revise fluxos completos de usuário:
 
 ```
-Review all UX copy in this onboarding flow:
+Revise todo o texto de UX neste fluxo de onboarding:
 https://www.figma.com/file/abc123/Onboarding-Flow
 
-Check for:
-- Tone consistency across all screens
-- Reading level (target 7th-8th grade)
-- Accessibility (screen reader compatibility)
-- Button label clarity
+Verifique:
+- Consistência de tom em todas as telas
+- Nível de leitura (equivalente ao 8º/9º ano)
+- Acessibilidade (compatibilidade com leitor de tela)
+- Clareza dos rótulos dos botões
 ```
 
 ---
 
-### Method 3: Get Rewritten Copy
+### Método 3: Solicitar Reescrita de Textos
 
-Ask Claude to generate improved versions:
-
-```
-Here's my error state: [Figma link]
-
-Rewrite all the copy following UX writing best practices:
-- Make it more concise
-- Add specific recovery steps
-- Ensure screen reader accessibility
-- Use empathetic tone
-```
-
----
-
-## Example Workflows for Content Designers
-
-### 1. Design Review (Quick Audit)
+Peça ao Claude para gerar versões melhoradas:
 
 ```
-I need to review copy in this checkout flow before launch:
-[Figma link to checkout screens]
+Aqui está meu estado de erro: [link do Figma]
 
-Using the UX Writing Skill, audit for:
-- Accessibility issues
-- Sentence length (should be under 20 words)
-- Button labels (should be specific, not generic)
-- Error message clarity
-- Consistency across screens
-
-Provide a prioritized list of issues.
-```
-
-### 2. Voice and Tone Check
-
-```
-Review the tone in these empty states:
-[Figma link]
-
-Our voice is: helpful, friendly, professional
-Check if the copy matches this voice and suggest improvements.
-```
-
-### 3. Accessibility Audit
-
-```
-Audit this form for accessibility:
-[Figma link to form]
-
-Check:
-- Screen reader compatibility
-- Form labels (visible, not just placeholders)
-- Error messages (descriptive, actionable)
-- Color contrast for text
-- Plain language (7th-8th grade level)
-```
-
-### 4. Before/After Improvements
-
-```
-Here's my current error screen: [Figma link]
-
-Show me:
-1. What's wrong with the current copy (score it against the 4 quality standards)
-2. Rewritten version with improvements
-3. Explanation of what changed and why
-```
-
-### 5. Cross-Platform Consistency
-
-```
-Compare copy across these three platforms:
-- Web: [Figma link 1]
-- iOS: [Figma link 2]
-- Android: [Figma link 3]
-
-Check for:
-- Terminology consistency
-- Similar tone
-- Character limits respected
-- Platform-specific conventions followed
+Reescreva todos os textos seguindo as boas práticas de UX Writing:
+- Torne mais conciso
+- Adicione passos específicos de recuperação
+- Garanta acessibilidade para leitores de tela
+- Use tom empático
 ```
 
 ---
 
-## Tips for Best Results
+## Exemplos de Fluxos para Designers de Conteúdo
 
-### Be Specific About What You Want
-
-❌ **Too vague:**
-> "Review this design: [link]"
-
-✅ **Better:**
-> "Review the error messages in this form: [link]. Check for accessibility, clarity, and actionable guidance."
-
-### Reference Multiple Frames for Context
-
-When reviewing a flow, share links to all relevant screens:
-```
-Review this 3-step onboarding flow:
-1. Welcome screen: [link]
-2. Account setup: [link]
-3. Preferences: [link]
-
-Check for consistent voice and progressive disclosure of information.
-```
-
-### Ask for Specific Frameworks
-
-The UX Writing Skill includes several frameworks you can reference:
-```
-Use the tone adaptation framework to suggest appropriate tone for this error state: [link]
-```
+### 1. Revisão de Design (Auditoria Rápida)
 
 ```
-Score this against the content usability checklist: [link]
+Preciso revisar os textos deste fluxo de checkout antes do lançamento:
+[Link do Figma para telas de checkout]
+
+Usando a Skill de UX Writing, audite:
+- Problemas de acessibilidade
+- Comprimento das frases (deve ser menor que 20 palavras)
+- Rótulos dos botões (devem ser específicos, não genéricos)
+- Clareza das mensagens de erro
+- Consistência entre telas
+
+Forneça uma lista priorizada de problemas.
 ```
 
-### Combine with Other Requests
+### 2. Verificação de Voz e Tom
 
 ```
-Review copy in this dashboard: [link]
+Revise o tom nestes estados vazios:
+[Link do Figma]
 
-Then create a voice chart based on the existing copy to document our current voice for the team.
+Nossa voz é: útil, amigável, profissional
+Verifique se os textos correspondem a essa voz e sugira melhorias.
 ```
 
----
+### 3. Auditoria de Acessibilidade
 
-## Troubleshooting
-
-### "I don't have access to that Figma file"
-
-**Solutions:**
-1. Make sure the file is set to "Anyone with the link can view"
-2. Check that you're signed into the same Figma account you authenticated with
-3. Try copying the link again (might have been truncated)
-
-### "The MCP server is disconnected"
-
-**For Remote Server:**
-1. Type `/mcp` in Claude Code
-2. Find the figma server and press Enter to reconnect
-3. Re-authenticate if prompted
-
-**For Desktop Server:**
-1. Make sure Figma desktop app is running
-2. Switch to Dev Mode (`Shift + D`)
-3. Check that MCP server is enabled in the Inspect panel
-
-### "I can't see the MCP server section in Figma"
-
-**Solutions:**
-1. Update to the latest Figma desktop app version
-2. Make sure you're in Dev Mode (`Shift + D`)
-3. Check that your Figma plan includes Dev Mode access
-
-### Claude doesn't seem to use the UX Writing Skill
-
-**Solution:**
-Explicitly mention it in your prompt:
 ```
-Using the UX Writing Skill, review this design: [link]
+Audite este formulário quanto à acessibilidade:
+[Link do Figma para o formulário]
+
+Verifique:
+- Compatibilidade com leitor de tela
+- Rótulos de formulário (visíveis, não apenas placeholders)
+- Mensagens de erro (descritivas, acionáveis)
+- Linguagem simples (equivalente ao 8º/9º ano)
 ```
 
-Or ask Claude to apply specific frameworks:
+### 4. Melhorias Antes/Depois
+
 ```
-Apply the four quality standards (purposeful, concise, conversational, clear) to this copy: [link]
+Aqui está minha tela de erro atual: [Link do Figma]
+
+Mostre:
+1. O que está errado com o texto atual (avalie em relação aos 4 padrões de qualidade)
+2. Versão reescrita com melhorias
+3. Explicação do que mudou e por quê
+```
+
+### 5. Consistência entre Plataformas
+
+```
+Compare os textos entre estas três plataformas:
+- Web: [Link do Figma 1]
+- iOS: [Link do Figma 2]
+- Android: [Link do Figma 3]
+
+Verifique:
+- Consistência de terminologia
+- Tom similar
+- Limites de caracteres respeitados
+- Convenções específicas de cada plataforma
 ```
 
 ---
 
-## Rate Limits
+## Dicas para Melhores Resultados
 
-Be aware of Figma MCP rate limits:
+### Seja Específico sobre o Que Você Quer
 
-**Starter Plan or View/Collab seats:**
-- Up to 6 tool calls per month
+❌ **Muito vago:**
+> "Revise este design: [link]"
 
-**Dev or Full seat on Professional/Organization/Enterprise:**
-- Per-minute rate limits (more generous)
+✅ **Melhor:**
+> "Revise as mensagens de erro neste formulário: [link]. Verifique acessibilidade, clareza e orientação acionável."
 
-If you hit rate limits, wait a few minutes before making additional requests.
+### Referencie Múltiplos Frames para Contexto
 
----
-
-## Advanced Usage
-
-### Create Documentation from Designs
-
+Ao revisar um fluxo, compartilhe links para todas as telas relevantes:
 ```
-Review all copy in this feature: [link]
+Revise este fluxo de onboarding em 3 etapas:
+1. Tela de boas-vindas: [link]
+2. Configuração de conta: [link]
+3. Preferências: [link]
 
-Create a content patterns document showing:
-- Common patterns we use (buttons, errors, empty states)
-- Voice characteristics
-- Terminology conventions
-- Do/don't examples
-
-Format it as a content style guide section.
+Verifique a consistência de voz e a divulgação progressiva de informações.
 ```
 
-### Generate Test Copy
+### Solicite Frameworks Específicos
 
+A Skill de UX Writing inclui vários frameworks que você pode referenciar:
 ```
-I need placeholder copy for this wireframe: [link]
-
-Generate realistic UX copy for all text elements following our voice:
-- Helpful, professional, encouraging
-- Target reading level: 8th grade
-- Keep button labels under 25 characters
+Use o framework de adaptação de tom para sugerir o tom adequado para este estado de erro: [link]
 ```
 
-### Localization Prep
+```
+Avalie este texto usando o checklist de usabilidade de conteúdo: [link]
+```
+
+### Combine com Outras Solicitações
 
 ```
-Review this design for translation readiness: [link]
+Revise os textos neste dashboard: [link]
 
-Check:
-- Text expansion space (German expands 30-40%)
-- Idioms or cultural references to avoid
-- Hard-coded text in buttons that should be dynamic
-- Character limits that might break in other languages
+Em seguida, crie um quadro de voz com base nos textos existentes para documentar nossa voz atual para a equipe.
 ```
 
 ---
 
-## Resources
+## Solução de Problemas
 
-- **Figma MCP Documentation**: [developers.figma.com/docs/figma-mcp-server](https://developers.figma.com/docs/figma-mcp-server/)
-- **Claude Code MCP Guide**: Type `/help mcp` in Claude Code
-- **UX Writing Skill Documentation**: See the main README.md
+### "Não tenho acesso a esse arquivo do Figma"
+
+**Soluções:**
+1. Verifique se o arquivo está configurado para "Qualquer pessoa com o link pode visualizar"
+2. Confira se você está logado na mesma conta do Figma com a qual autenticou
+3. Tente copiar o link novamente (pode ter sido truncado)
+
+### "O servidor MCP está desconectado"
+
+**Para o Servidor Remoto:**
+1. Digite `/mcp` no Claude Code
+2. Encontre o servidor figma e pressione Enter para reconectar
+3. Autentique novamente se solicitado
+
+**Para o Servidor Desktop:**
+1. Verifique se o app desktop do Figma está em execução
+2. Mude para o Dev Mode (`Shift + D`)
+3. Confirme que o servidor MCP está habilitado no painel Inspect
+
+### "Não consigo ver a seção do servidor MCP no Figma"
+
+**Soluções:**
+1. Atualize para a versão mais recente do app desktop do Figma
+2. Certifique-se de que está no Dev Mode (`Shift + D`)
+3. Verifique se seu plano do Figma inclui acesso ao Dev Mode
+
+### O Claude não parece usar a Skill de UX Writing
+
+**Solução:**
+Mencione explicitamente no seu prompt:
+```
+Usando a Skill de UX Writing, revise este design: [link]
+```
+
+Ou peça ao Claude para aplicar frameworks específicos:
+```
+Aplique os quatro padrões de qualidade (proposital, conciso, conversacional, claro) a este texto: [link]
+```
+
+---
+
+## Limites de Taxa de Requisição
+
+Esteja ciente dos limites de taxa do Figma MCP:
+
+**Plano Starter ou assentos de visualização/colaboração:**
+- Até 6 chamadas de ferramenta por mês
+
+**Assento Dev ou Full no plano Professional/Organization/Enterprise:**
+- Limites de taxa por minuto (mais generosos)
+
+Se atingir os limites, aguarde alguns minutos antes de fazer solicitações adicionais.
+
+---
+
+## Uso Avançado
+
+### Criar Documentação a Partir de Designs
+
+```
+Revise todos os textos neste recurso: [link]
+
+Crie um documento de padrões de conteúdo mostrando:
+- Padrões comuns que usamos (botões, erros, estados vazios)
+- Características de voz
+- Convenções de terminologia
+- Exemplos do que fazer/evitar
+
+Formate como uma seção do guia de estilo de conteúdo.
+```
+
+### Gerar Textos de Teste
+
+```
+Preciso de textos de placeholder para este wireframe: [link]
+
+Gere textos de UX realistas para todos os elementos de texto seguindo nossa voz:
+- Útil, profissional, encorajador
+- Nível de leitura: equivalente ao 8º/9º ano
+- Mantenha os rótulos dos botões com menos de 25 caracteres
+```
+
+### Preparação para Localização
+
+```
+Revise este design para compatibilidade com tradução: [link]
+
+Verifique:
+- Espaço para expansão de texto (o alemão expande 30 a 40%)
+- Expressões idiomáticas ou referências culturais a evitar
+- Texto fixo em botões que deveria ser dinâmico
+- Limites de caracteres que podem quebrar em outros idiomas
+```
+
+---
+
+## Recursos
+
+- **Documentação do Figma MCP**: [developers.figma.com/docs/figma-mcp-server](https://developers.figma.com/docs/figma-mcp-server/)
+- **Guia de MCP do Claude Code**: Digite `/help mcp` no Claude Code
+- **Documentação da Skill de UX Writing**: Consulte o README.md principal
 
 ---
 
 ## Feedback
 
-Have ideas for improving this integration? Open an issue or contribute to the repository. We'd especially love to hear:
-- Real-world workflows that work well
-- Examples of great UX writing improvements from Figma designs
-- Tips for content design teams using this integration
+Tem ideias para melhorar esta integração? Abra uma issue ou contribua com o repositório. Adoraríamos receber:
+- Fluxos de trabalho reais que funcionam bem
+- Exemplos de ótimas melhorias de UX Writing de designs do Figma
+- Dicas para equipes de design de conteúdo usando esta integração
 
 ---
 
-**Happy designing and writing!** 🎨✍️
+**Bons designs e boas escritas!** 🎨✍️
