@@ -1,185 +1,185 @@
-# Empty State Template
+# Modelo de Estado Vazio
 
-Use this template to guide users when content is absent and help them take action to populate the space.
+Use este modelo para orientar os usuários quando o conteúdo está ausente e ajudá-los a tomar uma ação para preencher o espaço.
 
-## Structure
-
-```
-[Title explaining the empty state] [Brief explanation or encouragement] [Clear call to action]
-```
-
-## Template Types
-
-### First-Use Empty State
-**Purpose**: Guide new users to populate content
-**Tone**: Inviting, encouraging, clear on benefit
+## Estrutura
 
 ```
-**Title**: [What's empty]
-**Body**: [Brief benefit of adding content]
-**Button**: [Specific action to populate]
+[Título explicando o estado vazio] [Breve explicação ou encorajamento] [Chamada para ação clara]
 ```
 
-**Example:**
-```
-**Title**: No projects yet
-**Body**: Create your first project to start organizing work.
-**Button**: Create project
-```
+## Tipos de Modelo
 
----
-
-### User-Cleared Empty State
-**Purpose**: Confirm completion, positive reinforcement
-**Tone**: Positive, celebratory (appropriately)
+### Estado Vazio de Primeiro Uso
+**Objetivo**: Orientar novos usuários a popular o conteúdo
+**Tom**: Convidativo, encorajador, claro sobre o benefício
 
 ```
-**Title**: [Positive completion statement]
-**Body**: [Optional: What happens next or when new content appears]
+**Título**: [O que está vazio]
+**Corpo**: [Breve benefício de adicionar conteúdo]
+**Botão**: [Ação específica para popular]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: You're all caught up
-**Body**: New tasks will appear here when they're assigned to you.
+**Título**: Nenhum projeto ainda
+**Corpo**: Crie seu primeiro projeto para começar a organizar o trabalho.
+**Botão**: Criar projeto
 ```
 
 ---
 
-### Error/No Results Empty State  
-**Purpose**: Suggest alternatives when search/filter returns nothing
-**Tone**: Helpful, solution-focused
+### Estado Vazio Limpo pelo Usuário
+**Objetivo**: Confirmar a conclusão, reforço positivo
+**Tom**: Positivo, comemorativo (quando apropriado)
 
 ```
-**Title**: [What wasn't found]
-**Body**: [Suggestion to modify or alternative action]
-**Button**: [Alternative action]
+**Título**: [Declaração positiva de conclusão]
+**Corpo**: [Opcional: O que acontece a seguir ou quando novo conteúdo aparece]
 ```
 
-**Example:**
+**Exemplo:**
 ```
-**Title**: No results for "vintage cameras"
-**Body**: Try different keywords or browse all items.
-**Button**: Browse all items
+**Título**: Tudo em dia
+**Corpo**: Novas tarefas aparecerão aqui quando forem atribuídas a você.
 ```
 
 ---
 
-## Empty State Checklist
+### Estado Vazio de Erro/Sem Resultados
+**Objetivo**: Sugerir alternativas quando busca/filtro não retorna nada
+**Tom**: Prestativo, focado em soluções
 
-Before finalizing an empty state, verify:
-
-- [ ] **Clear context** — User knows what's empty and why
-- [ ] **Actionable** — Provides specific next step
-- [ ] **Appropriate tone** — Matches emotional context
-- [ ] **Value-focused** — Shows benefit of taking action
-- [ ] **Concise** — Brief enough to scan quickly
-- [ ] **Avoids negativity** — No "nothing here" or "you have no..."
-
-## Content Patterns by Type
-
-### First-Use (Onboarding)
-**Pattern**: "No [content] yet. [Benefit statement]. [Action]"
-
-Examples:
-- "No contacts yet. Import contacts to start messaging. **Import contacts**"
-- "No favorites saved. Save items to find them quickly later. **Browse items**"
-- "No team members yet. Invite people to collaborate on projects. **Invite team**"
-
-### User-Cleared (Completion)
-**Pattern**: "All [done/complete/caught up]. [Optional: when more appears]"
-
-Examples:
-- "All tasks complete. New tasks appear when teammates assign them to you."
-- "Inbox zero! You've read all your messages."
-- "You're all set. Check back tomorrow for new recommendations."
-
-### No Results (Search/Filter)
-**Pattern**: "No [content] match [criteria]. [Suggestion]. [Alternative]"
-
-Examples:
-- "No files match your search. Try different keywords or **view all files**."
-- "No events this month. **See upcoming events** or **create an event**."
-- "No team members match these filters. **Clear filters** to see all members."
-
-### Permission/Access Required
-**Pattern**: "[Content] isn't available. [Why]. [How to get access]"
-
-Examples:
-- "Reports aren't available yet. Upgrade to Premium to access detailed analytics. **View plans**"
-- "This folder is private. Ask the owner to share it with you."
-- "Calendar events are hidden. Enable calendar sync in **settings** to see events."
-
-## Voice Variations
-
-### Professional/B2B Product
 ```
-**Title**: No documents uploaded
-**Body**: Upload files to share with your team.
-**Button**: Upload document
+**Título**: [O que não foi encontrado]
+**Corpo**: [Sugestão para modificar ou ação alternativa]
+**Botão**: [Ação alternativa]
 ```
 
-### Consumer/Friendly Product
+**Exemplo:**
 ```
-**Title**: Nothing here yet!
-**Body**: Start adding favorites to build your collection.
-**Button**: Find favorites
-```
-
-### Serious/High-Stakes Product
-```
-**Title**: No alerts
-**Body**: Your systems are running normally.
+**Título**: Nenhum resultado para "câmeras vintage"
+**Corpo**: Tente palavras diferentes ou navegue por todos os itens.
+**Botão**: Ver todos os itens
 ```
 
-## Illustration Guidance
+---
 
-When working with designers on empty state illustrations:
+## Checklist de Estado Vazio
 
-**First-use**: Optimistic, inviting imagery (open boxes, blank canvases, starting points)
-**User-cleared**: Positive, completion imagery (checkmarks, clean spaces, celebrations)
-**No results**: Neutral, helpful imagery (search icons, magnifying glasses, directional arrows)
+Antes de finalizar um estado vazio, verifique:
 
-## Common Mistakes to Avoid
+- [ ] **Contexto claro** — O usuário sabe o que está vazio e por quê
+- [ ] **Acionável** — Fornece um próximo passo específico
+- [ ] **Tom adequado** — Corresponde ao contexto emocional
+- [ ] **Focado no valor** — Mostra o benefício de tomar a ação
+- [ ] **Conciso** — Breve o suficiente para ser escaneado rapidamente
+- [ ] **Evita negatividade** — Sem "nada aqui" ou "você não tem..."
 
-❌ **Negative framing**: "You have no contacts"
-✅ **Neutral/positive**: "No contacts yet"
+## Padrões de Conteúdo por Tipo
 
-❌ **No guidance**: "Empty"
-✅ **Actionable**: "No contacts yet. Import to get started."
+### Primeiro Uso (Onboarding)
+**Padrão**: "Nenhum(a) [conteúdo] ainda. [Declaração de benefício]. [Ação]"
 
-❌ **Multiple CTAs**: Three different buttons competing
-✅ **Single primary CTA**: One clear next action
+Exemplos:
+- "Nenhum contato ainda. Importe contatos para começar a enviar mensagens. **Importar contatos**"
+- "Nenhum favorito salvo. Salve itens para encontrá-los rapidamente depois. **Explorar itens**"
+- "Nenhum membro da equipe ainda. Convide pessoas para colaborar nos projetos. **Convidar equipe**"
 
-❌ **Too much text**: Long paragraph explaining the feature
-✅ **Concise**: One sentence benefit, clear button
+### Limpo pelo Usuário (Conclusão)
+**Padrão**: "Tudo [feito/completo/em dia]. [Opcional: quando mais aparece]"
 
-❌ **Technical**: "No records found in database"
-✅ **Human**: "No projects found"
+Exemplos:
+- "Todas as tarefas concluídas. Novas tarefas aparecem quando os colegas as atribuírem a você."
+- "Caixa de entrada zerada! Você leu todas as suas mensagens."
+- "Está tudo certo. Volte amanhã para novas recomendações."
 
-## Quick Fill Template
+### Sem Resultados (Busca/Filtro)
+**Padrão**: "Nenhum(a) [conteúdo] corresponde a [critério]. [Sugestão]. [Alternativa]"
 
-Use this for rapid empty state drafting:
+Exemplos:
+- "Nenhum arquivo corresponde à sua busca. Tente palavras diferentes ou **ver todos os arquivos**."
+- "Nenhum evento este mês. **Ver eventos futuros** ou **criar um evento**."
+- "Nenhum membro da equipe corresponde a esses filtros. **Limpar filtros** para ver todos."
 
-**Empty state type:** (First-use / User-cleared / No results / Permission)
-**What's empty:**
-**Why it's empty:**
-**What user should do:**
-**User benefit:**
+### Permissão/Acesso Necessário
+**Padrão**: "[Conteúdo] não está disponível. [Por quê]. [Como obter acesso]"
 
-**Draft:**
-**Title**: [What's empty]
-**Body**: [Benefit of action or what happens next]
-**Button**: [Specific action]
+Exemplos:
+- "Relatórios ainda não disponíveis. Atualize para o Premium para acessar análises detalhadas. **Ver planos**"
+- "Esta pasta é privada. Peça ao dono para compartilhá-la com você."
+- "Eventos do calendário estão ocultos. Ative a sincronização do calendário em **configurações** para ver os eventos."
 
-**Example filled:**
-- Type: First-use
-- What's empty: Saved reports
-- Why: New user
-- What to do: Create or save a report
-- Benefit: Quick access to important data
+## Variações de Voz
 
-Draft:
-**Title**: No saved reports yet
-**Body**: Save reports to access your most important data quickly.
-**Button**: Create report
+### Produto Profissional/B2B
+```
+**Título**: Nenhum documento enviado
+**Corpo**: Envie arquivos para compartilhar com sua equipe.
+**Botão**: Enviar documento
+```
+
+### Produto para Consumidor/Amigável
+```
+**Título**: Nada aqui ainda!
+**Corpo**: Comece a adicionar favoritos para criar sua coleção.
+**Botão**: Descobrir favoritos
+```
+
+### Produto Sério/Alto Risco
+```
+**Título**: Nenhum alerta
+**Corpo**: Seus sistemas estão funcionando normalmente.
+```
+
+## Orientação para Ilustrações
+
+Ao trabalhar com designers em estados vazios:
+
+**Primeiro uso**: Imagens otimistas e convidativas (caixas abertas, telas em branco, pontos de partida)
+**Limpo pelo usuário**: Imagens positivas de conclusão (marcas de verificação, espaços limpos, celebrações)
+**Sem resultados**: Imagens neutras e úteis (ícones de busca, lupas, setas direcionais)
+
+## Erros Comuns a Evitar
+
+❌ **Enquadramento negativo**: "Você não tem contatos"
+✅ **Neutro/positivo**: "Nenhum contato ainda"
+
+❌ **Sem orientação**: "Vazio"
+✅ **Acionável**: "Nenhum contato ainda. Importe para começar."
+
+❌ **Múltiplos CTAs**: Três botões diferentes competindo
+✅ **CTA primário único**: Uma próxima ação clara
+
+❌ **Muito texto**: Longo parágrafo explicando o recurso
+✅ **Conciso**: Uma frase de benefício, botão claro
+
+❌ **Técnico**: "Nenhum registro encontrado no banco de dados"
+✅ **Humano**: "Nenhum projeto encontrado"
+
+## Modelo de Preenchimento Rápido
+
+Use este modelo para rascunhar estados vazios rapidamente:
+
+**Tipo de estado vazio:** (Primeiro uso / Limpo pelo usuário / Sem resultados / Permissão)
+**O que está vazio:**
+**Por que está vazio:**
+**O que o usuário deve fazer:**
+**Benefício para o usuário:**
+
+**Rascunho:**
+**Título**: [O que está vazio]
+**Corpo**: [Benefício da ação ou o que acontece a seguir]
+**Botão**: [Ação específica]
+
+**Exemplo preenchido:**
+- Tipo: Primeiro uso
+- O que está vazio: Relatórios salvos
+- Por quê: Novo usuário
+- O que fazer: Criar ou salvar um relatório
+- Benefício: Acesso rápido a dados importantes
+
+Rascunho:
+**Título**: Nenhum relatório salvo ainda
+**Corpo**: Salve relatórios para acessar seus dados mais importantes rapidamente.
+**Botão**: Criar relatório
