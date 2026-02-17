@@ -1,8 +1,8 @@
-# Melhorias de UX Writing do Mundo Real
+# Melhorias do mundo real
 
-Este documento mostra transformações reais de textos de UX com pontuação em relação aos quatro padrões de qualidade: Proposital, Conciso, Conversacional e Claro.
+Este documento mostra transformações reais de textos de UX com scoring/pontuação em relação aos quatro padrões de qualidade: Proposital, Conciso, Conversacional e Claro.
 
-## Erro no Checkout de E-commerce
+## Erro no checkout de E-commerce
 
 ### Antes
 "Ocorreu um erro ao processar o seu pagamento. Tente novamente mais tarde ou entre em contato com o suporte ao cliente caso o problema persista."
@@ -30,7 +30,7 @@ Este documento mostra transformações reais de textos de UX com pontuação em 
 
 ---
 
-## Estado Vazio em Dashboard de SaaS
+## Estado vazio/empty state em Dashboard de SaaS
 
 ### Antes
 "Nenhum dado disponível."
@@ -44,21 +44,21 @@ Este documento mostra transformações reais de textos de UX com pontuação em 
 **Geral**: 4/10 — Precisa de trabalho significativo
 
 ### Depois
-"Nenhum dado ainda. Conecte sua conta para ver os insights."
+"Para acessar os dados, faça login em sua conta."
 
 **Análise:**
 - **Proposital**: 9/10 — Explica o estado e fornece CTA claro
 - **Conciso**: 9/10 — 9 palavras, inclui ação
-- **Conversacional**: 8/10 — "ainda" cria expectativa de valor futuro
+- **Conversacional**: 8/10 — cria expectativa de valor futuro
 - **Claro**: 9/10 — Diz exatamente o que fazer
 
 **Geral**: 9/10 — Excelente
 
-**Por que funciona**: "Ainda" cria expectativa de valor futuro, o CTA é específico e acionável.
+**Por que funciona**: o CTA é específico e acionável.
 
 ---
 
-## Solicitação de Permissão em Aplicativo Mobile
+## Permissão em App no celular
 
 ### Antes
 "'NomeDoApp' Gostaria de Acessar Sua Localização"
@@ -88,7 +88,7 @@ Este documento mostra transformações reais de textos de UX com pontuação em 
 
 ---
 
-## Confirmação de Exclusão de Conta
+## Confirmar exclusão de Conta
 
 ### Antes
 "Tem certeza de que deseja excluir sua conta? Essa ação não pode ser desfeita. Todos os seus dados serão excluídos permanentemente."
@@ -102,7 +102,7 @@ Este documento mostra transformações reais de textos de UX com pontuação em 
 **Geral**: 6/10 — Adequado, mas pode ser melhorado
 
 ### Depois
-"Excluir sua conta? Você perderá todos os dados e isso não pode ser desfeito."
+"Excluir sua conta? Você perderá todos os dados. Essa ação não pode ser desfeita."
 
 **Análise:**
 - **Proposital**: 8/10 — Aviso claro sem ser excessivo
@@ -145,7 +145,7 @@ Use uma combinação de letras, números e símbolos"
 
 ---
 
-## Confirmação de Descadastro de Newsletter
+## Confirmar descadastro de Newsletter
 
 ### Antes
 "Você foi descadastrado com sucesso da nossa lista de e-mails. Você não receberá mais e-mails nossos. Obrigado pela sua participação."
@@ -159,7 +159,7 @@ Use uma combinação de letras, números e símbolos"
 **Geral**: 4/10 — Precisa de trabalho
 
 ### Depois
-"Você saiu da lista. Pode se recadastrar a qualquer momento em Configurações."
+"Você não receberá mais nossos e-mails. Volte a qualquer momento acessando Configurações."
 
 **Análise:**
 - **Proposital**: 9/10 — Confirma a ação, oferece saída fácil
@@ -173,10 +173,10 @@ Use uma combinação de letras, números e símbolos"
 
 ---
 
-## Progresso de Upload de Arquivo
+## Progresso de upload de arquivo
 
 ### Antes
-"Arquivo sendo carregado... Aguarde."
+"Arquivo sendo carregado. Aguarde."
 
 **Análise:**
 - **Proposital**: 5/10 — Mostra o status, mas sem estimativa de tempo
@@ -187,7 +187,7 @@ Use uma combinação de letras, números e símbolos"
 **Geral**: 6/10 — Adequado
 
 ### Depois
-"Enviando relatorio.pdf... Quase pronto"
+"Enviando [nomedoarquivo.pdf]... Quase pronto"
 
 **Análise:**
 - **Proposital**: 8/10 — Mostra o nome do arquivo e progresso tranquilizador
@@ -201,7 +201,7 @@ Use uma combinação de letras, números e símbolos"
 
 ---
 
-## Padrões Comuns Entre Estas Melhorias
+## Padrões comuns entre as melhorias
 
 1. **Comece com especificidade, não com generalidades** — "Não conseguimos processar seu pagamento" vs. "Ocorreu um erro"
 2. **Mostre o benefício do usuário antes da necessidade do sistema** — "Encontre cafés" antes de "acessar localização"
@@ -212,10 +212,9 @@ Use uma combinação de letras, números e símbolos"
 7. **Forneça caminhos de recuperação** — Sempre diga aos usuários o que fazer a seguir
 8. **Respeite as decisões do usuário** — Não culpe quem opta por sair
 
-## Perguntas Rápidas de Autoavaliação
+## Perguntas de Autoavaliação
 
-Use estas para melhorar qualquer texto de UX:
-
+Use estas para melhorar seu texto de UX:
 1. **Posso remover palavras sem perder o significado?**
 2. **Isso explica o que o usuário precisa saber agora?**
 3. **Eu diria isso em voz alta para um amigo?**
