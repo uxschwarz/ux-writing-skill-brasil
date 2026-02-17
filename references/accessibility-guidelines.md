@@ -1,390 +1,390 @@
-# Accessibility Guidelines for UX Writing
+# Diretrizes de Acessibilidade para UX Writing
 
-Writing accessible content ensures all users—including those using assistive technology, experiencing cognitive differences, or facing situational limitations—can understand and interact with your product.
+Escrever conteúdo acessível garante que todos os usuários — incluindo os que utilizam tecnologia assistiva, têm diferenças cognitivas ou enfrentam limitações situacionais — possam entender e interagir com seu produto.
 
-## Core Principles
+## Princípios Fundamentais
 
-### 1. Perceivable
-Users must be able to perceive the information being presented.
+### 1. Perceptível
+Os usuários devem conseguir perceber as informações apresentadas.
 
-**For UX Writers:**
-- Provide text alternatives for non-text content
-- Don't rely on color alone to convey meaning
-- Ensure sufficient color contrast (WCAG AA: 4.5:1 for body text, 3:1 for large text)
-- Write clear, descriptive labels for all interactive elements
+**Para UX Writers:**
+- Forneça alternativas em texto para conteúdo não textual
+- Não dependa apenas de cor para transmitir significado
+- Garanta contraste de cor suficiente (WCAG AA: 4,5:1 para texto de corpo, 3:1 para texto grande)
+- Escreva rótulos claros e descritivos para todos os elementos interativos
 
-### 2. Operable
-Users must be able to operate the interface.
+### 2. Operável
+Os usuários devem conseguir operar a interface.
 
-**For UX Writers:**
-- Write clear button labels that describe the action
-- Provide skip links for navigation ("Skip to main content")
-- Write descriptive link text (not "click here")
-- Use consistent terminology for navigation
+**Para UX Writers:**
+- Escreva rótulos de botão claros que descrevam a ação
+- Forneça links de navegação ("Ir para o conteúdo principal")
+- Escreva textos descritivos para links (não "clique aqui")
+- Use terminologia consistente para a navegação
 
-### 3. Understandable
-Users must be able to understand the information and interface.
+### 3. Compreensível
+Os usuários devem conseguir entender as informações e a interface.
 
-**For UX Writers:**
-- Use plain language (7th-8th grade reading level)
-- Keep sentences short (8-14 words for critical content)
-- Define technical terms on first use
-- Provide clear instructions and error messages
+**Para UX Writers:**
+- Use linguagem simples (nível equivalente ao 8º ou 9º ano)
+- Mantenha frases curtas (8 a 14 palavras para conteúdo crítico)
+- Defina termos técnicos na primeira ocorrência
+- Forneça instruções claras e mensagens de erro
 
-### 4. Robust
-Content must work with current and future assistive technologies.
+### 4. Robusto
+O conteúdo deve funcionar com tecnologias assistivas atuais e futuras.
 
-**For UX Writers:**
-- Write proper labels for form fields
-- Structure content with clear headings
-- Use semantic HTML-friendly language
-- Ensure error messages are programmatically associated with fields
+**Para UX Writers:**
+- Escreva rótulos adequados para campos de formulário
+- Estruture o conteúdo com títulos claros
+- Use linguagem compatível com HTML semântico
+- Garanta que as mensagens de erro estejam programaticamente associadas aos campos
 
 ---
 
-## Screen Reader Optimization
+## Otimização para Leitores de Tela
 
-### How Screen Readers Work
-Screen readers announce content linearly, reading:
-1. Element type (button, link, heading, form field)
-2. Label or text content
-3. State (expanded, collapsed, selected, required)
+### Como os Leitores de Tela Funcionam
+Os leitores de tela anunciam o conteúdo linearmente, lendo:
+1. Tipo do elemento (botão, link, título, campo de formulário)
+2. Rótulo ou conteúdo do texto
+3. Estado (expandido, recolhido, selecionado, obrigatório)
 
-### Writing for Screen Readers
+### Escrevendo para Leitores de Tela
 
-**Buttons**
-- ❌ Poor: "Submit" (context missing)
-- ✅ Good: "Submit application"
-- ✅ Better: "Submit job application"
+**Botões**
+- ❌ Ruim: "Enviar" (contexto ausente)
+- ✅ Bom: "Enviar candidatura"
+- ✅ Melhor: "Enviar candidatura de emprego"
 
 **Links**
-- ❌ Poor: "Click here to learn more"
-- ❌ Poor: "Read more" (about what?)
-- ✅ Good: "Learn about our privacy policy"
-- ✅ Good: "View pricing details"
+- ❌ Ruim: "Clique aqui para saber mais"
+- ❌ Ruim: "Leia mais" (sobre o quê?)
+- ✅ Bom: "Saiba mais sobre nossa política de privacidade"
+- ✅ Bom: "Ver detalhes do plano"
 
-**Form Fields**
-- ❌ Poor: Placeholder text as only label
-- ✅ Good: Visible label + optional placeholder
-- ✅ Example: Label: "Email address", Placeholder: "name@example.com"
+**Campos de Formulário**
+- ❌ Ruim: Texto de placeholder como único rótulo
+- ✅ Bom: Rótulo visível + placeholder opcional
+- ✅ Exemplo: Rótulo: "Endereço de e-mail", Placeholder: "nome@exemplo.com.br"
 
-**Error Messages**
-Screen readers read the field label + error message together, so write errors that make sense in that context.
-- ❌ Poor: "Invalid" (announced as "Email address, invalid")
-- ✅ Good: "Must include @" (announced as "Email address, must include @")
-- ✅ Better: "Email must include @" (complete sentence)
+**Mensagens de Erro**
+Os leitores de tela leem o rótulo do campo + mensagem de erro juntos, então escreva erros que façam sentido nesse contexto.
+- ❌ Ruim: "Inválido" (anunciado como "Endereço de e-mail, inválido")
+- ✅ Bom: "Deve conter @" (anunciado como "Endereço de e-mail, deve conter @")
+- ✅ Melhor: "O e-mail deve conter @" (frase completa)
 
-**Images and Icons**
-- Write meaningful alt text that conveys purpose
-- ❌ Poor: "image.png"
-- ❌ Poor: "icon"
-- ✅ Good: "Success" (for checkmark icon)
-- ✅ Good: "Error: Payment failed" (for error icon)
+**Imagens e Ícones**
+- Escreva texto alternativo significativo que transmita o propósito
+- ❌ Ruim: "imagem.png"
+- ❌ Ruim: "ícone"
+- ✅ Bom: "Sucesso" (para ícone de marca de verificação)
+- ✅ Bom: "Erro: Pagamento falhou" (para ícone de erro)
 
-**ARIA Labels**
-Use ARIA labels when visual context isn't available to screen readers:
-- Search button with only magnifying glass icon: aria-label="Search"
-- Close button with only X icon: aria-label="Close dialog"
-- Social media links with only icons: aria-label="Visit us on Twitter"
-
----
-
-## Cognitive Accessibility
-
-### Comprehension Research
-- **8 words or fewer**: 100% comprehension
-- **14 words or fewer**: 90% comprehension
-- **25+ words**: Comprehension drops significantly
-
-### Best Practices
-
-**Keep Sentences Short**
-- Critical instructions: 8-14 words maximum
-- Error messages: 12-18 words (including solution)
-- General content: 15-20 words average
-- Complex explanations: Break into multiple short sentences
-
-**Use Simple Language**
-- Choose common words over complex ones
-  - ❌ "Utilize" → ✅ "Use"
-  - ❌ "Purchase" → ✅ "Buy"
-  - ❌ "Terminate" → ✅ "End"
-- Avoid jargon unless your audience expects it
-- Define technical terms on first use
-
-**Create Scannable Content**
-- Use clear headings (H1, H2, H3 hierarchy)
-- Break content into short paragraphs (3-4 lines max)
-- Use bulleted lists for related items
-- Front-load important information
-
-**Provide Consistent Patterns**
-- Use the same words for the same actions
-- Place elements in predictable locations
-- Follow established UI patterns
-- Reduce cognitive load in high-stress moments (errors, confirmations)
-
-**Reduce Memory Load**
-- Don't make users remember information from previous screens
-- Repeat critical information when needed
-- Provide context at the point of action
-- Use progressive disclosure for complex flows
+**Rótulos ARIA**
+Use rótulos ARIA quando o contexto visual não está disponível para leitores de tela:
+- Botão de busca com apenas ícone de lupa: aria-label="Buscar"
+- Botão de fechar com apenas X: aria-label="Fechar diálogo"
+- Links de redes sociais com apenas ícones: aria-label="Visite-nos no Instagram"
 
 ---
 
-## Plain Language Guidelines
+## Acessibilidade Cognitiva
 
-### Reading Level Targets
+### Pesquisa sobre Compreensão
+- **8 palavras ou menos**: 100% de compreensão
+- **14 palavras ou menos**: 90% de compreensão
+- **25+ palavras**: A compreensão cai significativamente
 
-**General Public**
-- Target: 7th-8th grade (Flesch-Kincaid)
-- Sentence length: 15-20 words average
-- Word choice: Common, everyday words
+### Boas Práticas
 
-**Professional Tools**
-- Target: 9th-10th grade
-- Sentence length: 20-25 words maximum
-- Word choice: Industry terms okay if audience expects them
+**Mantenha as Frases Curtas**
+- Instruções críticas: no máximo 8 a 14 palavras
+- Mensagens de erro: 12 a 18 palavras (incluindo a solução)
+- Conteúdo geral: média de 15 a 20 palavras
+- Explicações complexas: divida em múltiplas frases curtas
 
-**Technical Products**
-- Target: 10th-11th grade
-- Sentence length: 25 words maximum
-- Word choice: Technical terms with clear definitions
+**Use Linguagem Simples**
+- Escolha palavras comuns em vez de complexas
+  - ❌ "Utilizar" → ✅ "Usar"
+  - ❌ "Adquirir" → ✅ "Comprar"
+  - ❌ "Encerrar" → ✅ "Fechar"
+- Evite jargões, a menos que seu público os espere
+- Defina termos técnicos na primeira ocorrência
 
-### Plain Language Techniques
+**Crie Conteúdo Escaneável**
+- Use títulos claros (hierarquia H1, H2, H3)
+- Divida o conteúdo em parágrafos curtos (máximo 3 a 4 linhas)
+- Use listas com marcadores para itens relacionados
+- Coloque as informações importantes no início
 
-**Active Voice (85% of the time)**
-- ❌ Passive: "Your account was created"
-- ✅ Active: "We created your account"
-- ❌ Passive: "Payment will be processed"
-- ✅ Active: "We'll process your payment"
+**Forneça Padrões Consistentes**
+- Use as mesmas palavras para as mesmas ações
+- Posicione os elementos em locais previsíveis
+- Siga padrões de UI estabelecidos
+- Reduza a carga cognitiva em momentos de alta tensão (erros, confirmações)
 
-**Concrete Verbs**
-- ❌ Weak: "Make a selection"
-- ✅ Strong: "Choose"
-- ❌ Weak: "Provide notification"
-- ✅ Strong: "Notify"
-
-**Positive Framing**
-- ❌ Negative: "Don't forget to save"
-- ✅ Positive: "Remember to save"
-- ❌ Negative: "You can't proceed without..."
-- ✅ Positive: "To proceed, please..."
-
-**Avoid Idioms and Metaphors**
-These don't translate well and confuse non-native speakers:
-- ❌ "Get the ball rolling"
-- ❌ "Think outside the box"
-- ❌ "Hit the ground running"
-- ✅ Use literal language instead
+**Reduza a Carga de Memória**
+- Não faça os usuários lembrarem de informações de telas anteriores
+- Repita informações críticas quando necessário
+- Forneça contexto no ponto de ação
+- Use divulgação progressiva para fluxos complexos
 
 ---
 
-## Multi-Modal Communication
+## Diretrizes de Linguagem Simples
 
-### Don't Rely on Color Alone
+### Metas de Nível de Leitura
 
-**Bad Example:**
-- Red text: "Email"
-- (Users with color blindness can't distinguish the error)
+**Público Geral**
+- Meta: equivalente ao 8º ou 9º ano (Flesch-Kincaid)
+- Comprimento de frase: média de 15 a 20 palavras
+- Escolha de palavras: comuns, do cotidiano
 
-**Good Example:**
-- "Error: Email must include @" + red icon
-- (Text provides meaning independent of color)
+**Ferramentas Profissionais**
+- Meta: equivalente ao 1º ou 2º ano do Ensino Médio
+- Comprimento de frase: máximo 20 a 25 palavras
+- Escolha de palavras: termos do setor são aceitáveis se o público os espera
 
-### Redundant Cues
+**Produtos Técnicos**
+- Meta: equivalente ao 2º ou 3º ano do Ensino Médio
+- Comprimento de frase: máximo 25 palavras
+- Escolha de palavras: termos técnicos com definições claras
 
-Provide multiple ways to perceive important information:
+### Técnicas de Linguagem Simples
 
-**Status Messages**
-- Color + icon + text
-- Example: Green checkmark + "Success: Changes saved"
+**Voz Ativa (85% do tempo)**
+- ❌ Passiva: "Sua conta foi criada"
+- ✅ Ativa: "Criamos sua conta"
+- ❌ Passiva: "O pagamento será processado"
+- ✅ Ativa: "Vamos processar seu pagamento"
 
-**Required Fields**
-- Asterisk + "required" label + error on submission
-- Example: "Email address *" with note "* Required field"
+**Verbos Concretos**
+- ❌ Fraco: "Faça uma seleção"
+- ✅ Forte: "Escolha"
+- ❌ Fraco: "Forneça uma notificação"
+- ✅ Forte: "Notifique"
 
-**Error States**
-- Color + icon + error message + border
-- Example: Red border + error icon + "Email must include @"
+**Enquadramento Positivo**
+- ❌ Negativo: "Não se esqueça de salvar"
+- ✅ Positivo: "Lembre-se de salvar"
+- ❌ Negativo: "Você não pode continuar sem..."
+- ✅ Positivo: "Para continuar, por favor..."
 
-**Links vs Plain Text**
-- Color + underline (or other visual distinction)
-- Ensure 3:1 contrast ratio between link and body text
-
----
-
-## Forms and Input Accessibility
-
-### Labels
-
-**Always Visible**
-- Don't hide labels on focus
-- Don't use placeholder as only label
-- Keep labels adjacent to fields
-
-**Clear and Descriptive**
-- ❌ Poor: "Name"
-- ✅ Good: "Full name"
-- ✅ Better: "Full name (as it appears on your ID)"
-
-### Instructions
-
-**Provide Before Input**
-- Explain requirements before user types
-- Keep instructions visible as user completes field
-
-**Be Specific**
-- ❌ Vague: "Enter valid email"
-- ✅ Specific: "Email must include @"
-- ✅ Example: "Email (you@example.com)"
-
-### Error Messages
-
-**Pattern: [What's wrong]. [How to fix].**
-- ❌ "Invalid"
-- ❌ "Error"
-- ✅ "Email must include @"
-- ✅ "Password must be at least 8 characters"
-
-**Timing**
-- Inline validation: Show after user completes field
-- Form-level: Show on submit, with focus moved to first error
-- Real-time: Only for format requirements (password strength)
-
-**Location**
-- Place error message near the field (above or below)
-- Ensure screen readers announce error with field label
-- Maintain error message while user corrects input
+**Evite Expressões Idiomáticas e Metáforas**
+Estas não se traduzem bem e confundem falantes não nativos:
+- ❌ "Meter a mão na massa"
+- ❌ "Virar o jogo"
+- ❌ "Estar na mesma página"
+- ✅ Use linguagem literal no lugar
 
 ---
 
-## Writing for Translation
+## Comunicação Multimodal
 
-### Keep It Simple
-- Short sentences translate more accurately
-- Simple grammar reduces translation errors
-- Common words have clearer equivalents
+### Não Dependa Apenas de Cor
 
-### Avoid Culturally-Specific References
-- ❌ "Home run" (baseball reference)
-- ❌ "The ball is in your court" (idiom)
-- ❌ "During the holidays" (varies by culture)
-- ✅ Use universal concepts
+**Exemplo Ruim:**
+- Texto vermelho: "E-mail"
+- (Usuários com daltonismo não conseguem distinguir o erro)
 
-### Plan for Text Expansion
-Text expands in translation:
-- German: +30-40%
-- French/Spanish: +15-20%
-- Italian/Portuguese: +20-25%
+**Exemplo Bom:**
+- "Erro: O e-mail deve conter @" + ícone vermelho
+- (O texto transmite o significado independentemente da cor)
 
-**Design Implications:**
-- Buttons: Allow for 150-200% text expansion
-- Titles: Plan for 130-150% expansion
-- Character limits: Test with longest likely translation
+### Sinais Redundantes
 
-### Gender-Neutral Language
-- Use "they/them" for unknown subjects
-- Avoid gendered job titles
-  - ❌ "Policeman" → ✅ "Police officer"
-  - ❌ "Stewardess" → ✅ "Flight attendant"
-- Structure sentences to avoid gender assumptions
+Forneça múltiplas formas de perceber informações importantes:
 
----
+**Mensagens de Status**
+- Cor + ícone + texto
+- Exemplo: Marca de verificação verde + "Sucesso: Alterações salvas"
 
-## High-Stress Context Accessibility
+**Campos Obrigatórios**
+- Asterisco + rótulo "obrigatório" + erro ao enviar
+- Exemplo: "Endereço de e-mail *" com nota "* Campo obrigatório"
 
-Users experiencing stress, frustration, or urgency have reduced cognitive capacity.
+**Estados de Erro**
+- Cor + ícone + mensagem de erro + borda
+- Exemplo: Borda vermelha + ícone de erro + "O e-mail deve conter @"
 
-### Error Messages
-- **Be immediately clear**: State the problem upfront
-- **Provide quick recovery**: One-step solution when possible
-- **Avoid blame**: Never use judgmental language
-- **Stay calm**: Reassuring tone without being condescending
-
-### Time-Sensitive Actions
-- **Clear deadlines**: Specific times, not "soon"
-- **Visible countdown**: "5 minutes remaining"
-- **Obvious actions**: Bold, clear CTAs
-
-### High-Stakes Decisions
-- **Transparent consequences**: "You'll lose all data"
-- **Reversibility**: State if action can be undone
-- **Easy exit**: Clear "Cancel" or "Go back" options
+**Links vs. Texto Simples**
+- Cor + sublinhado (ou outra distinção visual)
+- Garanta proporção de contraste de 3:1 entre link e texto de corpo
 
 ---
 
-## Testing for Accessibility
+## Acessibilidade em Formulários e Entradas
 
-### Automated Tools
-- **WAVE**: Web accessibility evaluation tool
-- **axe DevTools**: Browser extension for accessibility testing
-- **Lighthouse**: Built into Chrome DevTools
+### Rótulos
 
-### Manual Testing
+**Sempre Visíveis**
+- Não oculte rótulos ao focar
+- Não use placeholder como único rótulo
+- Mantenha os rótulos adjacentes aos campos
 
-**Screen Reader Test**
-- Turn on VoiceOver (Mac) or NVDA (Windows)
-- Navigate using keyboard only
-- Verify all content is announced meaningfully
-- Check that error messages are clear when announced
+**Claros e Descritivos**
+- ❌ Ruim: "Nome"
+- ✅ Bom: "Nome completo"
+- ✅ Melhor: "Nome completo (como aparece no seu documento)"
 
-**Readability Test**
-- Hemingway Editor: Highlights complex sentences
-- Readable.com: Multiple readability scores
-- Microsoft Word: Flesch-Kincaid scoring
+### Instruções
 
-**Color Contrast Test**
+**Forneça Antes da Entrada**
+- Explique os requisitos antes de o usuário digitar
+- Mantenha as instruções visíveis enquanto o usuário preenche o campo
+
+**Seja Específico**
+- ❌ Vago: "Insira e-mail válido"
+- ✅ Específico: "O e-mail deve conter @"
+- ✅ Exemplo: "E-mail (voce@exemplo.com.br)"
+
+### Mensagens de Erro
+
+**Padrão: [O que está errado]. [Como corrigir].**
+- ❌ "Inválido"
+- ❌ "Erro"
+- ✅ "O e-mail deve conter @"
+- ✅ "A senha deve ter pelo menos 8 caracteres"
+
+**Momento**
+- Validação inline: Exiba após o usuário completar o campo
+- Nível de formulário: Exiba ao enviar, com foco movido para o primeiro erro
+- Tempo real: Apenas para requisitos de formato (força da senha)
+
+**Local**
+- Coloque a mensagem de erro próxima ao campo (acima ou abaixo)
+- Garanta que os leitores de tela anunciem o erro com o rótulo do campo
+- Mantenha a mensagem de erro enquanto o usuário corrige a entrada
+
+---
+
+## Escrevendo para Tradução
+
+### Mantenha a Simplicidade
+- Frases curtas se traduzem com mais precisão
+- Gramática simples reduz erros de tradução
+- Palavras comuns têm equivalentes mais claros
+
+### Evite Referências Culturais Específicas do Brasil
+- ❌ "Dar um jeitinho"
+- ❌ "Resolver no chute"
+- ❌ "Durante as festas de fim de ano" (varia por cultura)
+- ✅ Use conceitos universais
+
+### Planeje para Expansão de Texto
+O texto se expande na tradução:
+- Alemão: +30 a 40%
+- Francês/Espanhol: +15 a 20%
+- Italiano/Português Europeu: +5 a 10%
+
+**Implicações de Design:**
+- Botões: Permita expansão de 150 a 200% do texto
+- Títulos: Planeje para expansão de 130 a 150%
+- Limites de caracteres: Teste com a tradução mais longa provável
+
+### Linguagem Neutra em Termos de Gênero
+- Use linguagem inclusiva para sujeitos desconhecidos
+- Evite títulos de cargo com marcação de gênero
+  - ❌ "A enfermeira" → ✅ "O profissional de enfermagem"
+  - ❌ "O garçom/a garçonete" → ✅ "O atendente"
+- Prefira formas neutras quando disponíveis
+
+---
+
+## Acessibilidade em Contextos de Alta Tensão
+
+Usuários em estado de estresse, frustração ou urgência têm capacidade cognitiva reduzida.
+
+### Mensagens de Erro
+- **Seja imediatamente claro**: Declare o problema logo no início
+- **Forneça recuperação rápida**: Solução em um passo quando possível
+- **Evite culpabilizar**: Nunca use linguagem julgamental
+- **Mantenha a calma**: Tom tranquilizador sem ser condescendente
+
+### Ações com Limite de Tempo
+- **Prazos claros**: Horários específicos, não "em breve"
+- **Contagem regressiva visível**: "5 minutos restantes"
+- **Ações óbvias**: CTAs em negrito e claros
+
+### Decisões de Alto Risco
+- **Consequências transparentes**: "Você perderá todos os dados"
+- **Reversibilidade**: Informe se a ação pode ser desfeita
+- **Saída fácil**: Opções claras de "Cancelar" ou "Voltar"
+
+---
+
+## Testando Acessibilidade
+
+### Ferramentas Automatizadas
+- **WAVE**: Ferramenta de avaliação de acessibilidade web
+- **axe DevTools**: Extensão de navegador para teste de acessibilidade
+- **Lighthouse**: Integrado ao Chrome DevTools
+
+### Testes Manuais
+
+**Teste com Leitor de Tela**
+- Ative o VoiceOver (Mac) ou o NVDA (Windows)
+- Navegue usando apenas o teclado
+- Verifique se todo o conteúdo é anunciado de forma significativa
+- Confira se as mensagens de erro são claras quando anunciadas
+
+**Teste de Legibilidade**
+- Hemingway Editor: Destaca frases complexas
+- Readable.com: Múltiplas pontuações de legibilidade
+- Microsoft Word: Pontuação Flesch-Kincaid integrada
+
+**Teste de Contraste de Cor**
 - WebAIM Contrast Checker
-- Verify 4.5:1 for body text
-- Verify 3:1 for large text and UI elements
+- Verifique 4,5:1 para texto de corpo
+- Verifique 3:1 para texto grande e elementos de UI
 
-**Keyboard Navigation Test**
-- Unplug your mouse
-- Complete all tasks using only keyboard
-- Verify all interactive elements are reachable
-- Check that focus order is logical
-
----
-
-## Quick Reference Checklist
-
-### Before Publishing Any UX Text
-
-- [ ] All interactive elements have clear, descriptive labels
-- [ ] Links describe destination ("View pricing" not "Click here")
-- [ ] Error messages are specific and actionable
-- [ ] Color is not the only indicator of meaning
-- [ ] Text has sufficient contrast (4.5:1 minimum)
-- [ ] Sentences average 15-20 words or fewer
-- [ ] Reading level is appropriate for audience
-- [ ] No idioms, metaphors, or cultural references
-- [ ] Required fields are marked with more than just color
-- [ ] Form instructions appear before input fields
-- [ ] Success and error states include text, not just icons
+**Teste de Navegação por Teclado**
+- Desconecte o mouse
+- Complete todas as tarefas usando apenas o teclado
+- Verifique se todos os elementos interativos são alcançáveis
+- Confirme que a ordem de foco é lógica
 
 ---
 
-## Resources
+## Checklist de Referência Rápida
 
-### WCAG Guidelines
-- [WCAG 2.1 Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/)
-- [Understanding WCAG Success Criteria](https://www.w3.org/WAI/WCAG21/Understanding/)
+### Antes de Publicar Qualquer Texto de UX
 
-### Testing Tools
+- [ ] Todos os elementos interativos têm rótulos claros e descritivos
+- [ ] Os links descrevem o destino ("Ver planos" não "Clique aqui")
+- [ ] As mensagens de erro são específicas e acionáveis
+- [ ] A cor não é o único indicador de significado
+- [ ] O texto tem contraste suficiente (mínimo 4,5:1)
+- [ ] As frases têm em média 15 a 20 palavras ou menos
+- [ ] O nível de leitura é adequado para o público
+- [ ] Sem expressões idiomáticas, metáforas ou referências culturais
+- [ ] Os campos obrigatórios são marcados com mais do que apenas cor
+- [ ] As instruções do formulário aparecem antes dos campos de entrada
+- [ ] Os estados de sucesso e erro incluem texto, não apenas ícones
+
+---
+
+## Recursos
+
+### Diretrizes WCAG
+- [Referência Rápida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+- [Entendendo os Critérios de Sucesso do WCAG](https://www.w3.org/WAI/WCAG21/Understanding/)
+
+### Ferramentas de Teste
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 - [Hemingway Editor](http://hemingwayapp.com/)
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
-### Plain Language
-- [PlainLanguage.gov](https://www.plainlanguage.gov/)
+### Linguagem Simples
+- [PlainLanguage.gov](https://www.plainlanguage.gov/) (referência em inglês)
 - [Readable.com](https://readable.com/)
 
-### Screen Readers
-- VoiceOver (Mac/iOS): Built-in
-- NVDA (Windows): Free download
-- JAWS (Windows): Commercial
+### Leitores de Tela
+- VoiceOver (Mac/iOS): Integrado ao sistema
+- NVDA (Windows): Download gratuito
+- JAWS (Windows): Comercial
 
 ---
 
-**Remember**: Accessibility isn't a feature—it's a baseline requirement. Writing accessibly makes your product better for everyone, not just users with disabilities.
+**Lembre-se**: Acessibilidade não é um recurso — é um requisito básico. Escrever de forma acessível melhora seu produto para todos, não apenas para usuários com deficiência.
