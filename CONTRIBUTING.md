@@ -1,223 +1,223 @@
-# Contributing to UX Writing Skill
+# Contribuindo para a Skill de UX Writing
 
-Thanks for your interest in improving this skill! Contributions are welcome and appreciated.
+Obrigado pelo interesse em melhorar esta skill! Contribuições são bem-vindas e muito apreciadas.
 
-## Ways to Contribute
+## Formas de Contribuir
 
-### 1. Report Issues
-- Found a typo or error? Open an issue
-- Unclear instructions? Let us know
-- Missing a common pattern? Suggest it
+### 1. Reportar Problemas
+- Encontrou um erro de digitação? Abra uma issue
+- Instruções pouco claras? Avise-nos
+- Faltando um padrão comum? Sugira-o
 
-### 2. Share Examples
-- Real-world before/after improvements
-- Industry-specific patterns (healthcare, fintech, etc.)
-- Unique voice applications
-- Edge cases or tricky scenarios
+### 2. Compartilhar Exemplos
+- Melhorias reais de antes/depois
+- Padrões específicos por setor (saúde, fintech, etc.)
+- Aplicações únicas de voz
+- Casos extremos ou cenários difíceis
 
-### 3. Add Templates
-- New UI patterns (e.g., chat interfaces, voice assistants)
-- Specialized content types (legal, medical, technical)
-- Workflow templates
-- Evaluation frameworks
+### 3. Adicionar Templates
+- Novos padrões de UI (ex.: interfaces de chat, assistentes de voz)
+- Tipos de conteúdo especializados (jurídico, médico, técnico)
+- Templates de fluxo de trabalho
+- Frameworks de avaliação
 
-### 4. Improve Documentation
-- Clarify existing instructions
-- Add more examples to patterns
-- Translate to other languages
-- Update outdated references
+### 4. Melhorar a Documentação
+- Esclarecer instruções existentes
+- Adicionar mais exemplos aos padrões
+- Traduzir para outros idiomas
+- Atualizar referências desatualizadas
 
-### 5. Extend Reference Materials
-- Accessibility guidelines
-- Localization best practices
-- Industry-specific standards
-- Research citations
+### 5. Expandir Materiais de Referência
+- Diretrizes de acessibilidade
+- Boas práticas de localização
+- Padrões específicos do setor
+- Citações de pesquisas
 
-## For Non-Technical Contributors
+## Para Contribuidores Não Técnicos
 
-**New to GitHub?** No problem! You don't need to be a developer to contribute. Here are simple ways to share your expertise:
+**Novo no GitHub?** Sem problema! Você não precisa ser desenvolvedor para contribuir. Aqui estão formas simples de compartilhar sua expertise:
 
-### Option 1: Open an Issue
+### Opção 1: Abrir uma Issue
 
-1. **Go to the repository** on GitHub
-2. **Click the "Issues" tab** at the top
-3. **Click the green "New issue" button**
-4. **Describe your contribution**:
-   - Paste your suggested text or example
-   - Explain what it improves or adds
-   - Include any context that's helpful
-5. **Click "Submit new issue"**
+1. **Vá ao repositório** no GitHub
+2. **Clique na aba "Issues"** no topo
+3. **Clique no botão verde "New issue"**
+4. **Descreva sua contribuição**:
+   - Cole o texto ou exemplo sugerido
+   - Explique o que melhora ou adiciona
+   - Inclua qualquer contexto útil
+5. **Clique em "Submit new issue"**
 
-That's it! A maintainer will review and incorporate your contribution.
+Pronto! Um mantenedor vai revisar e incorporar sua contribuição.
 
-### Option 2: Edit Files Directly on GitHub
+### Opção 2: Editar Arquivos Diretamente no GitHub
 
-You can edit files right in your browser without installing anything:
+Você pode editar arquivos diretamente no navegador sem instalar nada:
 
-1. **Navigate to the file you want to edit** (like `examples/real-world-improvements.md`)
-2. **Click the pencil icon** (✏️) in the top right corner
-3. **Make your changes** in the editor
-4. **Scroll down** to the "Propose changes" section
-5. **Write a brief description** of what you changed
-6. **Click "Propose changes"** (green button)
-7. **Click "Create pull request"** on the next screen
+1. **Navegue até o arquivo que deseja editar** (como `examples/real-world-improvements.md`)
+2. **Clique no ícone de lápis** (✏️) no canto superior direito
+3. **Faça suas alterações** no editor
+4. **Role para baixo** até a seção "Propose changes"
+5. **Escreva uma breve descrição** do que você alterou
+6. **Clique em "Propose changes"** (botão verde)
+7. **Clique em "Create pull request"** na próxima tela
 
-GitHub will handle the technical parts automatically. A maintainer will review your changes and merge them.
+O GitHub cuida das partes técnicas automaticamente. Um mantenedor vai revisar suas alterações e fazer o merge.
 
-### Option 3: Send It Directly
+### Opção 3: Envie Diretamente
 
-If GitHub feels overwhelming, you can:
+Se o GitHub parece intimidador, você pode:
 
-- **Email your contribution** to the maintainer (see README for contact)
-- **Share a Google Doc** with your suggested additions
-- **Post in community channels** where this skill is discussed
+- **Enviar sua contribuição por e-mail** para o mantenedor (veja o README para contato)
+- **Compartilhar um Google Doc** com suas adições sugeridas
+- **Publicar em canais da comunidade** onde esta skill é discutida
 
-Someone will help get your contribution into the repository.
+Alguém vai ajudar a incorporar sua contribuição ao repositório.
 
-### What Makes a Good Contribution?
+### O Que Torna uma Boa Contribuição?
 
-Whether you're submitting an issue or editing directly:
+Seja enviando uma issue ou editando diretamente:
 
-- **Be specific**: Instead of "add more examples," share the actual example
-- **Explain the value**: Why is this helpful? What problem does it solve?
-- **Keep it realistic**: Use examples from actual products when possible
-- **Follow the existing format**: Look at similar content and match the style
+- **Seja específico**: Em vez de "adicione mais exemplos", compartilhe o exemplo real
+- **Explique o valor**: Por que isso é útil? Qual problema resolve?
+- **Mantenha realismo**: Use exemplos de produtos reais quando possível
+- **Siga o formato existente**: Observe conteúdos similares e corresponda ao estilo
 
-### Don't Worry About Perfection
+### Não Se Preocupe com a Perfeição
 
-Submit your idea even if:
-- You're not sure about the formatting
-- Your example isn't polished yet
-- You're uncertain if it fits
+Envie sua ideia mesmo se:
+- Você não tem certeza sobre a formatação
+- Seu exemplo ainda não está polido
+- Você tem dúvidas se se encaixa
 
-Maintainers can help refine it. The hard part is having the expertise — you have that!
+Os mantenedores podem ajudar a refiná-la. A parte difícil é ter a expertise — e você tem!
 
-### Need Help?
+### Precisa de Ajuda?
 
-Stuck on something? Open an issue with the title "Help: [what you need]" and describe where you're stuck. The community is here to help.
+Travado em algo? Abra uma issue com o título "Ajuda: [o que você precisa]" e descreva onde está com dificuldades. A comunidade está aqui para ajudar.
 
-## Contribution Guidelines
+## Diretrizes de Contribuição
 
-### Content Standards
+### Padrões de Conteúdo
 
-All contributions should follow these principles:
+Todas as contribuições devem seguir estes princípios:
 
-1. **Evidence-based**: Based on established UX writing best practices or user research
-2. **Actionable**: Provides clear, practical guidance
-3. **Concise**: Respects the reader's time
-4. **Well-structured**: Easy to scan and reference
-5. **Example-rich**: Shows, doesn't just tell
+1. **Baseado em evidências**: Fundamentado em boas práticas estabelecidas de UX Writing ou pesquisa com usuários
+2. **Acionável**: Fornece orientação clara e prática
+3. **Conciso**: Respeita o tempo do leitor
+4. **Bem estruturado**: Fácil de escanear e consultar
+5. **Rico em exemplos**: Mostra em vez de apenas dizer
 
-### Style Guidelines
+### Diretrizes de Estilo
 
-- Use sentence case for headings
-- Use em dashes (—) not hyphens (-) for breaks
-- Keep examples realistic and specific
-- Include both "do" and "don't" examples where helpful
-- Score examples against the four quality standards when relevant
+- Use capitalização apenas da primeira letra nos títulos
+- Use travessão (—) não hífen (-) para pausas
+- Mantenha os exemplos realistas e específicos
+- Inclua exemplos do que fazer e o que evitar sempre que útil
+- Pontue exemplos em relação aos quatro padrões de qualidade quando relevante
 
-### File Organization
+### Organização de Arquivos
 
 ```
 ux-writing/
-├── SKILL.md (core principles and patterns)
-├── README.md (GitHub documentation)
-├── references/ (supporting materials)
+├── SKILL.md (princípios e padrões fundamentais)
+├── README.md (documentação do GitHub)
+├── references/ (materiais de suporte)
 │   ├── voice-chart-template.md
 │   ├── content-usability-checklist.md
 │   └── patterns-detailed.md
-├── examples/ (real-world applications)
+├── examples/ (aplicações do mundo real)
 │   └── real-world-improvements.md
-└── templates/ (fillable guides)
+└── templates/ (guias preenchíveis)
     ├── error-message-template.md
     ├── empty-state-template.md
     └── onboarding-flow-template.md
 ```
 
-### Adding New Content
+### Adicionando Novo Conteúdo
 
-**New examples** go in `examples/`
-- Show before/after with scoring
-- Explain why the improvement works
-- Keep consistent with existing format
+**Novos exemplos** vão em `examples/`
+- Mostre antes/depois com pontuação
+- Explique por que a melhoria funciona
+- Mantenha consistência com o formato existente
 
-**New templates** go in `templates/`
-- Provide clear structure and guidance
-- Include checklist for verification
-- Show filled examples
+**Novos templates** vão em `templates/`
+- Forneça estrutura e orientação claras
+- Inclua checklist de verificação
+- Mostre exemplos preenchidos
 
-**New reference materials** go in `references/`
-- Comprehensive coverage of topic
-- Links to authoritative sources
-- Maintains consistent voice
+**Novos materiais de referência** vão em `references/`
+- Cobertura abrangente do tópico
+- Links para fontes confiáveis
+- Mantém voz consistente
 
-### Submitting Changes
+### Enviando Alterações
 
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b add-chat-pattern`)
-3. **Make your changes** following the guidelines above
-4. **Test the skill** — verify Claude can use your additions effectively
-5. **Update CHANGELOG.md** with your changes under "Unreleased"
-6. **Submit a pull request** with clear description of what and why
+1. **Faça um fork do repositório**
+2. **Crie um branch de funcionalidade** (`git checkout -b adicionar-padrao-chat`)
+3. **Faça suas alterações** seguindo as diretrizes acima
+4. **Teste a skill** — verifique se o Claude consegue usar suas adições efetivamente
+5. **Atualize o CHANGELOG.md** com suas mudanças em "Não Lançado"
+6. **Envie um pull request** com uma descrição clara do que e por quê
 
-### Pull Request Template
+### Template de Pull Request
 
 ```markdown
-## What does this PR do?
-[Brief description of changes]
+## O que este PR faz?
+[Breve descrição das alterações]
 
-## Why is this needed?
-[Explain the problem this solves or value it adds]
+## Por que é necessário?
+[Explique o problema que resolve ou o valor que agrega]
 
-## What type of contribution is this?
-- [ ] Bug fix
-- [ ] New example
-- [ ] New template
-- [ ] New reference material
-- [ ] Documentation improvement
-- [ ] Other (please describe)
+## Que tipo de contribuição é esta?
+- [ ] Correção de bug
+- [ ] Novo exemplo
+- [ ] Novo template
+- [ ] Novo material de referência
+- [ ] Melhoria de documentação
+- [ ] Outro (descreva)
 
-## Have you:
-- [ ] Tested the skill with your changes?
-- [ ] Followed the style guidelines?
-- [ ] Updated CHANGELOG.md?
-- [ ] Added examples where applicable?
+## Você:
+- [ ] Testou a skill com suas alterações?
+- [ ] Seguiu as diretrizes de estilo?
+- [ ] Atualizou o CHANGELOG.md?
+- [ ] Adicionou exemplos quando aplicável?
 
-## Additional context
-[Any other relevant information]
+## Contexto adicional
+[Qualquer outra informação relevante]
 ```
 
-## Code of Conduct
+## Código de Conduta
 
-### Our Standards
+### Nossos Padrões
 
-- **Respectful**: Treat all contributors with respect
-- **Constructive**: Provide helpful, actionable feedback
-- **Inclusive**: Welcome contributions from all backgrounds
-- **Patient**: Remember everyone is learning
+- **Respeitoso**: Trate todos os contribuidores com respeito
+- **Construtivo**: Forneça feedback útil e acionável
+- **Inclusivo**: Bem-vindo a contribuições de todos os contextos
+- **Paciente**: Lembre-se que todos estão aprendendo
 
-### Unacceptable Behavior
+### Comportamento Inaceitável
 
-- Harassment or discrimination
-- Unconstructive criticism
-- Spam or promotional content
-- Sharing private information
+- Assédio ou discriminação
+- Críticas não construtivas
+- Spam ou conteúdo promocional
+- Compartilhar informações privadas
 
-## Questions?
+## Dúvidas?
 
-Not sure if your idea fits? Open an issue to discuss before investing time in a full PR.
+Não tem certeza se sua ideia se encaixa? Abra uma issue para discutir antes de investir tempo em um PR completo.
 
-## Recognition
+## Reconhecimento
 
-Contributors will be acknowledged in:
-- CHANGELOG.md for specific contributions
-- README.md for significant additions
-- Special recognition for ongoing contributors
+Contribuidores serão reconhecidos em:
+- CHANGELOG.md para contribuições específicas
+- README.md para adições significativas
+- Reconhecimento especial para contribuidores contínuos
 
-## License
+## Licença
 
-By contributing, you agree that your contributions will be licensed under the same MIT License that covers this project.
+Ao contribuir, você concorda que suas contribuições serão licenciadas sob a mesma Licença MIT que cobre este projeto.
 
 ---
 
-Thank you for helping make UX writing more systematic and accessible! 🎉
+Obrigado por ajudar a tornar o UX Writing mais sistemático e acessível! 🎉
