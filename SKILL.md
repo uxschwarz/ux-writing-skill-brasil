@@ -1,418 +1,418 @@
 ---
 name: ux-writing
-description: Create user-centered, accessible interface copy (microcopy) for digital products including buttons, labels, error messages, notifications, forms, onboarding, empty states, success messages, and help text. Use when writing or editing any text that appears in apps, websites, or software interfaces, designing conversational flows, establishing voice and tone guidelines, auditing product content for consistency and usability, reviewing UI strings, or improving existing interface copy. Applies UX writing best practices based on four quality standards — purposeful, concise, conversational, and clear. Includes accessibility guidelines, research-backed benchmarks (sentence length, comprehension rates, reading levels), expanded error patterns, tone adaptation frameworks, and comprehensive reference materials.
+description: Crie textos de interface centrados no usuário e acessíveis (microcopy) para produtos digitais, incluindo botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso e textos de ajuda. Use ao escrever ou editar qualquer texto que apareça em apps, sites ou softwares, ao projetar fluxos conversacionais, estabelecer diretrizes de voz e tom, auditar conteúdo de produtos para consistência e usabilidade, revisar strings de UI ou melhorar textos de interface existentes. Aplica boas práticas de UX Writing baseadas em quatro padrões de qualidade: proposital, conciso, conversacional e claro. Inclui diretrizes de acessibilidade, benchmarks embasados em pesquisa (comprimento de frases, taxas de compreensão, níveis de leitura), padrões expandidos de mensagens de erro, frameworks de adaptação de tom e materiais de referência completos.
 ---
 
 # UX Writing
 
-Write clear, concise, user-centered interface copy (UX text/microcopy) for digital products and experiences. This skill provides frameworks, patterns, and best practices for creating text that helps users accomplish their goals.
-
-**Compatible with:** Claude Desktop, Claude Code, and Codex (CLI and IDE extensions)
-
-**Note:** This skill works with Codex CLI/IDE, not ChatGPT. ChatGPT cannot install or use skills.
-
-## When to Use This Skill
-
-Use this skill when:
-- Writing interface copy (buttons, labels, titles, messages, forms)
-- Editing existing UX text for clarity and effectiveness
-- Creating error messages, notifications, or success messages
-- Designing conversational flows or onboarding experiences
-- Establishing voice and tone for a product
-- Auditing product content for consistency and usability
-
-## Core UX Writing Principles
-
-### The Four Quality Standards
-
-Every piece of UX text should be:
-
-1. **Purposeful** — Helps users or the business achieve goals
-2. **Concise** — Uses the fewest words possible without losing meaning
-3. **Conversational** — Sounds natural and human, not robotic
-4. **Clear** — Unambiguous, accurate, and easy to understand
-
-### Key Best Practices
-
-**Conciseness**
-- Use 40-60 characters per line maximum
-- Every word must have a job
-- Break dense text into scannable chunks
-- Front-load important information
-
-**Clarity**
-- Use plain language (7th grade reading level for general, 10th for professional)
-- Avoid jargon, idioms, and technical terms
-- Use consistent terminology throughout
-- Choose meaningful, specific verbs
-
-**Conversational Tone**
-- Write how you speak
-- Use active voice 85% of the time
-- Include prepositions and articles
-- Avoid robotic phrasing
-
-**User-Centered**
-- Focus on user benefits, not features
-- Anticipate and answer user questions
-- Use second-person ("you") language
-- Match user's language and mental models
-
-## UX Text Patterns
-
-Apply these common patterns for interface elements.
-
-### Titles
-- **Purpose**: Orient users to where they are
-- **Format**: Noun phrases, sentence case
-- **Types**: Brand titles, content titles, category titles, task titles
-- **Examples**: "Account settings", "Your library", "Create new post"
-
-### Buttons and Links
-- **Purpose**: Enable users to take action
-- **Format**: Active imperative verbs, sentence case
-- **Pattern**: `[Verb] [object]` 
-- **Examples**: "Save changes", "Delete account", "View details"
-- **Avoid**: Generic labels like "OK", "Submit", "Click here"
-
-### Error Messages
-- **Purpose**: Explain problem and provide solution
-- **Format**: Empathetic, clear, actionable
-- **Pattern**: `[What failed]. [Why/context]. [What to do].`
-
-**Error Message Types**
-
-**Validation Errors (Inline)**
-- Show as user completes field or on blur
-- Brief, specific guidance to correct input
-- Pattern: `[Field] [specific requirement]`
-- Examples:
-  - "Email must include @"
-  - "Password must be at least 8 characters"
-  - "Choose a date in the future"
-- Timing: Real-time or on field exit
-- Location: Below or beside the field
-
-**System Errors (Modal/Banner)**
-- Show when backend operations fail
-- Explain what happened and why
-- Pattern: `[Action failed]. [Likely cause]. [Recovery step].`
-- Examples:
-  - "Payment failed. Your card was declined. Try a different payment method."
-  - "Couldn't save changes. Connection lost. Reconnect and try again."
-  - "Upload failed. File is too large. Choose a file under 10MB."
-- Timing: Immediately after failure
-- Location: Modal dialog or prominent banner
-
-**Blocking Errors (Full-screen)**
-- Prevent continued use until resolved
-- Clear explanation of blocker and resolution
-- Pattern: `[What's blocked]. [Why]. [Specific action needed].`
-- Examples:
-  - "Update required. This version is no longer supported. Update now to continue."
-  - "Subscription expired. Your account is paused. Renew subscription to restore access."
-  - "Verification needed. Confirm your email to access features. Check your inbox."
-- Timing: On app launch or feature access
-- Location: Full screen or large modal
-
-**Permission Errors**
-- Explain benefit before requesting permission
-- Pattern: `[User benefit]. [Permission needed].`
-- Examples:
-  - "Get notified when orders ship. Enable notifications."
-  - "Find nearby stores. Allow location access."
-  - "Back up your photos. Grant storage permission."
-- Timing: When feature is first used
-- Location: In context of the feature
-
-**What to Avoid**
-- Technical codes without explanation ("Error 403")
-- Blame language ("invalid input", "illegal character")
-- Robotic tone ("An error has occurred")
-- Dead ends (error with no recovery path)
-- Vague causes ("Something went wrong")
-
-### Success Messages
-- **Purpose**: Confirm action completion
-- **Format**: Past tense, specific, encouraging
-- **Pattern**: `[Action] [result/benefit]`
-- **Examples**: "Changes saved", "Email sent", "Profile updated"
-
-### Empty States
-- **Purpose**: Guide users when content is absent
-- **Types**: First-use, user-cleared, error/no results
-- **Format**: Explanation + CTA to populate
-- **Example**: "No messages yet. Start a conversation to connect with your team."
-
-### Form Fields
-- **Labels**: Clear noun phrases describing input ("Email address", "Phone number")
-- **Instructions**: Verb-first, explain why information is needed
-- **Placeholder**: Use sparingly, only for standard inputs like "name@example.com"
-- **Helper text**: Static, on-demand, or automatic based on importance
-
-### Notifications
-- **Purpose**: Deliver timely, valuable information
-- **Types**: Action-required (intrusive), Passive (less intrusive)
-- **Format**: Verb-first title + contextual description
-- **Example**: "Update required. Install the latest version to continue."
-
-## Voice and Tone
-
-### Voice (Consistent Brand Personality)
-Voice is the consistent personality of the product. Establish voice using:
-- **Concepts**: 3-5 key brand principles/values
-- **Voice characteristics**: Descriptive adjectives for each concept
-- **Do/Don't examples**: Concrete examples showing voice in action
-
-See references/voice-chart-template.md for creating a voice chart.
-
-### Tone (Adaptive to Context)
-Tone is how voice adapts to specific situations. While voice remains constant, tone shifts based on user context and emotional state.
-
-**Tone Variables**
-- **Purpose**: Why user is seeing this text (information, action, confirmation)
-- **Context**: What user is trying to do (learning, completing task, recovering from error)
-- **Emotional state**: How user likely feels (frustrated, excited, confused, cautious)
-- **Stakes**: Impact of the action (low: changing theme, high: deleting account)
-
-**Tone Adaptation by User Emotional State**
-
-**Frustrated** (errors, failures, blockers)
-- Empathetic and solution-focused
-- Acknowledge the problem without blame
-- Provide clear recovery path
-- Example: "Payment failed. Your card was declined. Try a different payment method."
-
-**Confused** (first use, complex features)
-- Patient and explanatory
-- Break down steps clearly
-- Provide context and guidance
-- Example: "Connect your bank to see spending insights. We'll guide you through it."
-
-**Confident** (routine tasks, return visits)
-- Efficient and direct
-- Minimal explanation
-- Quick confirmation
-- Example: "Saved"
-
-**Cautious** (high-stakes actions, data loss)
-- Serious and transparent
-- Clear consequences
-- Respectful of user's decision
-- Example: "Delete account? You'll lose all data and this can't be undone."
-
-**Successful** (completions, achievements)
-- Positive and encouraging
-- Proportional to achievement
-- Brief celebration
-- Example: "Profile updated. Your changes are live."
-
-**Tone Adaptation by Content Type**
-
-**Error messages**: Empathetic, reassuring, solution-focused
-- Never blame user
-- Explain what happened
-- Provide clear next step
-
-**Success messages**: Positive, specific, encouraging
-- Confirm what happened
-- Proportional to action importance
-- Brief and clear
-
-**Instructions**: Clear, direct, helpful
-- Front-load key action
-- Explain why when needed
-- Use simple steps
-
-**Onboarding**: Inviting, encouraging, concise
-- Welcome without overwhelming
-- Focus on value
-- Celebrate early wins
-
-**Confirmations**: Serious, transparent, respectful
-- Clear about consequences
-- No manipulation
-- Easy to back out
-
-**Empty states**: Hopeful, actionable, guiding
-- Explain why it's empty
-- Provide clear next action
-- Keep encouraging tone
-
-## Editing Process
-
-Edit UX text in four phases:
-
-### Phase 1: Purposeful
-- Does text help user achieve their goal?
-- Does text serve business objectives?
-- Is value to user clear?
-- Are concerns anticipated and addressed?
-
-### Phase 2: Concise
-- Remove unnecessary words
-- Combine redundant information
-- Ensure every word earns its space
-- Front-load important concepts
-
-### Phase 3: Conversational
-- Read aloud—would you say this?
-- Use active voice (unless passive is clearer)
-- Include natural connecting words
-- Avoid corporate jargon
-
-### Phase 4: Clear
-- Use specific, accurate verbs
-- Maintain consistent terminology
-- Test readability (Hemingway Editor, Flesch-Kincaid)
-- Ensure unambiguous meaning
-
-## Workflow
-
-1. **Understand context**
-   - User goals and needs
-   - Business objectives
-   - Technical constraints
-   - Emotional state of user
-
-2. **Draft content**
-   - Start with conversation (what would you say?)
-   - Apply appropriate pattern
-   - Consider voice and tone
-   - Front-load important information
-
-3. **Edit iteratively**
-   - Phase 1: Purposeful
-   - Phase 2: Concise
-   - Phase 3: Conversational
-   - Phase 4: Clear
-
-4. **Test and measure**
-   - Review with team
-   - Test with users when possible
-   - Measure task completion, comprehension
-   - Iterate based on feedback
-
-## Accessibility in UX Writing
-
-Writing accessible content ensures all users, including those using assistive technology, can understand and interact with your product.
-
-### Core Accessibility Principles
-
-**Screen Reader Optimization**
-- Label all interactive elements explicitly ("Submit form" not just "Submit")
-- Write descriptive link text ("Read pricing details" not "Click here")
-- Structure error messages to work with screen readers (error + field label read together)
-- Use ARIA labels when visual context isn't sufficient
-
-**Cognitive Accessibility**
-- Target 8-14 words per sentence (8 words = 100% comprehension, 14 words = 90%)
-- Break complex information into scannable chunks
-- Use clear headings and logical hierarchy
-- Provide consistent, predictable patterns
-
-**Multi-Modal Communication**
-- Don't rely on color alone to convey meaning
-- Pair visual indicators with text ("Error: Email required" with red icon)
-- Provide text alternatives for icons and images
-- Ensure sufficient color contrast (WCAG AA minimum: 4.5:1)
-
-**Plain Language for All**
-- Target 7th-8th grade reading level for general audience
-- Define technical terms when first used
-- Avoid idioms, metaphors, and cultural references
-- Use common, everyday words
-
-### Accessible Pattern Examples
-
-**Buttons**
-- ❌ Poor: "Submit" (context missing for screen readers)
-- ✅ Good: "Submit application"
+Escreva textos de interface claros, concisos e centrados no usuário (UX text/microcopy) para produtos e experiências digitais. Esta skill fornece frameworks, padrões e boas práticas para criar textos que ajudam usuários a atingir seus objetivos.
+
+**Compatível com:** Claude Desktop, Claude Code e Codex (CLI e extensões de IDE)
+
+**Nota:** Esta skill funciona com o Codex CLI/IDE, não com o ChatGPT. O ChatGPT não pode instalar ou usar skills.
+
+## Quando Usar Esta Skill
+
+Use esta skill quando:
+- Escrever textos de interface (botões, rótulos, títulos, mensagens, formulários)
+- Editar textos de UX existentes para maior clareza e eficácia
+- Criar mensagens de erro, notificações ou mensagens de sucesso
+- Projetar fluxos conversacionais ou experiências de onboarding
+- Estabelecer voz e tom para um produto
+- Auditar conteúdo de um produto para consistência e usabilidade
+
+## Princípios Fundamentais de UX Writing
+
+### Os Quatro Padrões de Qualidade
+
+Todo texto de UX deve ser:
+
+1. **Proposital** — Ajuda usuários ou o negócio a atingir objetivos
+2. **Conciso** — Usa o menor número de palavras possível sem perder significado
+3. **Conversacional** — Soa natural e humano, não robótico
+4. **Claro** — Sem ambiguidades, preciso e fácil de entender
+
+### Boas Práticas Essenciais
+
+**Concisão**
+- Use no máximo 40 a 60 caracteres por linha
+- Cada palavra deve ter uma função
+- Divida textos densos em blocos escaneáveis
+- Coloque as informações mais importantes no início
+
+**Clareza**
+- Use linguagem simples (nível de leitura equivalente ao Ensino Fundamental para público geral, Ensino Médio para profissional)
+- Evite jargões, gírias e termos técnicos
+- Use terminologia consistente em todo o produto
+- Escolha verbos significativos e específicos
+
+**Tom Conversacional**
+- Escreva como fala
+- Use voz ativa 85% do tempo
+- Inclua preposições e artigos
+- Evite frases robóticas
+
+**Centrado no Usuário**
+- Foque nos benefícios para o usuário, não nos recursos do produto
+- Antecipe e responda às dúvidas do usuário
+- Use linguagem em segunda pessoa ("você")
+- Use a linguagem e os modelos mentais do usuário
+
+## Padrões de Texto de UX
+
+Aplique estes padrões comuns aos elementos de interface.
+
+### Títulos
+- **Objetivo**: Orientar o usuário sobre onde está
+- **Formato**: Frases nominais, capitalização da primeira letra
+- **Tipos**: Títulos de marca, de conteúdo, de categoria, de tarefa
+- **Exemplos**: "Configurações da conta", "Sua biblioteca", "Criar nova publicação"
+
+### Botões e Links
+- **Objetivo**: Permitir que o usuário execute uma ação
+- **Formato**: Verbos no imperativo afirmativo, capitalização da primeira letra
+- **Padrão**: `[Verbo] [objeto]`
+- **Exemplos**: "Salvar alterações", "Excluir conta", "Ver detalhes"
+- **Evite**: Rótulos genéricos como "OK", "Enviar", "Clique aqui"
+
+### Mensagens de Erro
+- **Objetivo**: Explicar o problema e oferecer solução
+- **Formato**: Empático, claro e acionável
+- **Padrão**: `[O que falhou]. [Por quê/contexto]. [O que fazer].`
+
+**Tipos de Mensagens de Erro**
+
+**Erros de Validação (Inline)**
+- Exiba quando o usuário termina de preencher o campo ou ao perder o foco
+- Orientação breve e específica para corrigir a entrada
+- Padrão: `[Campo] [requisito específico]`
+- Exemplos:
+  - "O e-mail deve conter @"
+  - "A senha deve ter pelo menos 8 caracteres"
+  - "Escolha uma data no futuro"
+- Momento: Em tempo real ou ao sair do campo
+- Local: Abaixo ou ao lado do campo
+
+**Erros de Sistema (Modal/Banner)**
+- Exiba quando operações de back-end falham
+- Explique o que aconteceu e por quê
+- Padrão: `[Ação falhou]. [Provável causa]. [Passo de recuperação].`
+- Exemplos:
+  - "Pagamento não realizado. Seu cartão foi recusado. Tente com outro cartão."
+  - "Não foi possível salvar. Conexão perdida. Reconecte e tente novamente."
+  - "Falha no envio. Arquivo muito grande. Escolha um arquivo menor que 10 MB."
+- Momento: Imediatamente após a falha
+- Local: Diálogo modal ou banner em destaque
+
+**Erros Bloqueantes (Tela cheia)**
+- Impedem o uso até que o problema seja resolvido
+- Explicação clara do bloqueio e da resolução
+- Padrão: `[O que está bloqueado]. [Por quê]. [Ação específica necessária].`
+- Exemplos:
+  - "Atualização necessária. Esta versão não é mais suportada. Atualize agora para continuar."
+  - "Assinatura expirada. Sua conta está pausada. Renove para restaurar o acesso."
+  - "Verificação necessária. Confirme seu e-mail para acessar os recursos. Verifique sua caixa de entrada."
+- Momento: Na abertura do app ou ao tentar acessar um recurso
+- Local: Tela cheia ou modal grande
+
+**Erros de Permissão**
+- Explique o benefício antes de solicitar a permissão
+- Padrão: `[Benefício para o usuário]. [Permissão necessária].`
+- Exemplos:
+  - "Receba notificações quando seus pedidos saírem para entrega. Ative as notificações."
+  - "Encontre lojas próximas. Permita o acesso à localização."
+  - "Faça backup das suas fotos. Conceda permissão de armazenamento."
+- Momento: Quando o recurso é usado pela primeira vez
+- Local: No contexto do recurso
+
+**O Que Evitar**
+- Códigos técnicos sem explicação ("Erro 403")
+- Linguagem que culpa o usuário ("entrada inválida", "caractere ilegal")
+- Tom robótico ("Ocorreu um erro")
+- Becos sem saída (erro sem caminho de recuperação)
+- Causas vagas ("Algo deu errado")
+
+### Mensagens de Sucesso
+- **Objetivo**: Confirmar a conclusão da ação
+- **Formato**: Passado composto, específico, encorajador
+- **Padrão**: `[Ação] [resultado/benefício]`
+- **Exemplos**: "Alterações salvas", "E-mail enviado", "Perfil atualizado"
+
+### Estados Vazios
+- **Objetivo**: Orientar usuários quando não há conteúdo
+- **Tipos**: Primeiro uso, limpo pelo usuário, erro/sem resultados
+- **Formato**: Explicação + CTA para preencher
+- **Exemplo**: "Nenhuma mensagem ainda. Inicie uma conversa para se conectar com sua equipe."
+
+### Campos de Formulário
+- **Rótulos**: Frases nominais claras descrevendo o campo ("Endereço de e-mail", "Número de celular")
+- **Instruções**: Verbos no início, explique por que a informação é necessária
+- **Placeholder**: Use com moderação, apenas para entradas padrão como "nome@exemplo.com.br"
+- **Texto de ajuda**: Estático, sob demanda ou automático conforme a importância
+
+### Notificações
+- **Objetivo**: Entregar informações oportunas e relevantes
+- **Tipos**: Ação necessária (intrusiva), Passiva (menos intrusiva)
+- **Formato**: Título com verbo no início + descrição contextual
+- **Exemplo**: "Atualização necessária. Instale a versão mais recente para continuar."
+
+## Voz e Tom
+
+### Voz (Personalidade Consistente da Marca)
+A voz é a personalidade consistente do produto. Estabeleça a voz usando:
+- **Conceitos**: 3 a 5 princípios/valores fundamentais da marca
+- **Características de voz**: Adjetivos descritivos para cada conceito
+- **Exemplos do que fazer/evitar**: Exemplos concretos mostrando a voz em ação
+
+Consulte references/voice-chart-template.md para criar um quadro de voz.
+
+### Tom (Adaptável ao Contexto)
+O tom é como a voz se adapta a situações específicas. Enquanto a voz permanece constante, o tom muda de acordo com o contexto e o estado emocional do usuário.
+
+**Variáveis de Tom**
+- **Objetivo**: Por que o usuário está vendo este texto (informação, ação, confirmação)
+- **Contexto**: O que o usuário está tentando fazer (aprender, completar uma tarefa, se recuperar de um erro)
+- **Estado emocional**: Como o usuário provavelmente se sente (frustrado, animado, confuso, cauteloso)
+- **Risco**: Impacto da ação (baixo: mudar tema; alto: excluir conta)
+
+**Adaptação de Tom por Estado Emocional do Usuário**
+
+**Frustrado** (erros, falhas, bloqueios)
+- Empático e focado na solução
+- Reconheça o problema sem culpar
+- Forneça um caminho claro de recuperação
+- Exemplo: "Pagamento não realizado. Seu cartão foi recusado. Tente com outro cartão."
+
+**Confuso** (primeiro uso, recursos complexos)
+- Paciente e explicativo
+- Detalhe os passos claramente
+- Forneça contexto e orientação
+- Exemplo: "Conecte sua conta bancária para ver insights de gastos. Vamos guiá-lo."
+
+**Confiante** (tarefas rotineiras, visitas de retorno)
+- Eficiente e direto
+- Explicação mínima
+- Confirmação rápida
+- Exemplo: "Salvo"
+
+**Cauteloso** (ações de alto risco, perda de dados)
+- Sério e transparente
+- Consequências claras
+- Respeitoso com a decisão do usuário
+- Exemplo: "Excluir conta? Você perderá todos os dados e isso não pode ser desfeito."
+
+**Com sucesso** (conclusões, conquistas)
+- Positivo e encorajador
+- Proporcional à conquista
+- Breve celebração
+- Exemplo: "Perfil atualizado. Suas alterações estão no ar."
+
+**Adaptação de Tom por Tipo de Conteúdo**
+
+**Mensagens de erro**: Empático, tranquilizador, focado na solução
+- Nunca culpe o usuário
+- Explique o que aconteceu
+- Forneça o próximo passo claro
+
+**Mensagens de sucesso**: Positivo, específico, encorajador
+- Confirme o que aconteceu
+- Proporcional à importância da ação
+- Breve e claro
+
+**Instruções**: Claro, direto, útil
+- Coloque a ação principal no início
+- Explique o porquê quando necessário
+- Use passos simples
+
+**Onboarding**: Convidativo, encorajador, conciso
+- Bem-vindo sem sobrecarregar
+- Foque no valor
+- Celebre as primeiras conquistas
+
+**Confirmações**: Sério, transparente, respeitoso
+- Claro quanto às consequências
+- Sem manipulação
+- Fácil de voltar atrás
+
+**Estados vazios**: Esperançoso, acionável, orientador
+- Explique por que está vazio
+- Forneça a próxima ação clara
+- Mantenha um tom encorajador
+
+## Processo de Edição
+
+Edite textos de UX em quatro fases:
+
+### Fase 1: Proposital
+- O texto ajuda o usuário a atingir seu objetivo?
+- O texto serve aos objetivos de negócio?
+- O valor para o usuário é claro?
+- As dúvidas são antecipadas e respondidas?
+
+### Fase 2: Conciso
+- Remova palavras desnecessárias
+- Combine informações redundantes
+- Garanta que cada palavra mereça estar ali
+- Coloque os conceitos importantes no início
+
+### Fase 3: Conversacional
+- Leia em voz alta — você diria isso?
+- Use voz ativa (a menos que a passiva seja mais clara)
+- Inclua palavras de conexão naturais
+- Evite jargões corporativos
+
+### Fase 4: Claro
+- Use verbos específicos e precisos
+- Mantenha terminologia consistente
+- Teste a legibilidade (Hemingway Editor, Flesch-Kincaid)
+- Garanta que não haja ambiguidade
+
+## Fluxo de Trabalho
+
+1. **Entenda o contexto**
+   - Objetivos e necessidades do usuário
+   - Objetivos de negócio
+   - Restrições técnicas
+   - Estado emocional do usuário
+
+2. **Esboce o conteúdo**
+   - Comece pela conversa (o que você diria?)
+   - Aplique o padrão apropriado
+   - Considere a voz e o tom
+   - Coloque as informações importantes no início
+
+3. **Edite iterativamente**
+   - Fase 1: Proposital
+   - Fase 2: Conciso
+   - Fase 3: Conversacional
+   - Fase 4: Claro
+
+4. **Teste e meça**
+   - Revise com a equipe
+   - Teste com usuários quando possível
+   - Meça conclusão de tarefas e compreensão
+   - Itere com base no feedback
+
+## Acessibilidade em UX Writing
+
+Escrever conteúdo acessível garante que todos os usuários, inclusive os que utilizam tecnologia assistiva, possam entender e interagir com seu produto.
+
+### Princípios Fundamentais de Acessibilidade
+
+**Otimização para Leitores de Tela**
+- Rotule todos os elementos interativos explicitamente ("Enviar formulário", não apenas "Enviar")
+- Escreva textos descritivos para links ("Leia os detalhes de preços", não "Clique aqui")
+- Estruture mensagens de erro para funcionar com leitores de tela (erro + rótulo do campo lidos juntos)
+- Use rótulos ARIA quando o contexto visual não for suficiente para leitores de tela
+
+**Acessibilidade Cognitiva**
+- Use 8 a 14 palavras por frase (8 palavras = 100% de compreensão, 14 palavras = 90%)
+- Divida informações complexas em blocos escaneáveis
+- Use títulos claros e hierarquia lógica
+- Forneça padrões consistentes e previsíveis
+
+**Comunicação Multimodal**
+- Não dependa apenas de cor para transmitir significado
+- Associe indicadores visuais a textos ("Erro: E-mail obrigatório" com ícone vermelho)
+- Forneça alternativas em texto para ícones e imagens
+- Garanta contraste de cor suficiente (mínimo WCAG AA: 4,5:1)
+
+**Linguagem Simples para Todos**
+- Use nível de leitura equivalente ao 8º e 9º ano para público geral
+- Defina termos técnicos na primeira ocorrência
+- Evite expressões idiomáticas, metáforas e referências culturais
+- Use palavras comuns e do cotidiano
+
+### Exemplos de Padrões Acessíveis
+
+**Botões**
+- ❌ Ruim: "Enviar" (contexto ausente para leitores de tela)
+- ✅ Bom: "Enviar candidatura"
 
 **Links**
-- ❌ Poor: "Click here for more information"
-- ✅ Good: "Read our privacy policy"
+- ❌ Ruim: "Clique aqui para mais informações"
+- ✅ Bom: "Leia nossa política de privacidade"
 
-**Error Messages**
-- ❌ Poor: Red text showing "Invalid"
-- ✅ Good: "Error: Email must include @" (with error icon)
+**Mensagens de Erro**
+- ❌ Ruim: Texto vermelho mostrando "Inválido"
+- ✅ Bom: "Erro: O e-mail deve conter @" (com ícone de erro)
 
-**Form Labels**
-- ❌ Poor: Placeholder-only fields
-- ✅ Good: Visible label + optional placeholder
+**Rótulos de Formulário**
+- ❌ Ruim: Campos com apenas placeholder
+- ✅ Bom: Rótulo visível + placeholder opcional
 
-## UX Text Benchmarks
+## Benchmarks de Texto de UX
 
-Use these research-backed metrics to create effective UX text.
+Use estas métricas embasadas em pesquisa para criar textos de UX eficazes.
 
-### Sentence Length Targets
+### Metas de Comprimento de Frase
 
-**By Content Type**
-- **Buttons/CTAs**: 2-4 words ideal, 6 word maximum
-- **Titles**: 3-6 words, 40 characters maximum
-- **Error messages**: 12-18 words (including solution)
-- **Instructions**: 20 words maximum, 14 ideal
-- **Body copy**: 15-20 words per sentence average
-- **Notifications**: 10-15 words for title + body
+**Por Tipo de Conteúdo**
+- **Botões/CTAs**: 2 a 4 palavras ideal, máximo de 6 palavras
+- **Títulos**: 3 a 6 palavras, máximo de 40 caracteres
+- **Mensagens de erro**: 12 a 18 palavras (incluindo a solução)
+- **Instruções**: máximo de 20 palavras, ideal 14
+- **Texto de corpo**: média de 15 a 20 palavras por frase
+- **Notificações**: 10 a 15 palavras para título + corpo
 
-**Comprehension Rates**
-- 8 words or fewer: 100% user comprehension
-- 14 words or fewer: 90% user comprehension
-- 25 words: Maximum before significant comprehension drop
+**Taxas de Compreensão**
+- 8 palavras ou menos: 100% de compreensão pelo usuário
+- 14 palavras ou menos: 90% de compreensão pelo usuário
+- 25 palavras: Máximo antes de queda significativa na compreensão
 
-### Character and Line Length
+### Comprimento de Caracteres e Linha
 
-**Optimal Ranges**
-- **Line length**: 40-60 characters for maximum readability
-- **Button labels**: 15-25 characters
-- **Page titles**: 30-50 characters
-- **Notification titles**: 35-45 characters
+**Faixas Ideais**
+- **Comprimento de linha**: 40 a 60 caracteres para máxima legibilidade
+- **Rótulos de botão**: 15 a 25 caracteres
+- **Títulos de página**: 30 a 50 caracteres
+- **Títulos de notificação**: 35 a 45 caracteres
 
-### Reading Level Guidelines
+### Diretrizes de Nível de Leitura
 
-**By Audience**
-- **General public**: 7th-8th grade (Flesch-Kincaid)
-- **Professional tools**: 9th-10th grade
-- **Technical products**: 10th-11th grade
-- **Specialized fields**: 11th-12th grade (only when necessary)
+**Por Público**
+- **Público geral**: Equivalente ao 8º ou 9º ano (Flesch-Kincaid)
+- **Ferramentas profissionais**: Equivalente ao 1º ou 2º ano do Ensino Médio
+- **Produtos técnicos**: Equivalente ao 2º ou 3º ano do Ensino Médio
+- **Áreas especializadas**: Equivalente ao final do Ensino Médio (apenas quando necessário)
 
-**Testing Tools**
-- Hemingway Editor: Highlights complex sentences
-- Readable.com: Provides multiple readability scores
-- Microsoft Word: Built-in Flesch-Kincaid scoring
+**Ferramentas de Teste**
+- Hemingway Editor: Destaca frases complexas
+- Readable.com: Fornece múltiplas pontuações de legibilidade
+- Microsoft Word: Pontuação Flesch-Kincaid integrada
 
-## Common Mistakes to Avoid
+## Erros Comuns a Evitar
 
-- Using passive voice excessively
-- Generic button labels ("Submit", "OK")
-- Blaming users in error messages
-- Overly clever humor in serious contexts
-- Inconsistent terminology
-- Hidden instructions or explanations
-- System-oriented language vs. user language
-- Too many words (not concise enough)
-- Robotic, corporate tone
-- Relying on color alone for meaning
-- Writing inaccessible link text ("Click here")
+- Usar voz passiva em excesso
+- Rótulos de botão genéricos ("Enviar", "OK")
+- Culpar o usuário em mensagens de erro
+- Humor excessivamente inteligente em contextos sérios
+- Terminologia inconsistente
+- Instruções ou explicações ocultas
+- Linguagem orientada ao sistema vs. linguagem do usuário
+- Texto demasiado longo (falta de concisão)
+- Tom robótico e corporativo
+- Depender apenas de cor para transmitir significado
+- Escrever textos de link inacessíveis ("Clique aqui")
 
-## Quick Reference
+## Referência Rápida
 
-**Sentence case**: "Save your changes" (not "Save Your Changes")  
-**Active imperative for buttons**: "Delete account" (not "Account deletion")  
-**User-focused**: "Save time with shortcuts" (not "We offer shortcuts")  
-**Specific verbs**: "Delete" (not "Remove" when permanently deleting)  
-**Front-loaded**: "Password must be 8 characters" (not "Must be 8 characters for your password")
+**Primeira letra maiúscula**: "Salvar alterações" (não "Salvar Alterações")
+**Imperativo ativo para botões**: "Excluir conta" (não "Exclusão de conta")
+**Foco no usuário**: "Economize tempo com atalhos" (não "Oferecemos atalhos")
+**Verbos específicos**: "Excluir" (não "Remover" quando a exclusão é permanente)
+**Informação no início**: "A senha deve ter 8 caracteres" (não "Deve ter 8 caracteres para sua senha")
 
-## Resources
+## Recursos
 
-This skill includes:
-- **references/accessibility-guidelines.md**: Comprehensive guide to writing accessible UX text for all users
-- **references/voice-chart-template.md**: Template for creating a product voice chart
-- **references/content-usability-checklist.md**: Comprehensive checklist for evaluating UX text quality
-- **references/patterns-detailed.md**: Extended examples of UX text patterns in different voices
-- **examples/real-world-improvements.md**: Before/after transformations with detailed analysis and scoring
-- **templates/error-message-template.md**: Fillable template for writing effective error messages
-- **templates/empty-state-template.md**: Guide for creating helpful empty states
-- **templates/onboarding-flow-template.md**: Framework for designing clear onboarding experiences
-- **docs/claude-figma-integration.md**: Guide for using this skill with Claude Code and Figma MCP
-- **docs/codex-figma-integration.md**: Guide for using this skill with Codex CLI/IDE and Figma MCP
+Esta skill inclui:
+- **references/accessibility-guidelines.md**: Guia completo para escrever textos de UX acessíveis para todos os usuários
+- **references/voice-chart-template.md**: Modelo para criar um quadro de voz do produto
+- **references/content-usability-checklist.md**: Checklist completo para avaliar a qualidade de textos de UX
+- **references/patterns-detailed.md**: Exemplos estendidos de padrões de texto de UX em diferentes vozes
+- **examples/real-world-improvements.md**: Transformações antes/depois com análise detalhada e pontuação
+- **templates/error-message-template.md**: Modelo para escrever mensagens de erro eficazes
+- **templates/empty-state-template.md**: Guia para criar estados vazios úteis
+- **templates/onboarding-flow-template.md**: Framework para projetar experiências de onboarding claras
+- **docs/claude-figma-integration.md**: Guia para usar esta skill com Claude Code e Figma MCP
+- **docs/codex-figma-integration.md**: Guia para usar esta skill com Codex CLI/IDE e Figma MCP
