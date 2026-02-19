@@ -34,10 +34,10 @@ jobs:
     - name: Check for changes
       id: check_changes
       run: |
-        if git diff --quiet dist/ux-writing-skill.zip; then
-          echo "changed=false" >> $GITHUB_OUTPUT
-        else
+        if git status --porcelain dist/ux-writing-skill-brasil.zip | grep -q .; then
           echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
         fi
 
     - name: Create Pull Request
@@ -47,7 +47,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git checkout -b "$BRANCH_NAME"
-        git add dist/ux-writing-skill.zip
+        git add dist/ux-writing-skill-brasil.zip
         git commit -m "Auto-rebuild skill package [auto-rebuild]"
         git push -u origin "$BRANCH_NAME"
 

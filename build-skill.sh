@@ -5,7 +5,7 @@
 set -e
 
 OUTPUT_DIR="dist"
-ZIP_NAME="ux-writing-skill.zip"
+ZIP_NAME="ux-writing-skill-brasil.zip"
 
 echo "Building UX Writing Skill package..."
 

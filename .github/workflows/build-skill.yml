@@ -29,12 +29,12 @@ jobs:
     - name: Upload skill package as artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ux-writing-skill
-        path: dist/ux-writing-skill.zip
+        name: ux-writing-skill-brasil
+        path: dist/ux-writing-skill-brasil.zip
 
     - name: Upload to release
       if: github.event_name == 'release'
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh release upload "${{ github.event.release.tag_name }}" dist/ux-writing-skill.zip --clobber
+        gh release upload "${{ github.event.release.tag_name }}" dist/ux-writing-skill-brasil.zip --clobber
