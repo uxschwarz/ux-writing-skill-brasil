@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma Skill completa de UX Writing para Claude e Codex em português brasileiro. Escreva textos de interface acessíveis e centrados no usuário seguindo boas práticas embasadas em pesquisa.">
+    <title>Skill de UX Writing Brasil para Claude & Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FAF8EE;
+            --ink: #1a1614;
+            --ink-light: #4a4540;
+            --ink-muted: #8a857f;
+            --accent: #7CB342;
+            --accent-dark: #689F38;
+            --border: rgba(26, 22, 20, 0.08);
+            --border-dark: rgba(26, 22, 20, 0.15);
+        }
+
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            line-height: 1.75;
+            color: var(--ink);
+            background: var(--cream);
+            font-size: 18px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+        }
+
+        /* Background pattern - subtle dots */
+        body::before {
+            content: '·';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 0;
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 40px;
+            color: var(--ink);
+            opacity: 0.06;
+            overflow: hidden;
+            white-space: pre;
+            word-wrap: break-word;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: var(--cream);
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: var(--ink);
+        }
+
+        .flag-icon {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 14px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        header nav a {
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            letter-spacing: 0.2px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: transparent;
+        }
+
+        header nav a:hover {
+            color: var(--ink);
+            background: rgba(124, 179, 66, 0.15);
+        }
+
+        .terminal-trigger {
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            letter-spacing: 0.2px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+
+        .terminal-trigger:hover {
+            color: var(--ink);
+            background: rgba(124, 179, 66, 0.15);
+        }
+
+        .video-trigger {
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            letter-spacing: 0.2px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+
+        .video-trigger:hover {
+            color: var(--ink);
+            background: rgba(124, 179, 66, 0.15);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 160px 0 200px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: clamp(48px, 7vw, 96px);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 40px;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(20px, 2.5vw, 28px);
+            color: var(--ink-light);
+            margin-bottom: 80px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 20px 48px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-dark);
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--ink);
+            color: var(--cream);
+            border-color: var(--ink);
+        }
+
+        .btn-primary:hover {
+            background: var(--ink-light);
+            border-color: var(--ink-light);
+            transform: translate3d(0, -2px, 0);
+            box-shadow: 0 8px 24px rgba(26, 22, 20, 0.15);
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .btn-secondary:hover {
+            background: var(--ink);
+            color: var(--cream);
+            transform: translate3d(0, -2px, 0);
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        /* Stats */
+        .stats {
+            padding: 120px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 80px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 72px;
+            font-weight: 300;
+            color: var(--ink);
+            margin-bottom: 16px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--ink-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        /* Features */
+        .features {
+            padding: 160px 0;
+        }
+
+        .section-title {
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 120px;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 80px;
+        }
+
+        .feature-card {
+            padding: 0;
+        }
+
+        .feature-card h4 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        .feature-card p {
+            color: var(--ink-light);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .feature-card ul {
+            list-style: none;
+        }
+
+        .feature-card li {
+            color: var(--ink-light);
+            font-size: 16px;
+            padding: 12px 0 12px 32px;
+            position: relative;
+            line-height: 1.6;
+            border-bottom: 1px solid var(--border);
+            transition: color 0.3s ease;
+        }
+
+        .feature-card li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-card li:before {
+            content: "—";
+            position: absolute;
+            left: 8px;
+            color: var(--accent);
+            font-weight: 400;
+            width: 16px;
+            text-align: left;
+        }
+
+        /* Integrations */
+        .integrations {
+            padding: 160px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .integrations .section-title {
+            margin-bottom: 40px;
+        }
+
+        .integrations .intro {
+            text-align: center;
+            color: var(--ink-light);
+            font-size: 20px;
+            margin-bottom: 80px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .integration-card {
+            background: rgba(124, 179, 66, 0.06);
+            border: 1px solid var(--border);
+            padding: 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .integration-card h4 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ink-muted);
+        }
+
+        .integration-card code {
+            background: var(--ink);
+            color: var(--accent);
+            padding: 32px;
+            display: block;
+            margin: 32px 0;
+            font-size: 15px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            overflow-x: auto;
+            line-height: 1.6;
+            border: 1px solid var(--ink);
+        }
+
+        .integration-card .help-text {
+            margin-top: 32px;
+            color: var(--ink-light);
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .integration-card .guide-link {
+            margin-top: 32px;
+            display: inline-block;
+        }
+
+        .integration-card .guide-link a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 400;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
+        }
+
+        .integration-card .guide-link a:hover {
+            border-color: var(--ink);
+        }
+
+        /* Quick Start */
+        .quickstart {
+            padding: 160px 0;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 80px;
+            margin-bottom: 80px;
+        }
+
+        .step {
+            text-align: left;
+            padding: 48px 0;
+            border-top: 1px solid var(--border-dark);
+        }
+
+        .step-number {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--ink-muted);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .step h4 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        .step p {
+            color: var(--ink-light);
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .quickstart-cta {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        /* Credits */
+        .credits {
+            padding: 120px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .credits .section-title {
+            margin-bottom: 60px;
+        }
+
+        .credits-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .credits-content p {
+            color: var(--ink-light);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .credits-content a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            transition: border-color 0.3s ease;
+        }
+
+        .credits-content a:hover {
+            border-color: var(--ink);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            margin-top: 160px;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer p {
+            color: var(--ink-muted);
+            font-size: 14px;
+        }
+
+        footer p a {
+            color: var(--ink-light);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        footer p a:hover {
+            color: var(--ink);
+            background: rgba(124, 179, 66, 0.15);
+        }
+
+        footer nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        footer nav a {
+            color: var(--ink-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: transparent;
+        }
+
+        footer nav a:hover {
+            color: var(--ink);
+            background: rgba(124, 179, 66, 0.15);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h2,
+        .hero .subtitle,
+        .cta-buttons {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .hero .subtitle {
+            animation-delay: 0.2s;
+        }
+
+        .cta-buttons {
+            animation-delay: 0.4s;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+
+            header {
+                padding: 40px 0;
+            }
+
+            header nav {
+                gap: 24px;
+            }
+
+            header nav a {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 100px 0 120px;
+            }
+
+            .hero .subtitle {
+                margin-bottom: 60px;
+            }
+
+            .stats {
+                padding: 80px 0;
+            }
+
+            .stats-grid {
+                gap: 60px;
+            }
+
+            .features {
+                padding: 100px 0;
+            }
+
+            .section-title {
+                margin-bottom: 80px;
+            }
+
+            .feature-grid {
+                gap: 60px;
+            }
+
+            .integrations {
+                padding: 100px 0;
+            }
+
+            .integration-card {
+                padding: 40px;
+            }
+
+            .quickstart {
+                padding: 100px 0;
+            }
+
+            .steps {
+                gap: 60px;
+            }
+
+            footer {
+                padding: 60px 0;
+                margin-top: 100px;
+            }
+
+            footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            footer nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* Refined details */
+        ::selection {
+            background: #7CB342;
+            color: var(--cream);
+        }
+
+        a {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .feature-card li:hover {
+            color: var(--ink);
+        }
+
+        /* Terminal Window */
+        .terminal-window {
+            position: fixed;
+            width: 600px;
+            height: 500px;
+            background: #1a1614;
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(26, 22, 20, 0.3);
+            overflow: hidden;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .terminal-header {
+            padding: 12px 16px;
+            background: #141413;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: grab;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .terminal-header:active {
+            cursor: grabbing;
+        }
+
+        .terminal-title {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .terminal-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-control {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .terminal-control.close {
+            background: #ff5f56;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .terminal-control.close::before {
+            content: '×';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+            color: #4a0a07;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .terminal-control.close:hover::before {
+            opacity: 1;
+        }
+
+        .terminal-control.minimize {
+            background: #ffbd2e;
+        }
+
+        .terminal-control.maximize {
+            background: #27c93f;
+        }
+
+        .terminal-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #1a1614;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #faf8ee;
+        }
+
+        .terminal-line {
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: fadeInLine 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeInLine {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .terminal-prompt {
+            color: #7CB342;
+        }
+
+        .terminal-command {
+            color: #faf8ee;
+        }
+
+        .terminal-output {
+            color: #b0aea5;
+        }
+
+        .terminal-success {
+            color: #7CB342;
+        }
+
+        .terminal-highlight {
+            color: #7CB342;
+            font-weight: 600;
+        }
+
+        /* Video Modal Window */
+        .video-window {
+            position: fixed;
+            width: 800px;
+            height: 500px;
+            background: #1a1614;
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(26, 22, 20, 0.3);
+            overflow: hidden;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-header {
+            padding: 12px 16px;
+            background: #141413;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: grab;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .video-header:active {
+            cursor: grabbing;
+        }
+
+        .video-title {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .video-content {
+            position: relative;
+            width: 100%;
+            flex: 1;
+            background: #1a1614;
+            overflow: hidden;
+        }
+
+        .video-content video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-window {
+                width: 90vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .terminal-window {
+                width: 90vw;
+                max-height: 70vh;
+            }
+
+            header nav {
+                gap: 4px;
+            }
+
+            header nav a,
+            .terminal-trigger,
+            .video-trigger {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SKILL DE UX WRITING <span class="flag-icon">🇧🇷</span></h1>
+            <nav>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil">Repositório</a>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil/blob/main/docs/claude-figma-integration.md">Figma</a>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil#exemplos-de-uso">Documentação</a>
+                <button class="video-trigger" onclick="toggleVideo()">▷</button>
+                <button class="terminal-trigger" onclick="toggleTerminal()">></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Escreva textos<br>de interface melhores</h2>
+                <p class="subtitle">Uma skill completa para Claude e Codex que ajuda designers de conteúdo e times de produto a criar textos acessíveis e centrados no usuário, seguindo boas práticas embasadas em pesquisa — em português brasileiro.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip" class="btn btn-primary">Baixar skill</a>
+                    <a href="https://github.com/uxschwarz/ux-writing-skill-brasil" class="btn btn-secondary">Ver no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Páginas de orientação</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Padrões de UI</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Templates preenchíveis</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">Grátis</div>
+                        <div class="stat-label">Open source</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3 class="section-title">O que está incluído</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>Diretrizes de acessibilidade</h4>
+                        <p>Orientação completa para escrever textos de UX inclusivos que funcionam para todos.</p>
+                        <ul>
+                            <li>Otimização para leitores de tela</li>
+                            <li>Acessibilidade cognitiva</li>
+                            <li>Conformidade com WCAG</li>
+                            <li>Comunicação multimodal</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Métricas embasadas em pesquisa</h4>
+                        <p>Benchmarks quantificáveis baseados em pesquisa de compreensão e padrões do setor.</p>
+                        <ul>
+                            <li>Metas de comprimento de frase</li>
+                            <li>Taxas de compreensão</li>
+                            <li>Diretrizes de nível de leitura</li>
+                            <li>Limites de caracteres por tipo</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Padrões expandidos de erros</h4>
+                        <p>Quatro tipos distintos de erro com orientação clara de timing, localização e recuperação.</p>
+                        <ul>
+                            <li>Erros de validação</li>
+                            <li>Erros de sistema</li>
+                            <li>Erros bloqueantes</li>
+                            <li>Erros de permissão</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Framework de adaptação de tom</h4>
+                        <p>Mapeie estados emocionais dos usuários para o tom apropriado, mantendo a voz consistente.</p>
+                        <ul>
+                            <li>Por estado emocional</li>
+                            <li>Por tipo de conteúdo</li>
+                            <li>Exemplos por contexto</li>
+                            <li>Templates de quadro de voz</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Exemplos do mundo real</h4>
+                        <p>Melhorias antes/depois com pontuação detalhada em relação aos padrões de qualidade.</p>
+                        <ul>
+                            <li>Padrões de e-commerce</li>
+                            <li>Aplicações SaaS</li>
+                            <li>Experiências mobile</li>
+                            <li>Anti-padrões comuns</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Templates preenchíveis</h4>
+                        <p>Guias práticos e frameworks para criar textos de UX consistentes e de alta qualidade.</p>
+                        <ul>
+                            <li>Templates de mensagem de erro</li>
+                            <li>Guias de estado vazio</li>
+                            <li>Fluxos de onboarding</li>
+                            <li>Quadros de voz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integrations">
+            <div class="container">
+                <h3 class="section-title">Integração com Figma</h3>
+                <p class="intro">Revise e melhore textos de UX diretamente dos seus designs no Figma. Funciona com Claude Code e Codex. Perfeito para designers de conteúdo e times de produto.</p>
+
+                <div class="feature-grid" style="margin-bottom: 0;">
+                    <div class="integration-card" style="background: rgba(124, 179, 66, 0.08); border: 1px solid var(--border); padding: 48px;">
+                        <h4>Claude Code + Figma MCP</h4>
+                        <code>claude mcp add --transport http figma https://mcp.figma.com/mcp</code>
+                        <p class="help-text">Compartilhe qualquer link de frame do Figma com o Claude Code para receber feedback instantâneo de UX Writing, auditorias de acessibilidade e melhorias específicas.</p>
+                        <p class="guide-link"><a href="https://github.com/uxschwarz/ux-writing-skill-brasil/blob/main/docs/claude-figma-integration.md">Ler guia de configuração do Claude →</a></p>
+                    </div>
+
+                    <div class="integration-card" style="background: rgba(124, 179, 66, 0.08); border: 1px solid var(--border); padding: 48px;">
+                        <h4>Codex + Figma MCP</h4>
+                        <code>codex mcp login figma</code>
+                        <p class="help-text">Configure o Codex para conectar com o Figma MCP e revise designs usando links do Dev Mode.</p>
+                        <p class="guide-link"><a href="https://github.com/uxschwarz/ux-writing-skill-brasil/blob/main/docs/codex-figma-integration.md">Ler guia de configuração do Codex →</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quickstart">
+            <div class="container">
+                <h3 class="section-title">Como começar</h3>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">Passo 1</div>
+                        <h4>Baixar</h4>
+                        <p>Baixe <strong>ux-writing-skill-brasil.zip</strong> — contém o arquivo da skill e toda a documentação de suporte para Claude e Codex.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">Passo 2 — Claude</div>
+                        <h4>Instalar no Claude Desktop</h4>
+                        <p>Abra <strong>Configurações → Capacidades → Skills</strong>, clique em <strong>Carregar skill</strong> e selecione o arquivo ZIP diretamente (não precisa extrair).</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">Passo 2 — Codex</div>
+                        <h4>Instalar no Codex</h4>
+                        <p>Extraia o ZIP e copie para <strong>~/.codex/skills/</strong> (Mac/Linux) ou <strong>%USERPROFILE%\.codex\skills\</strong> (Windows), depois reinicie o Codex ou seu IDE.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">Passo 3</div>
+                        <h4>Usar</h4>
+                        <p>Peça ao seu assistente de IA para revisar qualquer texto de interface e ele aplicará automaticamente as boas práticas de UX Writing.</p>
+                    </div>
+                </div>
+                <div class="quickstart-cta">
+                    <a href="https://github.com/uxschwarz/ux-writing-skill-brasil#instala%C3%A7%C3%A3o" class="btn btn-secondary">Ver instruções detalhadas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="credits">
+            <div class="container">
+                <h3 class="section-title">Créditos</h3>
+                <div class="credits-content">
+                    <p>Versão brasileira em português: construída, iterada e remodelada por <a href="https://www.linkedin.com/in/uxschwarz/">Stephanie Schwarz</a>, Content Designer na HelloFresh.</p>
+                    <p>Inspirada pela Skill desenvolvida por <a href="https://www.linkedin.com/in/christopher-greer/">Christopher Greer</a>, Staff Content Designer no Stripe. Adaptação dos materiais base para o português autorizada pelo criador original.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Criado por <a href="https://www.linkedin.com/in/uxschwarz/">Stephanie Schwarz</a> · Licença MIT</p>
+            <nav>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil/blob/main/CONTRIBUTING.md">Contribuir</a>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil/blob/main/CHANGELOG.md">Changelog</a>
+                <a href="https://github.com/uxschwarz/ux-writing-skill-brasil/issues">Issues</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Terminal Window -->
+    <div class="terminal-window" id="terminal-window" style="top: 100px; left: 100px; display: none;">
+        <div class="terminal-header" id="terminal-header">
+            <div class="terminal-title">ux-writing-skill-brasil — demo</div>
+            <div class="terminal-controls">
+                <button class="terminal-control close" onclick="closeTerminal()"></button>
+            </div>
+        </div>
+        <div class="terminal-content" id="terminal-content">
+            <div class="terminal-line"><span class="terminal-prompt">→</span> <span class="terminal-command">Revise esta mensagem de estado vazio</span></div>
+            <div class="terminal-line"><span class="terminal-output">"Você não tem nenhum item salvo."</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-success">✓ Analisando em relação aos 4 padrões de qualidade</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-highlight">Avaliação:</span></div>
+            <div class="terminal-line"><span class="terminal-output">✗ Proposital: Não ajuda o usuário a tomar ação ou atingir objetivos</span></div>
+            <div class="terminal-line"><span class="terminal-output">✓ Conciso: Contagem de palavras adequada (6 palavras)</span></div>
+            <div class="terminal-line"><span class="terminal-output">✗ Conversacional: Enquadramento negativo, soa desanimador</span></div>
+            <div class="terminal-line"><span class="terminal-output">✓ Claro: Mensagem não tem ambiguidade</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-highlight">Problemas:</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Falta call-to-action para popular o estado vazio</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Enquadramento negativo ("não tem") em vez de neutro/positivo</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Sem orientação sobre o que fazer a seguir</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-highlight">Recomendado:</span></div>
+            <div class="terminal-line"><span class="terminal-output">"Nenhum item salvo ainda. Navegue pelos produtos para criar sua lista."</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-highlight">Por que funciona:</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Proposital: CTA claro orienta o usuário para a próxima ação</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Conversacional: "ainda" implica que isso é temporário e esperado</span></div>
+            <div class="terminal-line"><span class="terminal-output">• Segue o padrão de estado vazio: Explicação + CTA</span></div>
+            <div class="terminal-line">&nbsp;</div>
+            <div class="terminal-line"><span class="terminal-prompt">→</span> <span class="terminal-command">_</span></div>
+        </div>
+    </div>
+
+    <!-- Video Window -->
+    <div class="video-window" id="video-window" style="top: 100px; left: 100px; display: none;">
+        <div class="video-header" id="video-header">
+            <div class="video-title">demo — ux-writing-skill-brasil</div>
+            <div class="terminal-controls">
+                <button class="terminal-control close" onclick="closeVideo()"></button>
+            </div>
+        </div>
+        <div class="video-content">
+            <video controls>
+                <source src="https://raw.githubusercontent.com/uxschwarz/ux-writing-skill-brasil/main/ux-writing-skill-vid.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Draggable terminal window
+        let isDragging = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+        let xOffset = 0;
+        let yOffset = 0;
+
+        const terminalWindow = document.getElementById('terminal-window');
+        const terminalHeader = document.getElementById('terminal-header');
+
+        terminalHeader.addEventListener('mousedown', dragStart);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', dragEnd);
+
+        // Touch events for mobile
+        terminalHeader.addEventListener('touchstart', dragStart);
+        document.addEventListener('touchmove', drag);
+        document.addEventListener('touchend', dragEnd);
+
+        function dragStart(e) {
+            // Don't start dragging if clicking on terminal control
+            if (e.target.classList.contains('terminal-control')) {
+                return;
+            }
+
+            if (e.type === 'touchstart') {
+                initialX = e.touches[0].clientX - xOffset;
+                initialY = e.touches[0].clientY - yOffset;
+            } else {
+                initialX = e.clientX - xOffset;
+                initialY = e.clientY - yOffset;
+            }
+
+            if (e.target === terminalHeader || terminalHeader.contains(e.target)) {
+                isDragging = true;
+            }
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+
+                if (e.type === 'touchmove') {
+                    currentX = e.touches[0].clientX - initialX;
+                    currentY = e.touches[0].clientY - initialY;
+                } else {
+                    currentX = e.clientX - initialX;
+                    currentY = e.clientY - initialY;
+                }
+
+                xOffset = currentX;
+                yOffset = currentY;
+
+                setTranslate(currentX, currentY, terminalWindow);
+            }
+        }
+
+        function dragEnd(e) {
+            initialX = currentX;
+            initialY = currentY;
+            isDragging = false;
+        }
+
+        function setTranslate(xPos, yPos, el) {
+            el.style.transform = `translate(${xPos}px, ${yPos}px)`;
+        }
+
+        function toggleTerminal() {
+            const isHidden = terminalWindow.style.display === 'none';
+            terminalWindow.style.display = isHidden ? 'flex' : 'none';
+
+            if (isHidden) {
+                // Add staggered typing animation
+                const lines = document.querySelectorAll('.terminal-line');
+                lines.forEach((line, index) => {
+                    line.style.animationDelay = `${index * 0.15}s`;
+                });
+            }
+        }
+
+        function closeTerminal() {
+            terminalWindow.style.display = 'none';
+        }
+
+        // Draggable video window
+        let isVideoDragging = false;
+        let videoCurrentX;
+        let videoCurrentY;
+        let videoInitialX;
+        let videoInitialY;
+        let videoXOffset = 0;
+        let videoYOffset = 0;
+
+        const videoWindow = document.getElementById('video-window');
+        const videoHeader = document.getElementById('video-header');
+
+        videoHeader.addEventListener('mousedown', videoDragStart);
+        document.addEventListener('mousemove', videoDrag);
+        document.addEventListener('mouseup', videoDragEnd);
+
+        // Touch events for mobile
+        videoHeader.addEventListener('touchstart', videoDragStart);
+        document.addEventListener('touchmove', videoDrag);
+        document.addEventListener('touchend', videoDragEnd);
+
+        function videoDragStart(e) {
+            // Don't start dragging if clicking on terminal control
+            if (e.target.classList.contains('terminal-control')) {
+                return;
+            }
+
+            if (e.type === 'touchstart') {
+                videoInitialX = e.touches[0].clientX - videoXOffset;
+                videoInitialY = e.touches[0].clientY - videoYOffset;
+            } else {
+                videoInitialX = e.clientX - videoXOffset;
+                videoInitialY = e.clientY - videoYOffset;
+            }
+
+            if (e.target === videoHeader || videoHeader.contains(e.target)) {
+                isVideoDragging = true;
+            }
+        }
+
+        function videoDrag(e) {
+            if (isVideoDragging) {
+                e.preventDefault();
+
+                if (e.type === 'touchmove') {
+                    videoCurrentX = e.touches[0].clientX - videoInitialX;
+                    videoCurrentY = e.touches[0].clientY - videoInitialY;
+                } else {
+                    videoCurrentX = e.clientX - videoInitialX;
+                    videoCurrentY = e.clientY - videoInitialY;
+                }
+
+                videoXOffset = videoCurrentX;
+                videoYOffset = videoCurrentY;
+
+                setVideoTranslate(videoCurrentX, videoCurrentY, videoWindow);
+            }
+        }
+
+        function videoDragEnd(e) {
+            videoInitialX = videoCurrentX;
+            videoInitialY = videoCurrentY;
+            isVideoDragging = false;
+        }
+
+        function setVideoTranslate(xPos, yPos, el) {
+            el.style.transform = `translate(${xPos}px, ${yPos}px)`;
+        }
+
+        function toggleVideo() {
+            const isHidden = videoWindow.style.display === 'none';
+            videoWindow.style.display = isHidden ? 'flex' : 'none';
+        }
+
+        function closeVideo() {
+            const video = videoWindow.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+            videoWindow.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
