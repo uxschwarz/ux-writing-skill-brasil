@@ -51,7 +51,7 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 
 **Para redatores de produto**: Permita que não-redatores criem textos de interface que seguem seu design system.
 
-**Para EUquipes de UX Writing**: Aplique diretrizes de conteúdo em escala sem se tornar um gargalo.
+**Para equipes de UX Writing**: Aplique diretrizes de conteúdo em escala sem se tornar um gargalo.
 
 **Para produtos em estágio inicial**: Construa qualidade de conteúdo desde o início com padrões comprovados - sem lorem ipsum.
 
@@ -67,10 +67,10 @@ Esta skill funciona com **Claude Desktop**, **Claude Code** e **Codex** (CLI e e
 
 Se você usa o Claude Desktop, a instalação é simples:
 
-1. **Baixe** [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip) — contém apenas os arquivos da skill e a documentação
+1. **Baixe** [ux-writing-skill.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill.zip) — contém apenas os arquivos da skill e a documentação
 2. Abra o **Claude Desktop**
 3. Vá em **Configurações → Capacidades → Skills**
-4. Clique em **Carregar skill** e selecione **ux-writing-skill-brasil.zip**
+4. Clique em **Carregar skill** e selecione **ux-writing-skill.zip**
 5. **Faça upload do arquivo ZIP diretamente** — não o extraia antes
 6. Comece a usar a skill imediatamente!
 
@@ -82,7 +82,7 @@ Se você usa o Claude Code, siga estes passos:
 
 **Passo 1: Baixe a Skill**
 
-1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip)
+1. Baixe [ux-writing-skill.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill.zip)
 2. Extraia o arquivo ZIP (duplo clique no Mac, clique direito → Extrair no Windows)
 
 **Passo 2: Copie para a Pasta de Skills**
@@ -113,7 +113,7 @@ Se você usa Codex CLI ou extensões de IDE, a instalação é direta:
 
 **Passo 1: Baixe a Skill**
 
-1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip)
+1. Baixe [ux-writing-skill.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill.zip)
 2. Extraia o arquivo ZIP
 
 **Passo 2: Copie para a Pasta de Skills do Codex**
@@ -271,7 +271,7 @@ Usar esta skill expõe uma execução básica sistemática por trás de um UX Wr
 
 ## Créditos
 
-Versão brasileira em português: construída, iterada e remodelada por da Skill originalmente construída por [Stephanie Schwarz](https://www.linkedin.com/in/uxschwarz/), Content Designer na HelloFresh.
+Versão brasileira em português: construída, iterada e remodelada por [Stephanie Schwarz](https://www.linkedin.com/in/uxschwarz/), Content Designer na HelloFresh.
 Inspirada pela Skill desenvolvida por [Christopher Greer](https://www.linkedin.com/in/christopher-greer/), Staff Content Designer no Stripe. Adaptação dos materiais base para o português autorizada pelo criador original.
 
 Baseada em princípios estabelecidos de UX Writing de:
@@ -299,7 +299,7 @@ Se você está contribuindo ou quer compilar o ZIP da skill localmente:
 ./build-skill.sh
 ```
 
-Isso cria `dist/ux-writing-skill-brasil.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
+Isso cria `dist/ux-writing-skill.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
 
 O script de build exclui arquivos do repositório como `README.md`, `CONTRIBUTING.md`, `index.html` e o vídeo demonstrativo — estes ficam no GitHub mas não são necessários no pacote da skill.
 
@@ -328,4 +328,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Habilitado para uso • **Versão**: 1.0.0 • **Última atualização**: Fevereiro de 2026
+**Status**: Pronto para produção • **Versão**: 1.5.0 • **Última atualização**: Fevereiro de 2026

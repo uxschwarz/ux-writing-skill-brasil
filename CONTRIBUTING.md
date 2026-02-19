@@ -122,6 +122,9 @@ Todas as contribuições devem seguir estes princípios:
 ux-writing/
 ├── SKILL.md (princípios e padrões fundamentais)
 ├── README.md (documentação do GitHub)
+├── docs/ (guias de integração)
+│   ├── claude-figma-integration.md
+│   └── codex-figma-integration.md
 ├── references/ (materiais de suporte)
 │   ├── voice-chart-template.md
 │   ├── content-usability-checklist.md

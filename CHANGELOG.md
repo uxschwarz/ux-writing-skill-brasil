@@ -30,7 +30,7 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ## [1.3.0] - 2025-11-11
 
 ### Adicionado
-- **Site no GitHub Pages**: Página de destino interativa em content-designer.github.io/ux-writing-skill
+- **Site no GitHub Pages**: Página de destino interativa em uxschwarz.github.io/ux-writing-skill-brasil
 - **Demonstração em Vídeo**: Demo incorporado mostrando a skill em ação
 - **Workflow de Reconstrução Automática**: GitHub Action para reconstruir o ZIP da skill automaticamente ao detectar mudanças
 

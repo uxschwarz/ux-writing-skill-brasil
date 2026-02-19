@@ -49,7 +49,7 @@ git push origin vX.Y.Z
 
 ### 5. Crie o Release no GitHub
 
-1. Acesse [Releases](https://github.com/content-designer/ux-writing-skill/releases)
+1. Acesse [Releases](https://github.com/uxschwarz/ux-writing-skill-brasil/releases)
 2. Clique em "Draft a new release"
 3. Selecione a tag que você acabou de enviar
 4. Adicione o título do release: `vX.Y.Z - Título do Release`
@@ -81,6 +81,6 @@ O GitHub cria automaticamente artefatos ZIP e tarball para download em cada rele
 
 Os usuários podem acessar qualquer versão pelo GitHub:
 
-- **Página de Releases**: https://github.com/content-designer/ux-writing-skill/releases
-- **Download direto**: https://github.com/content-designer/ux-writing-skill/releases/tag/vX.Y.Z
-- **Arquivo ZIP**: https://github.com/content-designer/ux-writing-skill/archive/refs/tags/vX.Y.Z.zip
+- **Página de Releases**: https://github.com/uxschwarz/ux-writing-skill-brasil/releases
+- **Download direto**: https://github.com/uxschwarz/ux-writing-skill-brasil/releases/tag/vX.Y.Z
+- **Arquivo ZIP**: https://github.com/uxschwarz/ux-writing-skill-brasil/archive/refs/tags/vX.Y.Z.zip
