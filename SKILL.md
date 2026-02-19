@@ -1,6 +1,6 @@
 ---
 name: ux-writing
-description: Crie textos de interface centrados no usuário e acessíveis (microcopy) para produtos digitais, incluindo botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso e textos de ajuda. Use ao escrever ou editar qualquer texto que apareça em apps, sites ou softwares, ao projetar fluxos conversacionais, estabelecer diretrizes de voz e tom, auditar conteúdo de produtos para consistência e usabilidade, revisar strings de UI ou melhorar textos de interface existentes. Aplica boas práticas de UX Writing baseadas em quatro padrões de qualidade: proposital, conciso, conversacional e claro. Inclui diretrizes de acessibilidade, benchmarks embasados em pesquisa (comprimento de frases, taxas de compreensão, níveis de leitura), padrões expandidos de mensagens de erro, frameworks de adaptação de tom e materiais de referência completos.
+description: Crie textos de interface centrados no usuário e acessíveis (microcopy) para produtos digitais, incluindo botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso e textos de ajuda.
 ---
 
 # UX Writing
