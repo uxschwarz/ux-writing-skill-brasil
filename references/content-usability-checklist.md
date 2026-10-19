@@ -120,13 +120,66 @@ Use este checklist para avaliar a qualidade de textos de UX. Avalie cada critér
 - Padrões de UI aplicados de forma consistente
 - Terminologia documentada no guia de estilo
 
+## Acessibilidade
+
+**Linguagem inclusiva e neutra**
+- Evita marcação de gênero desnecessária ("o usuário" pode ser "você" ou "a pessoa")
+- Sem expressões idiomáticas que excluem falantes não nativos
+- Terminologia respeitosa para deficiências (modelo social, não médico)
+
+**Textos alternativos e rótulos descritivos**
+- Elementos interativos têm rótulos que fazem sentido fora de contexto
+- Mensagens de erro e sucesso não dependem apenas de cor ou ícone
+- Ações destrutivas têm linguagem clara sobre consequências irreversíveis
+
+**Transparência e confiança**
+- Explica o que acontece com os dados do usuário antes de solicitá-los
+- Aviso prévio antes de ações irreversíveis ("Isso não pode ser desfeito")
+- Tom empático em momentos de erro — nunca culpabiliza o usuário
+
+**Linguagem simples para público amplo**
+- Nível de leitura adequado ao público (equivalente ao 8º ou 9º ano para público geral)
+- Termos técnicos definidos na primeira ocorrência
+- Parágrafos curtos, títulos descritivos, listas quando há mais de 2 itens
+
+**Feedback de estado claro**
+- Estados de carregamento, erro e sucesso têm texto (não só visual)
+- Contagem regressiva ou progresso é comunicada por extenso
+- Mudanças dinâmicas na tela são anunciáveis por leitores de tela
+
 ## Guia de Pontuação
 
-**9-10**: Excelente — Exemplo de melhor prática
-**7-8**: Bom — Pequenas melhorias possíveis
-**5-6**: Adequado — Problemas notáveis a resolver
-**3-4**: Precisa de trabalho — Problemas significativos
-**0-2**: Ruim — Revisão maior necessária
+### Escala Geral
+
+| Faixa | Classificação | Critério |
+|-------|---------------|----------|
+| 9–10 | Excelente | Exemplo de melhor prática — pode ser usado como referência |
+| 7–8 | Bom | Pequenas melhorias possíveis, mas não urgentes |
+| 5–6 | Adequado | Problemas notáveis que afetam a experiência |
+| 3–4 | Precisa de trabalho | Problemas significativos que confundem ou frustram |
+| 0–2 | Ruim | Revisão maior necessária — reescrever do zero |
+
+### O que distingue um 9 de um 5 por dimensão
+
+**Conciso**
+- **9**: Nenhuma palavra pode ser removida sem perda de significado; informação mais importante vem primeiro
+- **5**: Palavras de preenchimento presentes, ordem invertida (contexto antes da ação), frases longas mas compreensíveis
+
+**Proposital**
+- **9**: Responde imediatamente "o que eu faço aqui?" e "o que ganho?"; voz da marca presente e adequada ao contexto
+- **5**: Tarefa identificável, mas benefício não está explícito; voz genérica, poderia ser qualquer produto
+
+**Conversacional**
+- **9**: Soa como algo que se diria em voz alta; uso natural de artigos e preposições; personalidade presente sem forçar
+- **5**: Compreensível, mas ligeiramente robótico; falta fluidez; imperativo sem suavização em momentos que pedem empatia
+
+**Claro**
+- **9**: Verbos específicos e precisos; leitor sabe exatamente o que acontecerá; terminologia consistente com o resto do produto
+- **5**: Ação compreensível, mas verbo genérico ("fazer", "realizar"); possíveis ambiguidades se o usuário não tiver contexto
+
+**Acessibilidade**
+- **9**: Funciona sem cor, sem visão, sem contexto prévio; linguagem inclusiva; tom empático em momentos de tensão
+- **5**: Acessível para a maioria dos casos, mas depende de contexto visual em algum ponto; linguagem neutra mas não ativa na inclusão
 
 ## Como Usar Este Checklist
 
@@ -154,5 +207,7 @@ Use este checklist para avaliar a qualidade de textos de UX. Avalie cada critér
 **Proposital**: 8/10 — Sugere a causa provável (conexão) e o próximo passo
 **Conversacional**: 9/10 — Formulação natural e humana
 **Claro**: 9/10 — Específico sobre o que falhou e o que fazer
+
+**Acessibilidade**: 8/10 — Não depende de cor; poderia incluir ação de suporte ("Fale conosco se o problema persistir")
 
 **Geral**: 9/10 — Excelente
