@@ -114,7 +114,7 @@ Todas as contribuições devem seguir estes princípios:
 - Use travessão (—) não hífen (-) para pausas
 - Mantenha os exemplos realistas e específicos
 - Inclua exemplos do que fazer e o que evitar sempre que útil
-- Pontue exemplos em relação aos quatro padrões de qualidade quando relevante
+- Pontue exemplos em relação aos cinco padrões de qualidade quando relevante
 
 ### Organização de Arquivos
 
@@ -123,9 +123,9 @@ ux-writing/
 ├── SKILL.md (princípios e padrões fundamentais)
 ├── README.md (documentação do GitHub)
 ├── docs/ (guias de integração)
-│   ├── claude-figma-integration.md
-│   └── codex-figma-integration.md
+│   └── claude-figma-integration.md
 ├── references/ (materiais de suporte)
+│   ├── accessibility-guidelines.md
 │   ├── voice-chart-template.md
 │   ├── content-usability-checklist.md
 │   └── patterns-detailed.md
