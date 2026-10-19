@@ -9,7 +9,7 @@ Uma vez conectado, você pode:
 - **Auditar designs existentes** para verificar acessibilidade, clareza e tom
 - **Gerar textos melhorados** que seguem as boas práticas
 - **Revisar fluxos inteiros** para consistência e voz
-- **Obter sugestões específicas** baseadas nos quatro padrões de qualidade
+- **Obter sugestões específicas** baseadas nos cinco padrões de qualidade
 
 ## Exemplo Rápido
 
@@ -239,7 +239,7 @@ Verifique:
 Aqui está minha tela de erro atual: [Link do Figma]
 
 Mostre:
-1. O que está errado com o texto atual (avalie em relação aos 4 padrões de qualidade)
+1. O que está errado com o texto atual (avalie em relação aos 5 padrões de qualidade)
 2. Versão reescrita com melhorias
 3. Explicação do que mudou e por quê
 ```
@@ -342,7 +342,7 @@ Usando a Skill de UX Writing, revise este design: [link]
 
 Ou peça ao Claude para aplicar frameworks específicos:
 ```
-Aplique os quatro padrões de qualidade (proposital, conciso, conversacional, claro) a este texto: [link]
+Aplique os cinco padrões de qualidade (proposital, conciso, conversacional, claro e acessível) a este texto: [link]
 ```
 
 ---
