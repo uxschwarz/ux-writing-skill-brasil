@@ -4,6 +4,45 @@ Todas as mudanças notáveis na Skill de UX Writing serão documentadas neste ar
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) e este projeto segue o [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-10-19
+
+### Adicionado
+
+**Referências**
+- `accessibility-guidelines.md`: WCAG 2.2 (SC 3.2.6 Ajuda Consistente, SC 3.3.7 Entrada Redundante, SC 3.3.8 Autenticação Acessível); seção de regiões `aria-live` e conteúdo dinâmico; orientações LGPD para avisos de privacidade e consentimento; links atualizados para WCAG 2.2 como versão atual
+- `content-usability-checklist.md`: 5ª dimensão de pontuação "Acessibilidade" com critérios detalhados (linguagem inclusiva, textos alternativos, transparência, linguagem simples, feedback de estado); rubricas por dimensão explicando o que distingue 9/10 de 5/10; 6 itens adicionados ao checklist final (linguagem neutra, avisos irreversíveis, solicitação de dados, tom empático, termos técnicos definidos)
+- `patterns-detailed.md`: Padrões de consentimento LGPD com 3 vozes (banner de cookies, aviso em formulário, solicitação de permissão, revogação); estados de carregamento (skeleton, ação em progresso, sucesso pós-carregamento); padrões de busca (placeholder/rótulo, sugestões automáticas, resultados, empty state de busca); formatação brasileira (datas, moeda, CPF/CNPJ/CEP/telefone); truncamento (títulos, descrições, dados sensíveis mascarados)
+- `voice-chart-template.md`: Mapeamento de tom por contexto emocional com tabela por momento (fluxo neutro, conquista, erro recuperável, erro bloqueante, alto risco, onboarding, empty state) e exemplo aplicado ao METROZ; espectro de voz em 5 eixos com posicionamento das 3 marcas de exemplo; seção "Quando Adaptar a Voz" (desvios justificados vs. não justificados com regra prática); seção de voz para IA e interfaces conversacionais (princípios, anti-padrões e tabela de padrões por momento da conversa)
+
+**Exemplos**
+- `real-world-improvements.md`: 3 novos exemplos com contexto brasileiro — erro de PIX (incluindo handling de timeout), banner de consentimento LGPD e validação inline de CPF; 5ª dimensão Acessibilidade adicionada a todos os 14 blocos de análise (7 "Antes" + 7 "Depois"); 2 padrões comuns novos; 2 perguntas de autoavaliação novas
+
+**Templates**
+- `empty-state-template.md`: 5º tipo "Estado de Falha no Carregamento" (com variação de falha parcial); seção de acessibilidade (texto independente de ilustração, aria-live para estados dinâmicos, CTA descritivo fora de contexto, prevenção de falsos negativos); padrão "Retorno após Longa Ausência" nos padrões de conteúdo; 3 itens de acessibilidade no checklist
+- `error-message-template.md`: 4º tipo "Erro de Autorização / Acesso Negado" com 3 sub-cenários (plano insuficiente, permissão de equipe, sessão expirada); guidance de segurança na estrutura (quando omitir a causa em fluxos de autenticação); seção "Padrões Brasileiros Frequentes" com tabelas para documentos (CPF, CNPJ, CEP, telefone), PIX (5 cenários incluindo alerta crítico de timeout), autenticação e conta; tipos adicionais em Variações de Voz (timeout/conexão e edição simultânea/conflito); 3 itens de acessibilidade no checklist
+- `onboarding-flow-template.md`: Template "Consentimento e Privacidade (LGPD)" posicionado corretamente no fluxo após criação de conta, com exemplo de opt-in de marketing desligado por padrão; template "Solicitação de Permissão de Funcionalidade" com tela de valor antes do diálogo do sistema; template "Reengajamento / Retorno após Ausência" com dados concretos e guidance sobre feature discovery; seção "Linguagem de Ações Opcionais" com tabela de quando usar Pular vs Fazer isso depois vs Agora não vs Explorar; 4 itens de acessibilidade no checklist; 4 perguntas de teste novas
+
+### Corrigido
+- `real-world-improvements.md`: Dashboard empty state "depois" corrigido — a versão anterior dizia "Para acessar os dados, faça login em sua conta", pressupondo usuário deslogado; substituído por texto correto para usuário autenticado sem dados
+- `accessibility-guidelines.md`: Corrigido typo "localizaçaõ" → "localização"
+
+---
+
+## [1.6.0] - 2026-10-19
+
+### Removido
+- **Suporte ao OpenAI Codex**: Removidas todas as referências ao Codex do repositório — a skill é exclusiva para Claude
+- `docs/codex-figma-integration.md` deletado
+- `.github/workflows/main.yml` deletado (workflow "Droid Review" que nunca foi configurado e falhava em todas as execuções)
+
+### Alterado
+- `SKILL.md`: Compatibilidade atualizada para "Claude Desktop e Claude Code"; nota sobre Codex removida; link para `docs/codex-figma-integration.md` removido dos Recursos
+- `README.md`: Título, seções de instalação, Figma, Para Equipes, Trabalhos Relacionados e Como Funciona atualizados para remover referências ao Codex
+- `index.html`: Meta description, título, subtítulo, card de integração "Codex + Figma MCP" e etapa de instalação do Codex removidos
+- `VERSIONING.md`: Exemplo de "adicionar suporte a novas plataformas" atualizado para remover menção ao Codex
+
+---
+
 ## [1.5.0] - 2026-01
 
 ### Adicionado
@@ -128,9 +167,9 @@ Esta atualização aborda lacunas identificadas através de pesquisa de design s
 Possíveis adições para versões futuras:
 
 ### Materiais de Referência
-- Padrões de assistente de voz e UI conversacional
 - Considerações sobre textos para mobile vs. desktop
 - Bibliotecas de padrões específicos por setor (fintech, saúde, e-commerce)
+- Padrões para notificações por e-mail e push (conteúdo e frequência)
 
 ### Templates
 - Templates de anúncio de produto
@@ -139,10 +178,9 @@ Possíveis adições para versões futuras:
 - Templates de notificações por e-mail
 
 ### Exemplos
-- Mais exemplos específicos por setor (fintech, saúde, e-commerce)
+- Exemplos específicos por setor (fintech, saúde, e-commerce)
 - Exemplos de fluxos complexos (formulários multi-etapa, processos de checkout)
-- Exemplos de variação de voz (formal, casual, técnico)
-- Melhorias de acessibilidade
+- Exemplos de variação de voz por contexto (B2B, governo, aplicativos de saúde)
 
 ### Ferramentas
 - Planilha de auditoria de conteúdo
