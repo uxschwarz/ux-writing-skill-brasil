@@ -21,7 +21,7 @@ Use esta skill quando:
 
 ## Princípios Fundamentais de UX Writing
 
-### Os Quatro Padrões de Qualidade
+### Os Cinco Padrões de Qualidade
 
 Todo texto de UX deve ser:
 
@@ -29,6 +29,7 @@ Todo texto de UX deve ser:
 2. **Conciso** — Usa o menor número de palavras possível sem perder significado
 3. **Conversacional** — Soa natural e humano, não robótico
 4. **Claro** — Sem ambiguidades, preciso e fácil de entender
+5. **Acessível** — Inclusivo para todos os usuários; funciona com tecnologia assistiva; linguagem simples; não depende apenas de cor
 
 ### Boas Práticas Essenciais
 
@@ -178,13 +179,13 @@ O tom é como a voz se adapta a situações específicas. Enquanto a voz permane
 **Frustrado** (erros, falhas, bloqueios)
 - Empático e focado na solução
 - Reconheça o problema sem culpar
-- Forneqa um caminho claro de recuperação
+- Forneça um caminho claro de recuperação
 - Exemplo: "Pagamento não realizado. Seu cartão foi recusado. Tente com outro cartão."
 
 **Confuso** (primeiro uso, recursos complexos)
 - Paciente e explicativo
 - Detalhe os passos claramente
-- Forneqa contexto e orientação
+- Forneça contexto e orientação
 - Exemplo: "Conecte sua conta bancária para ver insights de gastos. Vamos guiá-lo."
 
 **Confiante** (tarefas rotineiras, visitas de retorno)
@@ -210,7 +211,7 @@ O tom é como a voz se adapta a situações específicas. Enquanto a voz permane
 **Mensagens de erro**: Empático, tranquilizador, focado na solução
 - Nunca culpe o usuário
 - Explique o que aconteceu
-- Forneqa o próximo passo claro
+- Forneça o próximo passo claro
 
 **Mensagens de sucesso**: Positivo, específico, encorajador
 - Confirme o que aconteceu
@@ -234,12 +235,12 @@ O tom é como a voz se adapta a situações específicas. Enquanto a voz permane
 
 **Estados vazios**: Esperançoso, acionável, orientador
 - Explique por que está vazio
-- Forneqa a próxima ação clara
+- Forneça a próxima ação clara
 - Mantenha um tom encorajador
 
 ## Processo de Edição
 
-Edite textos de UX em quatro fases:
+Edite textos de UX em cinco fases:
 
 ### Fase 1: Proposital
 - O texto ajuda o usuário a atingir seu objetivo?
@@ -265,6 +266,12 @@ Edite textos de UX em quatro fases:
 - Teste a legibilidade (Hemingway Editor, Flesch-Kincaid)
 - Garanta que não haja ambiguidade
 
+### Fase 5: Acessível
+- Elementos interativos têm rótulos descritivos fora de contexto
+- Erros e estados são comunicados por texto, não só por cor
+- Nível de leitura adequado ao público
+- Terminologia respeitosa e linguagem inclusiva
+
 ## Fluxo de Trabalho
 
 1. **Entenda o contexto**
@@ -284,6 +291,7 @@ Edite textos de UX em quatro fases:
    - Fase 2: Conciso
    - Fase 3: Conversacional
    - Fase 4: Claro
+   - Fase 5: Acessível
 
 4. **Teste e meça**
    - Revise com a equipe
@@ -307,12 +315,12 @@ Escrever conteúdo acessível garante que todos os usuários, inclusive os que u
 - Use 8 a 14 palavras por frase (8 palavras = 100% de compreensão, 14 palavras = 90%)
 - Divida informações complexas em blocos escaneáveis
 - Use títulos claros e hierarquia lógica
-- Forneqa padrões consistentes e previsíveis
+- Forneça padrões consistentes e previsíveis
 
 **Comunicação Multimodal**
 - Não dependa apenas de cor para transmitir significado
 - Associe indicadores visuais a textos ("Erro: E-mail obrigatório" com ícone vermelho)
-- Forneqa alternativas em texto para ícones e imagens
+- Forneça alternativas em texto para ícones e imagens
 - Garanta contraste de cor suficiente (mínimo WCAG AA: 4,5:1)
 
 **Linguagem Simples para Todos**
