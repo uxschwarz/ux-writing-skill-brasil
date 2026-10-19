@@ -68,7 +68,7 @@ O GitHub cria automaticamente artefatos ZIP e tarball para download em cada rele
 ### Incremente a versão MENOR (x.1.x → x.2.0) quando:
 - Adicionar novos documentos de referência
 - Adicionar novas categorias de padrões
-- Adicionar suporte a novas plataformas (ex.: Codex)
+- Adicionar suporte a novas plataformas
 - Adicionar novos recursos significativos
 
 ### Incremente o PATCH (x.x.1 → x.x.2) quando:
