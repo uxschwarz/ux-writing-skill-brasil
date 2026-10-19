@@ -65,6 +65,36 @@ Use este modelo para orientar os usuários quando o conteúdo está ausente e aj
 
 ---
 
+---
+
+### Estado de Falha no Carregamento
+**Objetivo**: Informar que o conteúdo deveria estar lá, mas falhou ao carregar; oferecer recuperação
+**Tom**: Transparente, prático, sem drama
+
+```
+**Título**: [O que não carregou]
+**Corpo**: [Causa provável, se conhecida]. [O que fazer].
+**Botão**: [Ação de recuperação]
+```
+
+**Exemplo:**
+```
+**Título**: Não foi possível carregar seus projetos
+**Corpo**: Verifique sua conexão e tente novamente.
+**Botão**: Tentar novamente
+```
+
+**Diferença do estado vazio real**: O usuário tem dados — eles simplesmente não puderam ser carregados. O texto deve comunicar isso: o problema é técnico, não é que o conteúdo não existe.
+
+**Variação com falha parcial** (parte do conteúdo carregou):
+```
+**Título**: Alguns itens não carregaram
+**Corpo**: Atualize para ver a lista completa.
+**Botão**: Atualizar
+```
+
+---
+
 ## Checklist de Estado Vazio
 
 Antes de finalizar um estado vazio, verifique:
@@ -75,6 +105,9 @@ Antes de finalizar um estado vazio, verifique:
 - [ ] **Focado no valor** — Mostra o benefício de tomar a ação
 - [ ] **Conciso** — Breve o suficiente para ser escaneado rapidamente
 - [ ] **Evita negatividade** — Sem "nada aqui" ou "você não tem..."
+- [ ] **Independente de ilustração** — O texto faz sentido sem a imagem; leitores de tela não descrevem ilustrações decorativas
+- [ ] **aria-live quando dinâmico** — Se o estado vazio aparece sem recarregar a página (busca em tempo real, filtro), a região usa `aria-live="polite"`
+- [ ] **Não depende de cor** — A ausência de conteúdo é comunicada por texto, não apenas por um espaço visual vazio
 
 ## Padrões de Conteúdo por Tipo
 
@@ -101,6 +134,16 @@ Exemplos:
 - "Nenhum arquivo corresponde à sua busca. Tente palavras diferentes ou **ver todos os arquivos**."
 - "Nenhum evento este mês. **Ver eventos futuros** ou **criar um evento**."
 - "Nenhum membro da equipe corresponde a esses filtros. **Limpar filtros** para ver todos."
+
+### Retorno após Longa Ausência
+**Padrão**: "[Contexto de tempo]. [O que mudou ou está esperando]. [Ação para retomar]"
+
+Exemplos:
+- "Você ficou 30 dias sem entrar. Suas tarefas foram arquivadas automaticamente. **Ver tarefas arquivadas**"
+- "Bem-vindo(a) de volta! Seus projetos estão aqui, prontos para continuar."
+- "Novidades desde sua última visita: 3 comentários e 1 tarefa atribuída a você."
+
+---
 
 ### Permissão/Acesso Necessário
 **Padrão**: "[Conteúdo] não está disponível. [Por quê]. [Como obter acesso]"
@@ -131,6 +174,29 @@ Exemplos:
 **Título**: Nenhum alerta
 **Corpo**: Seus sistemas estão funcionando normalmente.
 ```
+
+## Acessibilidade em Estados Vazios
+
+### Texto independente de contexto visual
+Estados vazios frequentemente dependem de uma ilustração para comunicar o "humor" do momento. O texto deve funcionar sem ela:
+- ❌ Título: "Oops!" + corpo: "Parece que algo deu errado." (sem ilustração = incompreensível)
+- ✅ Título: "Não foi possível carregar os dados" + corpo: "Verifique sua conexão e tente novamente."
+
+### aria-live para estados dinâmicos
+Quando o estado vazio aparece sem recarregar a página — por exemplo, ao filtrar uma lista ou fazer uma busca em tempo real — use `aria-live="polite"` na região de resultado para que leitores de tela anunciem a mudança.
+
+**Texto ideal para aria-live em busca sem resultado:**
+- ✅ "Nenhum resultado para 'câmera vintage'. Tente palavras diferentes."
+- ❌ "Nenhum resultado." (muito vago; o usuário pode não lembrar do que buscou)
+
+### CTA acessível
+O botão de ação do estado vazio deve ter rótulo descritivo fora de contexto:
+- ❌ "Começar" (início de quê?)
+- ✅ "Criar primeiro projeto"
+- ✅ "Importar contatos"
+
+### Estado de carregamento antes do estado vazio
+Antes de mostrar um estado vazio, confirme que o carregamento terminou. Um estado vazio mostrado prematuramente enquanto os dados ainda carregam é um falso negativo. Use texto de carregamento com `aria-live="polite"` antes de renderizar o estado vazio.
 
 ## Orientação para Ilustrações
 
