@@ -42,6 +42,36 @@ O conteúdo deve funcionar com tecnologias assistivas atuais e futuras.
 
 ---
 
+---
+
+## WCAG 2.2 — Novos Critérios de Sucesso (Outubro 2023)
+
+O WCAG 2.2 acrescenta ao WCAG 2.1 novos critérios relevantes para UX Writers. Os critérios anteriores (WCAG 2.1) continuam válidos.
+
+### SC 3.2.6 — Ajuda Consistente (Nível A)
+Se um mecanismo de ajuda (link de suporte, chat, número de telefone) aparece em múltiplas telas, ele deve aparecer na mesma posição relativa em todas.
+
+**Para UX Writers:**
+- O texto do link de ajuda deve ser consistente entre telas ("Fale conosco", não "Ajuda" em uma tela e "Suporte" em outra)
+- Botões de suporte inline devem usar o mesmo rótulo em todo o produto
+
+### SC 3.3.7 — Entrada Redundante (Nível A)
+O produto não deve pedir ao usuário que insira a mesma informação mais de uma vez no mesmo processo, a menos que seja necessário por segurança.
+
+**Para UX Writers:**
+- Textos de formulário não devem pedir informações que o sistema já tem ("Confirme seu e-mail" é aceitável por segurança; pedir o CEP duas vezes no mesmo fluxo não é)
+- Quando informação é pré-preenchida, comunique isso ao usuário: "Usamos o endereço da sua conta. Altere se necessário."
+
+### SC 3.3.8 — Autenticação Acessível (Nível AA)
+Processos de autenticação não podem exigir que o usuário resolva um teste cognitivo (CAPTCHA baseado em memória ou cálculo) sem oferecer alternativa acessível.
+
+**Para UX Writers:**
+- Textos de CAPTCHA devem oferecer alternativa de áudio
+- Mensagens de autenticação em dois fatores devem ser claras sobre o método: "Digite o código de 6 dígitos enviado para (11) 9****-1234"
+- Erros de autenticação não devem revelar qual parte está errada por motivos de segurança: "E-mail ou senha incorretos" (não "Senha incorreta")
+
+---
+
 ## Otimização para leitores de tela
 
 ### Como leitores de tela funcionam
@@ -86,6 +116,45 @@ Use rótulos ARIA quando o contexto visual não está disponível para leitores 
 - Botão de busca com apenas ícone de lupa: aria-label="Buscar"
 - Botão de fechar com apenas X: aria-label="Fechar diálogo"
 - Links de redes sociais com apenas ícones: aria-label="Visite-nos no Instagram"
+
+---
+
+---
+
+## Regiões aria-live e Conteúdo Dinâmico
+
+Quando o conteúdo muda na tela sem recarregar a página (notificações, validação inline, contadores, resultados de busca), leitores de tela não anunciam automaticamente. Use regiões `aria-live` para comunicar essas mudanças.
+
+### Quando usar aria-live
+
+- Mensagens de validação inline (aparece ao sair do campo)
+- Notificações toast e banners de status
+- Resultados de busca carregados dinamicamente
+- Contadores ("3 itens no carrinho")
+- Confirmações de ação ("Salvo com sucesso")
+- Erros de formulário mostrados após envio
+
+### Níveis de urgência
+
+| Valor | Quando usar | Exemplo de texto |
+|-------|-------------|-----------------|
+| `aria-live="polite"` | Maioria das atualizações — aguarda o usuário terminar o que está fazendo | "Salvo com sucesso", resultados de busca, validações inline |
+| `aria-live="assertive"` | Apenas para erros críticos ou mudanças que exigem ação imediata | "Sessão expirando em 2 minutos", "Falha no pagamento" |
+
+**Evite `assertive` para updates rotineiros** — interrompe o leitor de tela no meio de uma sentença.
+
+### Boas práticas de texto para aria-live
+
+**Seja completo**: O texto anunciado deve fazer sentido sem o contexto visual.
+- ❌ "Inválido" (anunciado sem contexto)
+- ✅ "E-mail inválido. O e-mail deve conter @."
+
+**Evite textos voláteis**: Não atualize aria-live regiões com textos temporários que desaparecem antes do leitor terminar.
+
+**Confirmações de ação**: Use verbos no passado para indicar conclusão.
+- ✅ "Arquivo excluído com sucesso"
+- ✅ "3 resultados encontrados"
+- ✅ "Formulário enviado. Você receberá uma confirmação por e-mail."
 
 ---
 
@@ -259,7 +328,7 @@ Forneça múltiplas formas de perceber informações importantes:
 
 ---
 
-## Escrevendo para tradução e localizaçaõ
+## Escrevendo para tradução e localização
 
 ### Mantenha a simplicidade
 - Frases curtas se traduzem com mais precisão
@@ -314,6 +383,56 @@ Usuários em estado de estresse, frustração ou urgência têm capacidade cogni
 
 ---
 
+---
+
+## Acessibilidade em Avisos de Privacidade e Consentimento (LGPD)
+
+A Lei Geral de Proteção de Dados (LGPD) exige que avisos de privacidade e solicitações de consentimento sejam claros e compreensíveis. Isso é, também, uma questão de acessibilidade cognitiva.
+
+### Princípios de linguagem para LGPD
+
+**Linguagem simples e direta**
+- Evite juridiquês: substitua "mediante expressa anuência do titular" por "com sua permissão"
+- Use frases curtas; uma ideia por sentença
+- Explique *por que* os dados são coletados, não apenas *quais*
+
+**Consentimento granular e claro**
+- Cada tipo de uso de dados deve ter opt-in/opt-out separado e claro
+- O rótulo do toggle/checkbox deve descrever o uso específico, não apenas "aceitar"
+  - ❌ "Aceito os termos"
+  - ✅ "Permitir uso dos meus dados para personalizar anúncios"
+
+**Banner de cookies acessível**
+
+| Elemento | Boa prática |
+|----------|-------------|
+| Título | "Usamos cookies" — direto, sem eufemismo |
+| Corpo | Explique brevemente o que e por quê (máximo 2 linhas visíveis) |
+| Ações | "Aceitar todos" e "Personalizar" com peso visual equivalente — não esconda a recusa |
+| Link | "Ver política de privacidade" — não "Saiba mais" |
+
+**Aviso de coleta de dados no formulário**
+
+- Apareça perto do campo, não apenas no rodapé
+- Seja específico: "Seu telefone será usado para enviar alertas de viagem. Não compartilhamos com terceiros."
+- Se o campo for opcional, diga isso: "Opcional — usado para lembretes por SMS"
+
+**Solicitação de permissão (mobile/push)**
+
+- Explique o benefício antes de pedir a permissão do sistema
+  - ✅ "Ative as notificações para receber alertas quando seu ônibus estiver chegando." → [Ativar notificações]
+- Após recusa do sistema, ofereça alternativa: "Você pode ativar as notificações nas configurações do celular a qualquer momento."
+
+### Checklist LGPD para UX Writers
+
+- [ ] O aviso explica *para que* os dados serão usados, não apenas que serão coletados
+- [ ] A opção de recusa tem o mesmo peso visual que a opção de aceitar
+- [ ] Termos legais têm equivalentes em linguagem simples disponíveis
+- [ ] Campos opcionais estão marcados como tal
+- [ ] O usuário pode revogar o consentimento com a mesma facilidade com que o deu
+
+---
+
 ## Testando acessibilidade
 
 ### Ferramentas automatizadas
@@ -358,6 +477,8 @@ Usuários em estado de estresse, frustração ou urgência têm capacidade cogni
 - [ ] O nível de leitura é adequado para o público
 - [ ] Sem expressões idiomáticas, metáforas ou referências culturais
 - [ ] Os campos obrigatórios são marcados com mais do que apenas cor
+- [ ] Atualizações dinâmicas (validações, notificações) usam aria-live ou equivalente
+- [ ] Avisos de privacidade e consentimento usam linguagem simples, não juridiquês
 - [ ] As instruções do formulário aparecem antes dos campos de entrada
 - [ ] Os estados de sucesso e erro incluem texto, não apenas ícones
 
@@ -366,8 +487,10 @@ Usuários em estado de estresse, frustração ou urgência têm capacidade cogni
 ## Recursos
 
 ### Diretrizes WCAG
-- [Referência Rápida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
-- [Entendendo os Critérios de Sucesso do WCAG](https://www.w3.org/WAI/WCAG21/Understanding/)
+- [Referência Rápida WCAG 2.2](https://www.w3.org/WAI/WCAG22/quickref/) — versão atual (Outubro 2023)
+- [Referência Rápida WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) — versão anterior, ainda amplamente adotada
+- [Entendendo os Critérios de Sucesso do WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/)
+- [Novidades no WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/)
 
 ### Ferramentas de Teste
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
