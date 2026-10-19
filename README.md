@@ -14,7 +14,7 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 
 ## O que torna esta Skill diferente
 
-**Pensamento sistêmico, não guia de estilo**: Não é uma lista de dicas de escrita. É um framework para avaliar e melhorar textos de UX baseado em quatro padrões de qualidade mensuráveis.
+**Pensamento sistêmico, não guia de estilo**: Não é uma lista de dicas de escrita. É um framework para avaliar e melhorar textos de UX baseado em cinco padrões de qualidade mensuráveis.
 
 **Divulgação progressiva**: Os materiais de referência são carregados apenas quando necessários, mantendo o contexto do Claude eficiente enquanto fornece auxílio sob demanda.
 
@@ -25,7 +25,7 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 ## O que você recebe
 
 ### Framework Principal
-- **Quatro padrões de qualidade**: Proposital, Conciso, Conversacional, Claro
+- **Cinco padrões de qualidade**: Proposital, Conciso, Conversacional, Claro, Acessível
 - **Padrões comuns de UX**: Botões, erros, estados vazios, formulários, notificações, onboarding
 - **Processo de edição**: Abordagem sistemática para melhorar qualquer texto de interface
 - **Guia de voz e tom**: Adapte o conteúdo à personalidade da marca e ao contexto
@@ -40,7 +40,7 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 
 ### Ferramentas Práticas
 - **Melhorias do mundo real**: Transformações antes/depois com análise
-- **Modelos preenchiíveis**: Mensagens de erro, estados vazios, fluxos de onboarding
+- **Modelos preenchíveis**: Mensagens de erro, estados vazios, fluxos de onboarding
 - **Padrões expandidos de erros**: Erros de validação, sistema, bloqueantes e de permissão com exemplos
 - **Framework de adaptação de tom**: Mapeie estados emocionais para tons apropriados
 - **Referência rápida**: Padrões comuns e anti-padrões
@@ -141,7 +141,7 @@ Conecte esta skill ao Figma através do Claude Code para analisar mockups, audit
    Verifique acessibilidade, clareza e tom.
    ```
 
-3. **Receba feedback instantâneo** com melhorias específicas baseadas nos quatro padrões de qualidade.
+3. **Receba feedback instantâneo** com melhorias específicas baseadas nos cinco padrões de qualidade.
 
 **📖 Guia completo de configuração para Claude Code:** [docs/claude-figma-integration.md](docs/claude-figma-integration.md)
 
@@ -161,7 +161,7 @@ O Claude aplica a skill automaticamente e gera mensagens de erro claras e acion�
 Revise este rótulo de botão: "Envie suas informações para processamento"
 ```
 
-O Claude avalia em relação aos quatro padrões de qualidade e sugere melhorias.
+O Claude avalia em relação aos cinco padrões de qualidade e sugere melhorias.
 
 ### Criando Padrões Consistentes
 
@@ -254,4 +254,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Pronto para produção • **Versão**: 1.6.0 • **Última atualização**: Outubro de 2026
+**Status**: Pronto para produção • **Versão**: 1.7.0 • **Última atualização**: Outubro de 2026
