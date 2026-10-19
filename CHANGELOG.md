@@ -25,6 +25,10 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ### Corrigido
 - `real-world-improvements.md`: Dashboard empty state "depois" corrigido — a versão anterior dizia "Para acessar os dados, faça login em sua conta", pressupondo usuário deslogado; substituído por texto correto para usuário autenticado sem dados
 - `accessibility-guidelines.md`: Corrigido typo "localizaçaõ" → "localização"
+- `SKILL.md`: Acessível adicionado como 5º padrão de qualidade (consistência com `content-usability-checklist.md` e `real-world-improvements.md`); Fase 5: Acessível adicionada ao Processo de Edição e Fluxo de Trabalho; 6 ocorrências de "Forneqa" corrigidas para "Forneça"
+- `README.md`: Versão atualizada para 1.7.0; "quatro padrões" atualizado para "cinco padrões" (3 ocorrências); corrigido typo "preenchiíveis" → "preenchíveis"
+- `CONTRIBUTING.md`: Árvore de arquivos corrigida — removida referência ao `docs/codex-figma-integration.md` (deletado em 1.6.0); adicionado `references/accessibility-guidelines.md` que estava ausente
+- `docs/claude-figma-integration.md`: "quatro padrões" atualizado para "cinco padrões" (3 ocorrências)
 
 ---
 
