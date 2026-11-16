@@ -1,13 +1,16 @@
 ---
 name: ux-writing
-description: Crie textos de interface centrados no usuário e acessíveis (microcopy) para produtos digitais, incluindo botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso e textos de ajuda.
+description: Crie, revise e pontue textos de interface (UX writing/microcopy) em português do Brasil, claros, concisos e acessíveis. Use quando a pessoa pedir para escrever, editar, avaliar ou padronizar textos de produtos digitais — botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso, textos de ajuda, solicitações de permissão e consentimento (LGPD) —, para definir voz e tom de um produto ou para auditar os textos de telas e designs do Figma.
+license: MIT
+metadata:
+  version: "1.8.0"
 ---
 
 # UX Writing
 
-Escreva textos de interface claros, concisos e centrados no usuário (UX text/microcopy) para produtos e experiências digitais. Esta skill fornece frameworks, padrões e boas práticas para criar textos que ajudam usuários a atingir seus objetivos.
+Escreva textos de interface claros, concisos e centrados no usuário (UX text/microcopy) para produtos e experiências digitais em português do Brasil. Esta skill fornece frameworks, padrões e boas práticas para criar textos que ajudam usuários a atingir seus objetivos.
 
-**Compatível com:** Claude Desktop e Claude Code
+**Compatível com:** Claude (app e web), Claude Desktop e Claude Code
 
 ## Quando Usar Esta Skill
 
@@ -40,22 +43,64 @@ Todo texto de UX deve ser:
 - Coloque as informações mais importantes no início
 
 **Clareza**
-- Use linguagem simples (nível de leitura equivalente ao Ensino Fundamental para público geral, Ensino Médio para profissional)
+- Use linguagem simples (compreensível por quem concluiu o Ensino Fundamental, para público geral; Ensino Médio, para público profissional)
 - Evite jargões, gírias e termos técnicos
 - Use terminologia consistente em todo o produto
 - Escolha verbos significativos e específicos
 
 **Tom Conversacional**
 - Escreva como fala
-- Use voz ativa 85% do tempo
+- Prefira a voz ativa; use a passiva só quando ela for mais clara ou evitar culpar a pessoa
 - Inclua preposições e artigos
 - Evite frases robóticas
 
 **Centrado no Usuário**
 - Foque nos benefícios para o usuário, não nos recursos do produto
 - Antecipe e responda às dúvidas do usuário
-- Use linguagem em segunda pessoa ("você")
+- Trate a pessoa por "você"
 - Use a linguagem e os modelos mentais do usuário
+
+## Padrões do Português do Brasil
+
+Aplique estes padrões em todo texto, salvo quando o quadro de voz do produto definir outra coisa.
+
+**Tratamento**
+- Use "você" com verbos na 3ª pessoa: "Confira seu e-mail"
+- Não misture "você" com "tu"/"teu" na mesma interface
+- Evite "o senhor"/"a senhora", exceto em produtos em que a formalidade seja esperada
+
+**Forma verbal**
+- Botões e links: infinitivo ("Salvar alterações", "Ver detalhes")
+- Instruções no corpo do texto: imperativo ("Digite seu CPF", "Escolha uma data")
+
+**Linguagem neutra**
+- Evite adjetivos e particípios que atribuem gênero a quem usa o produto
+  - "Boas-vindas ao [Produto]" (não "Bem-vindo")
+  - "Que bom ter você de volta" (não "Bem-vindo de volta")
+  - "Login feito" (não "Você está conectado")
+  - "Agradecemos" (não "Obrigado")
+- Evite "(a)", "@", "x" e "e" como marcas neutras: leitores de tela leem mal ou pronunciam errado
+- Reescreva a frase para que o sujeito não precise de gênero
+
+**Capitalização**
+- Apenas a primeira letra e nomes próprios, também em títulos e botões: "Salvar alterações" (não "Salvar Alterações")
+
+**Números e formatos**
+- Moeda: R$ 1.234,56 (espaço depois de R$, vírgula nos centavos)
+- Datas: 16/11/2026 ou 16 de novembro de 2026
+- Horas: 14h30
+- Documentos: CPF 000.000.000-00; CNPJ 00.000.000/0000-00; CEP 00000-000
+- Telefone: (11) 91234-5678
+
+**Termos estrangeiros**
+- Prefira o termo em português quando ele for comum ("senha", não "password"; "baixar", não "fazer download")
+- Mantenha o estrangeiro quando for o mais conhecido pelo público ("e-mail", "login", "app")
+- Escreva nomes de marcas e serviços como na grafia oficial: "Pix" (não "PIX")
+
+**Privacidade (LGPD)**
+- Peça consentimento com linguagem simples, diga para que o dado será usado e deixe opções de marketing desligadas por padrão
+
+Para exemplos detalhados de LGPD, formatação, truncamento e dados sensíveis, leia references/patterns-detailed.md.
 
 ## Padrões de Texto de UX
 
@@ -69,8 +114,8 @@ Aplique estes padrões comuns aos elementos de interface.
 
 ### Botões e Links
 - **Objetivo**: Permitir que o usuário execute uma ação
-- **Formato**: Verbos no imperativo afirmativo, capitalização da primeira letra
-- **Padrão**: `[Verbo] [objeto]`
+- **Formato**: Verbos no infinitivo, capitalização da primeira letra
+- **Padrão**: `[Verbo no infinitivo] [objeto]`
 - **Exemplos**: "Salvar alterações", "Excluir conta", "Ver detalhes"
 - **Evite**: Rótulos genéricos como "OK", "Enviar", "Clique aqui"
 
@@ -114,16 +159,6 @@ Aplique estes padrões comuns aos elementos de interface.
 - Momento: Na abertura do app ou ao tentar acessar um recurso
 - Local: Tela cheia ou modal grande
 
-**Erros de Permissão**
-- Explique o benefício antes de solicitar a permissão
-- Padrão: `[Benefício para o usuário]. [Permissão necessária].`
-- Exemplos:
-  - "Receba notificações quando seus pedidos saírem para entrega. Ative as notificações."
-  - "Encontre lojas próximas. Permita o acesso à localização."
-  - "Faça backup das suas fotos. Conceda permissão de armazenamento."
-- Momento: Quando o recurso é usado pela primeira vez
-- Local: No contexto do recurso
-
 **O Que Evitar**
 - Códigos técnicos sem explicação ("Erro 403")
 - Linguagem que culpa o usuário ("entrada inválida", "caractere ilegal")
@@ -133,9 +168,9 @@ Aplique estes padrões comuns aos elementos de interface.
 
 ### Mensagens de Sucesso
 - **Objetivo**: Confirmar a conclusão da ação
-- **Formato**: Passado composto, específico, encorajador
-- **Padrão**: `[Ação] [resultado/benefício]`
-- **Exemplos**: "Alterações salvas", "E-mail enviado", "Perfil atualizado"
+- **Formato**: Substantivo + particípio, concordando em gênero e número com o que foi feito; específico e encorajador
+- **Padrão**: `[O que foi feito] [particípio]`
+- **Exemplos**: "Alteração salva", "E-mail enviado", "Perfil atualizado", "Arquivos excluídos"
 
 ### Estados Vazios
 - **Objetivo**: Orientar usuários quando não há conteúdo
@@ -152,8 +187,19 @@ Aplique estes padrões comuns aos elementos de interface.
 ### Notificações
 - **Objetivo**: Entregar informações oportunas e relevantes
 - **Tipos**: Ação necessária (intrusiva), Passiva (menos intrusiva)
-- **Formato**: Título com verbo no início + descrição contextual
+- **Formato**: Título curto que nomeia a situação (frase nominal) + descrição que começa com o verbo da ação
 - **Exemplo**: "Atualização necessária. Instale a versão mais recente para continuar."
+
+### Solicitações de Permissão
+- **Objetivo**: Pedir acesso a um recurso do dispositivo ou da conta antes de usá-lo
+- **Formato**: Explique o benefício antes de pedir a permissão
+- **Padrão**: `[Benefício para o usuário]. [Permissão necessária].`
+- **Exemplos**:
+  - "Receba notificações quando seus pedidos saírem para entrega. Ative as notificações."
+  - "Encontre lojas próximas. Permita o acesso à localização."
+  - "Faça backup das suas fotos. Permita o acesso às fotos."
+- **Momento**: Quando o recurso é usado pela primeira vez, antes do diálogo do sistema
+- **Local**: No contexto do recurso
 
 ## Voz e Tom
 
@@ -163,7 +209,7 @@ A voz é a personalidade consistente do produto. Estabeleça a voz usando:
 - **Características de voz**: Adjetivos descritivos para cada conceito
 - **Exemplos do que fazer/evitar**: Exemplos concretos mostrando a voz em ação
 
-Consulte references/voice-chart-template.md para criar um quadro de voz.
+Para criar ou documentar um quadro de voz, leia references/voice-chart-template.md.
 
 ### Tom (Adaptável ao Contexto)
 O tom é como a voz se adapta a situações específicas. Enquanto a voz permanece constante, o tom muda de acordo com o contexto e o estado emocional do usuário.
@@ -186,13 +232,13 @@ O tom é como a voz se adapta a situações específicas. Enquanto a voz permane
 - Paciente e explicativo
 - Detalhe os passos claramente
 - Forneça contexto e orientação
-- Exemplo: "Conecte sua conta bancária para ver insights de gastos. Vamos guiá-lo."
+- Exemplo: "Conecte sua conta bancária para ver insights de gastos. Vamos guiar você em cada passo."
 
 **Confiante** (tarefas rotineiras, visitas de retorno)
 - Eficiente e direto
 - Explicação mínima
 - Confirmação rápida
-- Exemplo: "Salvo"
+- Exemplo: "Alteração salva"
 
 **Cauteloso** (ações de alto risco, perda de dados)
 - Sério e transparente
@@ -224,7 +270,7 @@ O tom é como a voz se adapta a situações específicas. Enquanto a voz permane
 - Use passos simples
 
 **Onboarding**: Convidativo, encorajador, conciso
-- Bem-vindo sem sobrecarregar
+- Boas-vindas sem sobrecarregar
 - Foque no valor
 - Celebre as primeiras conquistas
 
@@ -263,14 +309,14 @@ Edite textos de UX em cinco fases:
 ### Fase 4: Claro
 - Use verbos específicos e precisos
 - Mantenha terminologia consistente
-- Teste a legibilidade (Hemingway Editor, Flesch-Kincaid)
+- Teste a legibilidade (Índice de Flesch adaptado para o português, NILC-Metrix ou teste com pessoas)
 - Garanta que não haja ambiguidade
 
 ### Fase 5: Acessível
 - Elementos interativos têm rótulos descritivos fora de contexto
 - Erros e estados são comunicados por texto, não só por cor
 - Nível de leitura adequado ao público
-- Terminologia respeitosa e linguagem inclusiva
+- Terminologia respeitosa e linguagem neutra
 
 ## Fluxo de Trabalho
 
@@ -301,91 +347,36 @@ Edite textos de UX em cinco fases:
 
 ## Acessibilidade em UX Writing
 
-Escrever conteúdo acessível garante que todos os usuários, inclusive os que utilizam tecnologia assistiva, possam entender e interagir com seu produto.
+Todo texto deve funcionar para quem usa leitor de tela, tem baixa visão ou está sob carga cognitiva. O essencial:
 
-### Princípios Fundamentais de Acessibilidade
+- Rotule elementos interativos de forma que façam sentido fora de contexto ("Enviar candidatura", não "Enviar")
+- Escreva links que digam o destino ("Ler a política de privacidade", não "Clique aqui")
+- Não dependa só de cor: associe ícone e texto ("Erro: o e-mail deve conter @")
+- Use rótulos visíveis em campos; placeholder não substitui rótulo
+- Prefira frases de até 14 palavras e defina termos técnicos na primeira ocorrência
+- Anuncie mudanças dinâmicas (validações, notificações) com texto que funcione sozinho
 
-**Otimização para Leitores de Tela**
-- Rotule todos os elementos interativos explicitamente ("Enviar formulário", não apenas "Enviar")
-- Escreva textos descritivos para links ("Leia os detalhes de preços", não "Clique aqui")
-- Estruture mensagens de erro para funcionar com leitores de tela (erro + rótulo do campo lidos juntos)
-- Use rótulos ARIA quando o contexto visual não for suficiente para leitores de tela
-
-**Acessibilidade Cognitiva**
-- Use 8 a 14 palavras por frase (8 palavras = 100% de compreensão, 14 palavras = 90%)
-- Divida informações complexas em blocos escaneáveis
-- Use títulos claros e hierarquia lógica
-- Forneça padrões consistentes e previsíveis
-
-**Comunicação Multimodal**
-- Não dependa apenas de cor para transmitir significado
-- Associe indicadores visuais a textos ("Erro: E-mail obrigatório" com ícone vermelho)
-- Forneça alternativas em texto para ícones e imagens
-- Garanta contraste de cor suficiente (mínimo WCAG AA: 4,5:1)
-
-**Linguagem Simples para Todos**
-- Use nível de leitura equivalente ao 8º e 9º ano para público geral
-- Defina termos técnicos na primeira ocorrência
-- Evite expressões idiomáticas, metáforas e referências culturais
-- Use palavras comuns e do cotidiano
-
-### Exemplos de Padrões Acessíveis
-
-**Botões**
-- ❌ Ruim: "Enviar" (contexto ausente para leitores de tela)
-- ✅ Bom: "Enviar candidatura"
-
-**Links**
-- ❌ Ruim: "Clique aqui para mais informações"
-- ✅ Bom: "Leia nossa política de privacidade"
-
-**Mensagens de Erro**
-- ❌ Ruim: Texto vermelho mostrando "Inválido"
-- ✅ Bom: "Erro: O e-mail deve conter @" (com ícone de erro)
-
-**Rótulos de Formulário**
-- ❌ Ruim: Campos com apenas placeholder
-- ✅ Bom: Rótulo visível + placeholder opcional
+Para revisar acessibilidade em detalhe — leitores de tela, `aria-live`, WCAG 2.2, metas de nível de leitura, LGPD e contextos de tensão —, leia references/accessibility-guidelines.md.
 
 ## Benchmarks de Texto de UX
 
-Use estas métricas embasadas em pesquisa para criar textos de UX eficazes.
+Use estas metas como ponto de partida, não como regra exata. Os números de compreensão vêm de estudos com textos em inglês; em português, as frases costumam ser um pouco mais longas.
 
-### Metas de Comprimento de Frase
+| Elemento | Meta |
+|---|---|
+| Botões/CTAs | 2 a 4 palavras (máximo de 6), 15 a 25 caracteres |
+| Títulos de página | 3 a 6 palavras, 30 a 50 caracteres |
+| Títulos de notificação | 35 a 45 caracteres |
+| Notificações (título + corpo) | 10 a 15 palavras |
+| Mensagens de erro | 12 a 18 palavras, incluindo a solução |
+| Instruções | Até 14 palavras (máximo de 20) |
+| Frases em texto corrido | Até 14 palavras de preferência, máximo de 20 |
+| Comprimento de linha | 40 a 60 caracteres |
 
-**Por Tipo de Conteúdo**
-- **Botões/CTAs**: 2 a 4 palavras ideal, máximo de 6 palavras
-- **Títulos**: 3 a 6 palavras, máximo de 40 caracteres
-- **Mensagens de erro**: 12 a 18 palavras (incluindo a solução)
-- **Instruções**: máximo de 20 palavras, ideal 14
-- **Texto de corpo**: média de 15 a 20 palavras por frase
-- **Notificações**: 10 a 15 palavras para título + corpo
-
-**Taxas de Compreensão**
-- 8 palavras ou menos: 100% de compreensão pelo usuário
-- 14 palavras ou menos: 90% de compreensão pelo usuário
-- 25 palavras: Máximo antes de queda significativa na compreensão
-
-### Comprimento de Caracteres e Linha
-
-**Faixas Ideais**
-- **Comprimento de linha**: 40 a 60 caracteres para máxima legibilidade
-- **Rótulos de botão**: 15 a 25 caracteres
-- **Títulos de página**: 30 a 50 caracteres
-- **Títulos de notificação**: 35 a 45 caracteres
-
-### Diretrizes de Nível de Leitura
-
-**Por Público**
-- **Público geral**: Equivalente ao 8º ou 9º ano (Flesch-Kincaid)
-- **Ferramentas profissionais**: Equivalente ao 1º ou 2º ano do Ensino Médio
-- **Produtos técnicos**: Equivalente ao 2º ou 3º ano do Ensino Médio
-- **Áreas especializadas**: Equivalente ao final do Ensino Médio (apenas quando necessário)
-
-**Ferramentas de Teste**
-- Hemingway Editor: Destaca frases complexas
-- Readable.com: Fornece múltiplas pontuações de legibilidade
-- Microsoft Word: Pontuação Flesch-Kincaid integrada
+**Comprimento de frase e compreensão (referência aproximada)**
+- Até 8 palavras: compreensão quase total
+- Até 14 palavras: compreensão alta (cerca de 90%)
+- Mais de 25 palavras: a compreensão cai bastante
 
 ## Erros Comuns a Evitar
 
@@ -400,24 +391,27 @@ Use estas métricas embasadas em pesquisa para criar textos de UX eficazes.
 - Tom robótico e corporativo
 - Depender apenas de cor para transmitir significado
 - Escrever textos de link inacessíveis ("Clique aqui")
+- Atribuir gênero a quem usa o produto ("Bem-vindo", "Você está conectado")
 
 ## Referência Rápida
 
 **Primeira letra maiúscula**: "Salvar alterações" (não "Salvar Alterações")
-**Imperativo ativo para botões**: "Excluir conta" (não "Exclusão de conta")
+**Infinitivo nos botões**: "Excluir conta" (não "Exclusão de conta")
+**Particípio no sucesso**: "Alteração salva" (não "Sua alteração foi salva com sucesso")
+**Linguagem neutra**: "Boas-vindas" (não "Bem-vindo(a)")
 **Foco no usuário**: "Economize tempo com atalhos" (não "Oferecemos atalhos")
 **Verbos específicos**: "Excluir" (não "Remover" quando a exclusão é permanente)
 **Informação no início**: "A senha deve ter 8 caracteres" (não "Deve ter 8 caracteres para sua senha")
 
 ## Recursos
 
-Esta skill inclui:
-- **references/accessibility-guidelines.md**: Guia completo para escrever textos de UX acessíveis para todos os usuários
-- **references/voice-chart-template.md**: Modelo para criar um quadro de voz do produto
-- **references/content-usability-checklist.md**: Checklist completo para avaliar a qualidade de textos de UX
-- **references/patterns-detailed.md**: Exemplos estendidos de padrões de texto de UX em diferentes vozes
-- **examples/real-world-improvements.md**: Transformações antes/depois com análise detalhada e pontuação
-- **templates/error-message-template.md**: Modelo para escrever mensagens de erro eficazes
-- **templates/empty-state-template.md**: Guia para criar estados vazios úteis
-- **templates/onboarding-flow-template.md**: Framework para projetar experiências de onboarding claras
-- **docs/claude-figma-integration.md**: Guia para usar esta skill com Claude Code e Figma MCP
+Leia um arquivo de apoio só quando a tarefa pedir. Não carregue todos de uma vez.
+
+- **Pontuar, avaliar ou auditar textos** → references/content-usability-checklist.md (critérios e rubricas das cinco dimensões)
+- **Criar ou documentar a voz de um produto, ou ajustar o tom por contexto** → references/voice-chart-template.md
+- **Ver um padrão aplicado em vozes diferentes, ou escrever textos de LGPD, carregamento, busca, formatação brasileira e truncamento** → references/patterns-detailed.md
+- **Revisar acessibilidade em detalhe** (leitores de tela, `aria-live`, WCAG 2.2, nível de leitura) → references/accessibility-guidelines.md
+- **Mostrar antes/depois com análise ou calibrar uma pontuação** → examples/real-world-improvements.md
+- **Escrever mensagens de erro**, incluindo CPF, CNPJ, CEP, Pix e autenticação → templates/error-message-template.md
+- **Escrever estados vazios**, incluindo falha no carregamento e retorno após ausência → templates/empty-state-template.md
+- **Projetar onboarding**, consentimento LGPD, solicitações de permissão ou reengajamento → templates/onboarding-flow-template.md

@@ -207,16 +207,16 @@ Campos e fluxos específicos do contexto brasileiro têm erros com padrões pró
 
 ---
 
-### PIX
+### Pix
 
 | Situação | Mensagem recomendada |
 |----------|---------------------|
-| Chave inativa | "O PIX não foi enviado — a chave do destinatário está inativa. Tente via transferência." |
-| Valor acima do limite noturno | "Valor acima do limite noturno do PIX (R$ 1.000). Tente após as 6h ou use TED." |
-| Chave não encontrada | "Chave PIX não encontrada. Confira e tente novamente." |
-| Timeout | "O PIX não foi confirmado. Verifique seu extrato antes de tentar novamente." |
+| Chave inativa | "O Pix não foi enviado — a chave do destinatário está inativa. Tente via transferência." |
+| Valor acima do limite noturno | "Valor acima do limite noturno do Pix (R$ 1.000). Tente após as 6h ou use TED." |
+| Chave não encontrada | "Chave Pix não encontrada. Confira e tente novamente." |
+| Timeout | "O Pix não foi confirmado. Verifique seu extrato antes de tentar novamente." |
 
-**Importante — timeout de PIX**: Nunca instrua o usuário a "tentar novamente" sem verificar o extrato primeiro. A transação pode ter sido processada mesmo sem confirmação.
+**Importante — timeout de Pix**: Nunca instrua o usuário a "tentar novamente" sem verificar o extrato primeiro. A transação pode ter sido processada mesmo sem confirmação.
 
 ---
 

@@ -4,6 +4,36 @@ Todas as mudanças notáveis na Skill de UX Writing serão documentadas neste ar
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) e este projeto segue o [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0] - 2026-11-16
+
+### Corrigido
+- **Pacote da skill**: o ZIP agora tem uma pasta `ux-writing/` na raiz e caminhos com `/`. A versão anterior era gerada no Windows, com caminhos `docs\arquivo.md` e o `SKILL.md` solto na raiz, o que impedia a leitura das referências e templates em Mac, Linux e no upload do Claude
+- `build-skill.sh`: marcado como executável no git (o workflow falhava com "Permission denied") e passa a validar a estrutura do pacote
+- `SKILL.md`: botões descritos como infinitivo (antes "imperativo afirmativo", contradizendo os exemplos); regra de notificações alinhada ao exemplo "Atualização necessária"; mensagens de sucesso descritas como substantivo + particípio, com exemplo "Alteração salva"; metas de comprimento de frase unificadas (até 14 palavras, máximo de 20)
+- Linguagem neutra: "Vamos guiá-lo", "Bem-vindo" e "Bem-vindo(a)" substituídos por formas neutras em `SKILL.md`, `templates/onboarding-flow-template.md` e `templates/empty-state-template.md`
+- Links do Figma atualizados para o formato `figma.com/design/`
+- `README.md`: removida a menção a um vídeo demonstrativo inexistente; instruções de instalação descrevem a pasta `ux-writing`
+- "PIX" padronizado como "Pix", grafia oficial do Banco Central, em `SKILL.md`, `examples/real-world-improvements.md` e `templates/error-message-template.md` (códigos de erro de exemplo, como "PIX-103", mantidos)
+
+### Adicionado
+- `SKILL.md`: seção "Padrões do Português do Brasil" (tratamento, forma verbal, linguagem neutra, capitalização, números e formatos, termos estrangeiros, LGPD)
+- `SKILL.md`: seção "Solicitações de Permissão", separada dos tipos de erro
+- `SKILL.md`: versão no frontmatter (`metadata.version`) e licença
+- Workflow "Validate Skill Package", que gera e valida o pacote a cada push e pull request
+- Tag `v1.6.0` (faltava no repositório)
+
+### Alterado
+- `SKILL.md`: description diz quando usar a skill, não só o que ela faz
+- `SKILL.md`: Recursos indicam quando ler cada arquivo de apoio
+- `SKILL.md`: seções de Acessibilidade e Benchmarks resumidas, com remissão a `references/accessibility-guidelines.md`; benchmarks em tabela
+- Ferramentas de legibilidade feitas para o inglês (Hemingway Editor, Flesch-Kincaid, Readable.com) trocadas pelo Índice de Flesch adaptado para o português, NILC-Metrix e teste com pessoas
+- Números de compreensão por tamanho de frase e "voz ativa 85% do tempo" apresentados como referência aproximada, não como regra
+- `docs/claude-figma-integration.md` deixa de ir no pacote da skill (é documentação para pessoas)
+- Download do ZIP passa a apontar para o release mais recente; `dist/` deixa de ser versionado
+- Workflow "Auto-rebuild Skill Package" removido (abria PRs automáticos para atualizar o ZIP versionado)
+
+---
+
 ## [1.7.0] - 2026-10-19
 
 ### Adicionado

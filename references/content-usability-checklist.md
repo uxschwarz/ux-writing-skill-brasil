@@ -21,7 +21,7 @@ Use este checklist para avaliar a qualidade de textos de UX. Avalie cada critér
 
 **Frases e parágrafos curtos**
 - Menos de 3 a 4 linhas por parágrafo
-- Frases variam em comprimento, com média de 15 a 20 palavras
+- Frases de até 14 palavras de preferência, máximo de 20
 - Dividido em blocos escaneáveis
 
 **Início com palavras-sinal**

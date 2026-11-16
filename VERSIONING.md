@@ -18,9 +18,16 @@ Consulte o [CHANGELOG.md](CHANGELOG.md) para o histórico detalhado de versões.
 
 ### 1. Atualize o Número de Versão
 
-Atualize a versão no `README.md`:
+Atualize a versão em dois lugares:
+
+- No `README.md`:
 ```markdown
 **Status**: Pronto para produção • **Versão**: X.Y.Z • **Última atualização**: Mês Ano
+```
+- No frontmatter do `SKILL.md`:
+```yaml
+metadata:
+  version: "X.Y.Z"
 ```
 
 ### 2. Atualize o CHANGELOG.md
@@ -33,7 +40,7 @@ Adicione uma nova entrada no topo do changelog seguindo o formato do [Keep a Cha
 ### 3. Faça Commit das Alterações
 
 ```bash
-git add README.md CHANGELOG.md
+git add README.md SKILL.md CHANGELOG.md
 git commit -m "Release vX.Y.Z: Breve descrição"
 ```
 
@@ -56,7 +63,7 @@ git push origin vX.Y.Z
 5. Copie as notas da versão do CHANGELOG.md para a descrição
 6. Publique o release
 
-O GitHub cria automaticamente artefatos ZIP e tarball para download em cada release.
+Ao publicar o release, o workflow "Build Skill Package" gera o `ux-writing-skill-brasil.zip` e o anexa ao release. O link de download do README sempre aponta para o pacote do release mais recente.
 
 ## Quando Incrementar as Versões
 

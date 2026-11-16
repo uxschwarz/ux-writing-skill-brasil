@@ -41,7 +41,8 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 ### Ferramentas Práticas
 - **Melhorias do mundo real**: Transformações antes/depois com análise
 - **Modelos preenchíveis**: Mensagens de erro, estados vazios, fluxos de onboarding
-- **Padrões expandidos de erros**: Erros de validação, sistema, bloqueantes e de permissão com exemplos
+- **Padrões expandidos de erros**: Erros de validação, sistema e bloqueantes com exemplos, além de solicitações de permissão
+- **Padrões do português do Brasil**: Tratamento por "você", infinitivo nos botões, linguagem neutra, formatos de moeda, data e documentos
 - **Framework de adaptação de tom**: Mapeie estados emocionais para tons apropriados
 - **Referência rápida**: Padrões comuns e anti-padrões
 
@@ -65,14 +66,14 @@ Esta skill funciona com **Claude Desktop** e **Claude Code**. Escolha o método 
 
 Se você usa o Claude Desktop, a instalação é simples:
 
-1. **Baixe** [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip) — contém apenas os arquivos da skill e a documentação
+1. **Baixe** [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/releases/latest/download/ux-writing-skill-brasil.zip) da versão mais recente
 2. Abra o **Claude Desktop**
 3. Vá em **Configurações → Capacidades → Skills**
 4. Clique em **Carregar skill** e selecione **ux-writing-skill-brasil.zip**
 5. **Faça upload do arquivo ZIP diretamente** — não o extraia antes
 6. Comece a usar a skill imediatamente!
 
-O ZIP contém apenas os arquivos relevantes da skill: `SKILL.md` mais a documentação de suporte em `docs/`, `examples/`, `references/` e `templates/`.
+O ZIP contém uma única pasta, `ux-writing/`, com o `SKILL.md` e os arquivos de apoio em `examples/`, `references/` e `templates/`.
 
 ### Instalação Manual (Claude Code)
 
@@ -80,15 +81,15 @@ Se você usa o Claude Code, siga estes passos:
 
 **Passo 1: Baixe a Skill**
 
-1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/raw/main/dist/ux-writing-skill-brasil.zip)
-2. Extraia o arquivo ZIP (duplo clique no Mac, clique direito → Extrair no Windows)
+1. Baixe [ux-writing-skill-brasil.zip](https://github.com/uxschwarz/ux-writing-skill-brasil/releases/latest/download/ux-writing-skill-brasil.zip)
+2. Extraia o arquivo ZIP (duplo clique no Mac, clique direito → Extrair no Windows). Você terá uma pasta chamada `ux-writing`
 
 **Passo 2: Copie para a Pasta de Skills**
 
-Copie a pasta extraída para o diretório de skills do Claude:
+Copie a pasta `ux-writing` para o diretório de skills do Claude:
 
-- **Mac/Linux**: `~/.claude/skills/`
-- **Windows**: `%USERPROFILE%\.claude\skills\`
+- **Mac/Linux**: `~/.claude/skills/` (o resultado fica em `~/.claude/skills/ux-writing/SKILL.md`)
+- **Windows**: `%USERPROFILE%\.claude\skills\` (o resultado fica em `%USERPROFILE%\.claude\skills\ux-writing\SKILL.md`)
 
 Crie o diretório se não existir.
 
@@ -110,7 +111,7 @@ O Claude aplicará as boas práticas de UX Writing e criará uma mensagem de err
 Quer que toda a sua equipe use esta skill automaticamente?
 
 **Para Claude Code:**
-1. Copie a pasta `ux-writing` para `.claude/skills/` no diretório raiz do seu projeto
+1. Copie a pasta `ux-writing` (extraída do ZIP) para `.claude/skills/` no diretório raiz do seu projeto, ficando `.claude/skills/ux-writing/SKILL.md`
 2. Faça commit no seu repositório
 3. Quando os colegas fizerem pull, receberão a skill automaticamente
 4. **Nota**: As skills de projeto funcionam apenas quando o Claude Code é aberto naquela pasta de projeto
@@ -136,7 +137,7 @@ Conecte esta skill ao Figma através do Claude Code para analisar mockups, audit
 2. **Compartilhe um link de frame do Figma** com o Claude:
    ```
    Revise o texto de UX nesta tela de login:
-   https://www.figma.com/file/abc123/Design?node-id=123-456
+   https://www.figma.com/design/abc123/Design?node-id=123-456
 
    Verifique acessibilidade, clareza e tom.
    ```
@@ -225,15 +226,17 @@ Abra uma issue ou envie um pull request.
 
 ### Compilando o pacote da Skill
 
-Se você está contribuindo ou quer compilar o ZIP da skill localmente:
+O pacote é gerado automaticamente a cada release publicado no GitHub e anexado a ele. Cada push e pull request também gera e valida o pacote no GitHub Actions.
+
+Para compilar o ZIP localmente (Mac, Linux ou WSL no Windows, com `zip` instalado):
 
 ```bash
 ./build-skill.sh
 ```
 
-Isso cria `dist/ux-writing-skill-brasil.zip` contendo apenas os arquivos da skill (`SKILL.md`, `docs/`, `examples/`, `references/`, `templates/`).
+Isso cria `dist/ux-writing-skill-brasil.zip` com uma pasta `ux-writing/` contendo apenas os arquivos da skill (`SKILL.md`, `examples/`, `references/`, `templates/`). O script confere se o `SKILL.md` está na pasta certa e se não há caminhos no formato do Windows.
 
-O script de build exclui arquivos do repositório como `README.md`, `CONTRIBUTING.md`, `index.html` e o vídeo demonstrativo — estes ficam no GitHub mas não são necessários no pacote da skill.
+Arquivos do repositório como `README.md`, `CONTRIBUTING.md`, `index.html` e o guia `docs/claude-figma-integration.md` são para pessoas e ficam fora do pacote.
 
 ## Licença
 Licença MIT — use esta skill livremente em seus projetos e equipes.
@@ -254,4 +257,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Pronto para produção • **Versão**: 1.7.0 • **Última atualização**: Outubro de 2026
+**Status**: Pronto para produção • **Versão**: 1.8.0 • **Última atualização**: Novembro de 2026

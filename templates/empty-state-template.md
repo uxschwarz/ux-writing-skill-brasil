@@ -140,7 +140,7 @@ Exemplos:
 
 Exemplos:
 - "Você ficou 30 dias sem entrar. Suas tarefas foram arquivadas automaticamente. **Ver tarefas arquivadas**"
-- "Bem-vindo(a) de volta! Seus projetos estão aqui, prontos para continuar."
+- "Que bom ter você de volta! Seus projetos estão aqui, prontos para continuar."
 - "Novidades desde sua última visita: 3 comentários e 1 tarefa atribuída a você."
 
 ---

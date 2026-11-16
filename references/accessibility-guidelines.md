@@ -160,17 +160,18 @@ Quando o conteúdo muda na tela sem recarregar a página (notificações, valida
 
 ## Acessibilidade Cognitiva
 
-### Pesquisa sobre compreensão
-- **8 palavras ou menos**: 100% de compreensão
-- **14 palavras ou menos**: 90% de compreensão
-- **25+ palavras**: A compreensão cai significativamente
+### Comprimento de frase e compreensão
+Referência aproximada, vinda de estudos com textos em inglês (American Press Institute). Use como orientação, não como regra exata:
+- **Até 8 palavras**: compreensão quase total
+- **Até 14 palavras**: compreensão alta (cerca de 90%)
+- **Mais de 25 palavras**: a compreensão cai bastante
 
 ### Boas Práticas
 
 **Mantenha as frases curtas**
-- Instruções críticas: no máximo 8 a 14 palavras
+- Instruções críticas: até 14 palavras (8 é o ideal)
 - Mensagens de erro: 12 a 18 palavras (incluindo a solução)
-- Conteúdo geral: média de 15 a 20 palavras
+- Conteúdo geral: até 14 palavras de preferência, máximo de 20
 - Explicações complexas: divida em múltiplas frases curtas
 
 **Use Linguagem Simples**
@@ -206,12 +207,12 @@ Quando o conteúdo muda na tela sem recarregar a página (notificações, valida
 ### Metas de Nível de Leitura
 
 **Público geral**
-- Meta: equivalente ao 8º ou 9º ano (Flesch-Kincaid)
-- Comprimento de frase: média de 15 a 20 palavras
+- Meta: compreensível por quem concluiu o Ensino Fundamental (Índice de Flesch adaptado: 50 ou mais)
+- Comprimento de frase: até 14 palavras de preferência, máximo de 20
 - Escolha de palavras: comuns, do cotidiano
 
 **Ferramentas profissionais**
-- Meta: equivalente ao 1º ou 2º ano do Ensino Médio
+- Meta: equivalente ao 1º ou 2º ano do Ensino Médio (Índice de Flesch adaptado: 25 a 50)
 - Comprimento de frase: máximo 20 a 25 palavras
 - Escolha de palavras: termos do setor são aceitáveis se o público os espera
 
@@ -222,7 +223,7 @@ Quando o conteúdo muda na tela sem recarregar a página (notificações, valida
 
 ### Técnicas de Linguagem Simples
 
-**Voz Ativa (85% do tempo)**
+**Prefira a voz ativa** (use a passiva só quando ela for mais clara ou evitar culpar a pessoa)
 - ❌ Passiva: "Sua conta foi criada"
 - ✅ Ativa: "Criamos sua conta"
 - ❌ Passiva: "O pagamento será processado"
@@ -267,7 +268,7 @@ Forneça múltiplas formas de perceber informações importantes:
 
 **Mensagens de status**
 - Cor + ícone + texto
-- Exemplo: Marca de verificação verde + "Sucesso: Alterações salvas"
+- Exemplo: Marca de verificação verde + "Sucesso: Alteração salva"
 
 **Campos obrigatórios**
 - Asterisco + rótulo "obrigatório" + erro ao enviar
@@ -355,8 +356,8 @@ O texto se expande na tradução:
 ### Linguagem Neutra em termos de Gênero
 - Use linguagem inclusiva para sujeitos desconhecidos
 - Evite títulos de cargo com marcação de gênero
-  - ❌ "A enfermeira" → ✅ "O profissional de enfermagem"
-  - ❌ "O garçom/a garçonete" → ✅ "O atendente"
+  - ❌ "A enfermeira" → ✅ "A equipe de enfermagem"
+  - ❌ "O garçom/a garçonete" → ✅ "A equipe de atendimento"
 - Prefira formas neutras quando disponíveis
 
 ---
@@ -449,9 +450,10 @@ A Lei Geral de Proteção de Dados (LGPD) exige que avisos de privacidade e soli
 - Confira se as mensagens de erro são claras quando anunciadas
 
 **Teste de legibilidade**
-- Hemingway Editor: Destaca frases complexas
-- Readable.com: Múltiplas pontuações de legibilidade
-- Microsoft Word: Pontuação Flesch-Kincaid integrada
+- Índice de Flesch adaptado para o português (Martins et al., 1996): 75–100 muito fácil, 50–75 fácil, 25–50 difícil, 0–25 muito difícil
+- NILC-Metrix (USP): métricas de legibilidade e complexidade para textos em português
+- Teste com pessoas reais: peça que expliquem o texto com as próprias palavras
+- Evite ferramentas feitas para o inglês (Hemingway Editor, Flesch-Kincaid, Readable.com): as fórmulas não valem para o português
 
 **Teste de contraste de cor**
 - WebAIM Contrast Checker
@@ -473,7 +475,7 @@ A Lei Geral de Proteção de Dados (LGPD) exige que avisos de privacidade e soli
 - [ ] As mensagens de erro são específicas e acionáveis
 - [ ] A cor não é o único indicador de significado
 - [ ] O texto tem contraste suficiente (mínimo 4,5:1)
-- [ ] As frases têm em média 15 a 20 palavras ou menos
+- [ ] As frases têm até 14 palavras de preferência (máximo de 20)
 - [ ] O nível de leitura é adequado para o público
 - [ ] Sem expressões idiomáticas, metáforas ou referências culturais
 - [ ] Os campos obrigatórios são marcados com mais do que apenas cor
@@ -494,12 +496,11 @@ A Lei Geral de Proteção de Dados (LGPD) exige que avisos de privacidade e soli
 
 ### Ferramentas de Teste
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
-- [Hemingway Editor](http://hemingwayapp.com/)
+- [NILC-Metrix](http://fw.nilc.icmc.usp.br:23380/nilcmetrix) — legibilidade de textos em português
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 ### Linguagem Simples
 - [PlainLanguage.gov](https://www.plainlanguage.gov/) (referência em inglês)
-- [Readable.com](https://readable.com/)
 
 ### Leitores de Tela
 - VoiceOver (Mac/iOS): Integrado ao sistema
