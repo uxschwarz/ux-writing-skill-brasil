@@ -4,6 +4,39 @@ Todas as mudanças notáveis na Skill de UX Writing serão documentadas neste ar
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) e este projeto segue o [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0] - 2026-11-16
+
+### Adicionado
+
+**SKILL.md**
+- Seção "Diretrizes do Produto": a skill usa o quadro de voz e o glossário da empresa (pasta `.claude/ux-writing/` do projeto ou anexos na conversa), que valem mais que os padrões da skill em voz, tom e termos
+- Seção "Formato de Auditoria": resumo, tabela de problemas com prioridade (alta, média, baixa) e lista de inconsistências de terminologia
+- Seção "Ética": sem padrões enganosos; recusar tão fácil quanto aceitar
+- "Variáveis e plural" nos padrões do português do Brasil, incluindo o caso do zero
+- Description e "Quando Usar" incluem IA, push, e-mail, SMS, glossário e adaptação do inglês
+- Recursos indicam quando ler cada arquivo novo
+
+**Referências**
+- `variables-and-plurals.md`: plural com caso zero (e a armadilha do 0 como singular no português do Brasil), gênero de variáveis, variáveis vazias, frases montadas em pedaços, formatos e especificação de strings para o desenvolvimento
+- `ethics-and-dark-patterns.md`: oito padrões enganosos com alternativas, contexto brasileiro (CDC e LGPD) e perguntas para avaliar um texto
+- `ai-features.md`: pontos de entrada, expectativas, estados, erros e limites, transparência, controle e feedback em funcionalidades com IA
+- `channels.md`: push, e-mail e SMS, com limites aproximados, segurança e o efeito dos acentos no limite do SMS
+- `content-testing.md`: qual método usar para cada pergunta (paráfrase, cloze, marca-texto, 5 segundos, primeiro clique, card sorting, tree testing, A/B, análise de chamados)
+- `localization-en-ptbr.md`: expressões comuns, falsos cognatos, estruturas que não combinam com o português, formatos e o que manter em inglês
+
+**Templates**
+- `glossary-template.md`: modelo de glossário do produto com ações, objetos, status, termos de marca e termos proibidos
+
+**README**
+- Seção "Personalize para a Sua Empresa"
+- Lista de materiais atualizada
+
+**Site (`index.html`)**
+- Três cards novos: padrões do português do Brasil, consistência em escala, e ética, IA e outros canais
+- Glossário do produto no card de templates; meta description atualizada
+
+---
+
 ## [1.8.1] - 2026-11-16
 
 ### Corrigido

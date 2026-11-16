@@ -1,9 +1,9 @@
 ---
 name: ux-writing
-description: Crie, revise e pontue textos de interface (UX writing/microcopy) em português do Brasil, claros, concisos e acessíveis. Use quando a pessoa pedir para escrever, editar, avaliar ou padronizar textos de produtos digitais — botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso, textos de ajuda, solicitações de permissão e consentimento (LGPD) —, para definir voz e tom de um produto ou para auditar os textos de telas e designs do Figma.
+description: Crie, revise e pontue textos de interface (UX writing/microcopy) em português do Brasil, claros, concisos e acessíveis. Use quando a pessoa pedir para escrever, editar, avaliar ou padronizar textos de produtos digitais — botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso, textos de ajuda, solicitações de permissão, consentimento (LGPD), funcionalidades com IA, push, e-mail e SMS —, para definir voz, tom e glossário de um produto, adaptar interfaces do inglês ou auditar os textos de telas e designs do Figma.
 license: MIT
 metadata:
-  version: "1.8.1"
+  version: "1.9.0"
 ---
 
 # UX Writing
@@ -19,8 +19,21 @@ Use esta skill quando:
 - Editar textos de UX existentes para maior clareza e eficácia
 - Criar mensagens de erro, notificações ou mensagens de sucesso
 - Projetar fluxos conversacionais ou experiências de onboarding
-- Estabelecer voz e tom para um produto
+- Estabelecer voz, tom e glossário para um produto
 - Auditar conteúdo de um produto para consistência e usabilidade
+- Escrever textos para funcionalidades com IA, notificações push, e-mails e SMS
+- Adaptar interfaces escritas em inglês para o português do Brasil
+- Planejar como testar se um texto funciona
+
+## Diretrizes do Produto
+
+Antes de escrever ou revisar, verifique se o produto tem diretrizes próprias:
+- Arquivos na pasta `.claude/ux-writing/` do projeto, como `voz.md` (quadro de voz) e `glossario.md` (termos aprovados)
+- Quadro de voz, glossário ou guia de conteúdo anexado ou colado na conversa
+
+**Se houver diretrizes**: elas valem mais que os padrões desta skill em voz, tom, tratamento e termos. Use os termos do glossário mesmo quando esta skill sugerir outro. As regras de acessibilidade e de ética continuam valendo: se uma diretriz da empresa entrar em conflito com elas, siga a diretriz e aponte o conflito.
+
+**Se não houver**: use os padrões desta skill. Em auditorias e revisões de várias telas, sugira criar um glossário (templates/glossary-template.md) e um quadro de voz (references/voice-chart-template.md).
 
 ## Princípios Fundamentais de UX Writing
 
@@ -100,7 +113,13 @@ Aplique estes padrões em todo texto, salvo quando o quadro de voz do produto de
 **Privacidade (LGPD)**
 - Peça consentimento com linguagem simples, diga para que o dado será usado e deixe opções de marketing desligadas por padrão
 
-Para exemplos detalhados de LGPD, formatação, truncamento e dados sensíveis, leia references/patterns-detailed.md.
+**Variáveis e plural**
+- Escreva um texto para cada caso: "Nenhum arquivo excluído", "1 arquivo excluído", "3 arquivos excluídos"
+- Nunca use "(s)", "(a)" ou "(es)": ❌ "{n} arquivo(s) excluído(s)"
+- Trate o zero à parte: em português do Brasil, as regras de plural mais usadas em software tratam o 0 como singular ("0 arquivo excluído")
+- Não monte frases com pedaços, e não deixe a variável quebrar a concordância de gênero ("Item excluído: {nome}", não "{item} excluído")
+
+Para exemplos detalhados de LGPD, formatação, truncamento e dados sensíveis, leia references/patterns-detailed.md. Para variáveis, plural e especificação de strings para o time de desenvolvimento, leia references/variables-and-plurals.md.
 
 ## Padrões de Texto de UX
 
@@ -344,6 +363,30 @@ Edite textos de UX em cinco fases:
    - Teste com usuários quando possível
    - Meça conclusão de tarefas e compreensão
    - Itere com base no feedback
+   - Para escolher o método de teste, leia references/content-testing.md
+
+## Formato de Auditoria
+
+Ao auditar telas, fluxos ou designs do Figma, entregue sempre neste formato:
+
+**1. Resumo**: quantos problemas por prioridade e os 3 padrões que mais se repetem.
+
+**2. Tabela de problemas**, ordenada por prioridade:
+
+| Tela | Texto atual | Problema | Padrão violado | Sugestão | Prioridade |
+|---|---|---|---|---|---|
+| Checkout | "Erro 403" | Código sem explicação | Claro | "Sessão expirada. Entre de novo para concluir a compra." | Alta |
+
+**Prioridades**
+- **Alta**: impede ou atrapalha a tarefa, cria barreira de acessibilidade, induz a erro ou tem risco legal (LGPD, cobrança, padrões enganosos)
+- **Média**: causa dúvida, inconsistência de termos ou tom inadequado ao momento
+- **Baixa**: ajuste de concisão ou de estilo que não afeta o entendimento
+
+**3. Inconsistências de terminologia**: a mesma coisa com nomes diferentes entre telas ("Excluir" numa, "Apagar" em outra), com o termo recomendado. Se houver glossário do produto, use-o como referência.
+
+## Ética
+
+Não escreva textos que levem a pessoa a uma decisão que ela não tomaria se entendesse bem o que está acontecendo: botões de recusa que constrangem ("Não, prefiro pagar mais caro"), urgência falsa, custos escondidos, cancelamento difícil ou consentimento pré-marcado. Recusar deve ser tão fácil quanto aceitar, e desfazer tão fácil quanto fazer. Se um pedido envolver esses padrões, aponte o problema e ofereça uma alternativa honesta. Para exemplos e o contexto brasileiro (CDC, LGPD), leia references/ethics-and-dark-patterns.md.
 
 ## Acessibilidade em UX Writing
 
@@ -392,6 +435,8 @@ Use estas metas como ponto de partida, não como regra exata. Os números de com
 - Depender apenas de cor para transmitir significado
 - Escrever textos de link inacessíveis ("Clique aqui")
 - Atribuir gênero a quem usa o produto ("Bem-vindo", "Você está conectado")
+- Usar "(s)" em vez de escrever cada caso de plural
+- Constranger quem recusa ou esconder custos e cancelamento
 
 ## Referência Rápida
 
@@ -415,3 +460,10 @@ Leia um arquivo de apoio só quando a tarefa pedir. Não carregue todos de uma v
 - **Escrever mensagens de erro**, incluindo CPF, CNPJ, CEP, Pix e autenticação → templates/error-message-template.md
 - **Escrever estados vazios**, incluindo falha no carregamento e retorno após ausência → templates/empty-state-template.md
 - **Projetar onboarding**, consentimento LGPD, solicitações de permissão ou reengajamento → templates/onboarding-flow-template.md
+- **Criar ou organizar o glossário do produto** → templates/glossary-template.md
+- **Escrever textos com variáveis, quantidades ou plural**, ou especificar strings para o desenvolvimento → references/variables-and-plurals.md
+- **Avaliar se um texto é ético** (padrões enganosos, cancelamento, consentimento, custos) → references/ethics-and-dark-patterns.md
+- **Escrever textos de funcionalidades com IA** → references/ai-features.md
+- **Escrever notificações push, e-mails ou SMS** → references/channels.md
+- **Planejar como testar um texto com pessoas** → references/content-testing.md
+- **Adaptar uma interface do inglês para o português do Brasil** → references/localization-en-ptbr.md
