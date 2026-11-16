@@ -3,7 +3,7 @@ name: ux-writing
 description: Crie, revise e pontue textos de interface (UX writing/microcopy) em português do Brasil, claros, concisos e acessíveis. Use quando a pessoa pedir para escrever, editar, avaliar ou padronizar textos de produtos digitais — botões, rótulos, mensagens de erro, notificações, formulários, onboarding, estados vazios, mensagens de sucesso, textos de ajuda, solicitações de permissão e consentimento (LGPD) —, para definir voz e tom de um produto ou para auditar os textos de telas e designs do Figma.
 license: MIT
 metadata:
-  version: "1.8.0"
+  version: "1.8.1"
 ---
 
 # UX Writing
