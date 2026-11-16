@@ -37,10 +37,17 @@ Esta Skill organiza parte da expertise básica de UX Writing em um sistema que a
 - **Modelo de quadro de voz**: Estabeleça uma personalidade de marca consistente
 - **Checklist de usabilidade de conteúdo**: Avalie a qualidade do texto com framework de pontuação
 - **Exemplos detalhados de padrões**: Veja como diferentes vozes aplicam os mesmos padrões
+- **Variáveis e plural**: Textos com quantidades, nomes e datas, sem "(s)", e especificação de strings para o desenvolvimento
+- **Ética e padrões enganosos**: Como evitar constrangimento na recusa, urgência falsa, custos escondidos e cancelamento difícil
+- **Funcionalidades com IA**: Pontos de entrada, estados, erros, transparência e feedback
+- **Push, e-mail e SMS**: Limites de cada canal e boas práticas, incluindo o efeito dos acentos no SMS
+- **Testes de conteúdo**: Qual método usar para saber se um texto funciona
+- **Adaptação do inglês**: Expressões, falsos cognatos e estruturas que não combinam com o português
 
 ### Ferramentas Práticas
 - **Melhorias do mundo real**: Transformações antes/depois com análise
-- **Modelos preenchíveis**: Mensagens de erro, estados vazios, fluxos de onboarding
+- **Modelos preenchíveis**: Mensagens de erro, estados vazios, fluxos de onboarding, glossário do produto
+- **Formato de auditoria**: Toda revisão de telas sai numa tabela com problema, sugestão e prioridade
 - **Padrões expandidos de erros**: Erros de validação, sistema e bloqueantes com exemplos, além de solicitações de permissão
 - **Padrões do português do Brasil**: Tratamento por "você", infinitivo nos botões, linguagem neutra, formatos de moeda, data e documentos
 - **Framework de adaptação de tom**: Mapeie estados emocionais para tons apropriados
@@ -115,6 +122,18 @@ Quer que toda a sua equipe use esta skill automaticamente?
 2. Faça commit no seu repositório
 3. Quando os colegas fizerem pull, receberão a skill automaticamente
 4. **Nota**: As skills de projeto funcionam apenas quando o Claude Code é aberto naquela pasta de projeto
+
+### Personalize para a Sua Empresa
+
+A skill usa a voz e os termos da sua empresa quando eles existem, sem precisar editar a skill.
+
+**No Claude Code**: crie a pasta `.claude/ux-writing/` no seu projeto com um ou os dois arquivos:
+- `voz.md`: o quadro de voz do produto (use o modelo em `references/voice-chart-template.md`)
+- `glossario.md`: os termos aprovados e os que devem ser evitados (use o modelo em `templates/glossary-template.md`)
+
+**No Claude Desktop ou no app**: anexe ou cole o quadro de voz e o glossário na conversa.
+
+As diretrizes da empresa valem mais que os padrões da skill em voz, tom e termos. As regras de acessibilidade e de ética continuam valendo; se houver conflito, a skill segue a diretriz da empresa e aponta o conflito.
 
 ## Integração com Figma
 
@@ -257,4 +276,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Pronto para produção • **Versão**: 1.8.1 • **Última atualização**: Novembro de 2026
+**Status**: Pronto para produção • **Versão**: 1.9.0 • **Última atualização**: Novembro de 2026

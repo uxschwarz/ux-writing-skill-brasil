@@ -127,14 +127,21 @@ ux-writing-skill-brasil/
 │   └── claude-figma-integration.md
 ├── references/ (materiais de suporte)
 │   ├── accessibility-guidelines.md
-│   ├── voice-chart-template.md
+│   ├── ai-features.md
+│   ├── channels.md
+│   ├── content-testing.md
 │   ├── content-usability-checklist.md
-│   └── patterns-detailed.md
+│   ├── ethics-and-dark-patterns.md
+│   ├── localization-en-ptbr.md
+│   ├── patterns-detailed.md
+│   ├── variables-and-plurals.md
+│   └── voice-chart-template.md
 ├── examples/ (aplicações do mundo real)
 │   └── real-world-improvements.md
 └── templates/ (guias preenchíveis)
     ├── error-message-template.md
     ├── empty-state-template.md
+    ├── glossary-template.md
     └── onboarding-flow-template.md
 ```
 
