@@ -1,6 +1,6 @@
 # Build output
-# The package is built by the release workflow and attached to each GitHub release
-dist/
+# dist/ux-writing-skill-brasil.zip is committed so the old download link keeps working.
+# The release workflow updates it on main every time a release is published.
 
 # OS files
 .DS_Store

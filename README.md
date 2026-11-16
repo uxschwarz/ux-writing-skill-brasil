@@ -226,7 +226,7 @@ Abra uma issue ou envie um pull request.
 
 ### Compilando o pacote da Skill
 
-O pacote é gerado automaticamente a cada release publicado no GitHub e anexado a ele. Cada push e pull request também gera e valida o pacote no GitHub Actions.
+O pacote é gerado automaticamente a cada release publicado no GitHub, anexado a ele e copiado para `dist/ux-writing-skill-brasil.zip` na `main`, para que links antigos de download continuem funcionando. Cada push e pull request também gera e valida o pacote no GitHub Actions.
 
 Para compilar o ZIP localmente (Mac, Linux ou WSL no Windows, com `zip` instalado):
 
@@ -257,4 +257,4 @@ Esta skill torna a excelência em UX Writing sistemática, escalável e consiste
 
 ---
 
-**Status**: Pronto para produção • **Versão**: 1.8.0 • **Última atualização**: Novembro de 2026
+**Status**: Pronto para produção • **Versão**: 1.8.1 • **Última atualização**: Novembro de 2026

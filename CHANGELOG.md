@@ -4,6 +4,13 @@ Todas as mudanças notáveis na Skill de UX Writing serão documentadas neste ar
 
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) e este projeto segue o [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.1] - 2026-11-16
+
+### Corrigido
+- Link antigo de download (`raw/main/dist/ux-writing-skill-brasil.zip`), usado em artigos e referências externas, voltou a funcionar: o ZIP volta a ficar em `dist/` e o workflow de release o atualiza na `main` a cada versão publicada
+
+---
+
 ## [1.8.0] - 2026-11-16
 
 ### Corrigido

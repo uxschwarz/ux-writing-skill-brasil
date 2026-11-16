@@ -37,3 +37,22 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         gh release upload "${{ github.event.release.tag_name }}" dist/ux-writing-skill-brasil.zip --clobber
+
+    # Keeps the old download link (raw/main/dist/...) working, as it is linked from external articles
+    - name: Update dist/ on main
+      if: github.event_name == 'release'
+      run: |
+        cp dist/ux-writing-skill-brasil.zip "$RUNNER_TEMP/"
+        git fetch --depth=1 origin main
+        git checkout -f -B main FETCH_HEAD
+        mkdir -p dist
+        cp "$RUNNER_TEMP/ux-writing-skill-brasil.zip" dist/
+        git add dist/ux-writing-skill-brasil.zip
+        if git diff --cached --quiet; then
+          echo "dist/ already up to date"
+          exit 0
+        fi
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git commit -m "Atualiza dist/ux-writing-skill-brasil.zip para ${{ github.event.release.tag_name }}"
+        git push origin main
