@@ -31,6 +31,10 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Seção "Personalize para a Sua Empresa"
 - Lista de materiais atualizada
 
+**Site (`index.html`)**
+- Três cards novos: padrões do português do Brasil, consistência em escala, e ética, IA e outros canais
+- Glossário do produto no card de templates; meta description atualizada
+
 ---
 
 ## [1.8.1] - 2026-11-16
