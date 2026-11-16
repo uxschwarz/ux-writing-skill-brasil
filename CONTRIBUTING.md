@@ -119,10 +119,11 @@ Todas as contribuições devem seguir estes princípios:
 ### Organização de Arquivos
 
 ```
-ux-writing/
+ux-writing-skill-brasil/
 ├── SKILL.md (princípios e padrões fundamentais)
 ├── README.md (documentação do GitHub)
-├── docs/ (guias de integração)
+├── build-skill.sh (gera dist/ux-writing-skill-brasil.zip com a pasta ux-writing/)
+├── docs/ (guias de integração para pessoas, fora do pacote da skill)
 │   └── claude-figma-integration.md
 ├── references/ (materiais de suporte)
 │   ├── accessibility-guidelines.md

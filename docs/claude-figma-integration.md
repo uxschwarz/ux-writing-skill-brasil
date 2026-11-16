@@ -141,7 +141,7 @@ Cole o link no Claude Code junto com sua solicitação:
 
 ```
 Revise o texto de UX nesta tela de login:
-https://www.figma.com/file/abc123/Design?node-id=123-456
+https://www.figma.com/design/abc123/Design?node-id=123-456
 
 Foque em:
 - Rótulos dos botões
@@ -165,7 +165,7 @@ Revise fluxos completos de usuário:
 
 ```
 Revise todo o texto de UX neste fluxo de onboarding:
-https://www.figma.com/file/abc123/Onboarding-Flow
+https://www.figma.com/design/abc123/Onboarding-Flow
 
 Verifique:
 - Consistência de tom em todas as telas

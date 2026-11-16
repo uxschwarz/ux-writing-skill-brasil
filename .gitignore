@@ -1,7 +1,6 @@
 # Build output
-# Note: dist/ is committed to enable direct downloads from GitHub
-# The auto-rebuild workflow keeps it in sync when skill files change
-# dist/
+# The package is built by the release workflow and attached to each GitHub release
+dist/
 
 # OS files
 .DS_Store

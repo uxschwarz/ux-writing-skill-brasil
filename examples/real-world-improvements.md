@@ -165,7 +165,7 @@ Use uma combinação de letras, números e símbolos"
 - **Conciso**: 3/10 — 23 palavras, muita redundância
 - **Conversacional**: 3/10 — Corporativo, engessado
 - **Claro**: 7/10 — Mensagem clara, mas verbosa
-- **Acessibilidade**: 3/10 — "Descadastrado" é jargão técnico; tom formal excessivo; sem caminho de retorno
+- **Acessibilidade**: 3/10 — "Descadastrado" é jargão técnico e marca gênero; tom formal excessivo; sem caminho de retorno
 
 **Geral**: 4/10 — Precisa de trabalho
 

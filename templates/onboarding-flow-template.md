@@ -35,7 +35,7 @@ Cada etapa deve responder:
 
 **Exemplo:**
 ```
-**Título**: Bem-vindo ao FluxoTask
+**Título**: Boas-vindas ao FluxoTask
 **Corpo**:
 • Organize projetos com sua equipe
 • Acompanhe o progresso em tempo real
@@ -239,7 +239,7 @@ Você pode ativar as notificações depois em Configurações → Notificações
 
 **Exemplo — Retorno após semanas:**
 ```
-**Título**: Bem-vindo(a) de volta!
+**Título**: Que bom ter você de volta!
 **Corpo**: Desde sua última visita: 4 tarefas adicionadas e 2 comentários esperando você.
 [Ver atualizações] [Ir para meus projetos]
 ```
@@ -277,11 +277,11 @@ Para cada etapa do seu fluxo de onboarding, verifique:
 ## Padrões de Conteúdo por Tipo de Etapa
 
 ### Boas-vindas/Introdução
-**Padrão**: "Bem-vindo(a) ao [Produto]. [Faça X para alcançar Y]."
+**Padrão**: "Boas-vindas ao [Produto]. [Faça X para alcançar Y]."
 
 Exemplos:
-- "Bem-vindo ao Notion. Crie documentos, wikis e projetos lindos."
-- "Bem-vinda ao Figma. Crie, prototipe e colabore em tempo real."
+- "Boas-vindas ao Notion. Crie documentos, wikis e projetos lindos."
+- "Boas-vindas ao Figma. Crie, prototipe e colabore em tempo real."
 
 ### Solicitação de Permissão
 **Padrão**: "Ative [permissão] para [benefício específico]"
@@ -362,7 +362,7 @@ A escolha entre "Pular", "Fazer isso depois" e "Agora não" não é arbitrária 
 
 ### Tela 1: Boas-vindas
 ```
-**Bem-vindo ao EscritaMelhor**
+**Boas-vindas ao EscritaMelhor**
 
 Escreva melhor e mais rápido com edição assistida por IA.
 

@@ -23,8 +23,7 @@ jobs:
 
     - name: Build skill package
       run: |
-        chmod +x ./build-skill.sh
-        ./build-skill.sh
+        bash ./build-skill.sh
 
     - name: Upload skill package as artifact
       uses: actions/upload-artifact@v4
