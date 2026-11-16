@@ -13,6 +13,7 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Linguagem neutra: "Vamos guiá-lo", "Bem-vindo" e "Bem-vindo(a)" substituídos por formas neutras em `SKILL.md`, `templates/onboarding-flow-template.md` e `templates/empty-state-template.md`
 - Links do Figma atualizados para o formato `figma.com/design/`
 - `README.md`: removida a menção a um vídeo demonstrativo inexistente; instruções de instalação descrevem a pasta `ux-writing`
+- "PIX" padronizado como "Pix", grafia oficial do Banco Central, em `SKILL.md`, `examples/real-world-improvements.md` e `templates/error-message-template.md` (códigos de erro de exemplo, como "PIX-103", mantidos)
 
 ### Adicionado
 - `SKILL.md`: seção "Padrões do Português do Brasil" (tratamento, forma verbal, linguagem neutra, capitalização, números e formatos, termos estrangeiros, LGPD)

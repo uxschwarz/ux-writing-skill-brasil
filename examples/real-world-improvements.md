@@ -217,7 +217,7 @@ Use uma combinação de letras, números e símbolos"
 
 ---
 
-## Erro de pagamento via PIX
+## Erro de pagamento via Pix
 
 ### Antes
 "Transação não realizada. Código de erro: PIX-103. Entre em contato com seu banco ou tente novamente."
@@ -232,18 +232,18 @@ Use uma combinação de letras, números e símbolos"
 **Geral**: 2/10 — Experiência ruim para o usuário
 
 ### Depois
-"O PIX não foi enviado — a chave do destinatário está inativa. Copie o número da conta e tente via transferência."
+"O Pix não foi enviado — a chave do destinatário está inativa. Copie o número da conta e tente via transferência."
 
 **Análise:**
 - **Proposital**: 9/10 — Causa específica e alternativa concreta; o usuário sabe exatamente o que fazer
 - **Conciso**: 9/10 — 17 palavras com causa, contexto e solução
-- **Conversacional**: 9/10 — "O PIX não foi enviado" é linguagem do dia a dia; evita termos de sistema
+- **Conversacional**: 9/10 — "O Pix não foi enviado" é linguagem do dia a dia; evita termos de sistema
 - **Claro**: 9/10 — Causa (chave inativa) e ação alternativa (transferência) explícitas
 - **Acessibilidade**: 8/10 — Independente de cor; solução alternativa oferecida; poderia mencionar prazo se houver urgência no pagamento
 
 **Geral**: 9/10 — Excelente
 
-**Por que funciona**: Em vez de um código indecifrável, explica a causa em linguagem cotidiana. Oferece alternativa concreta — crítico quando o PIX falha e o pagamento precisa ser feito. Transforma um dead end em um desvio navegável.
+**Por que funciona**: Em vez de um código indecifrável, explica a causa em linguagem cotidiana. Oferece alternativa concreta — crítico quando o Pix falha e o pagamento precisa ser feito. Transforma um dead end em um desvio navegável.
 
 ---
 
@@ -319,7 +319,7 @@ Use uma combinação de letras, números e símbolos"
 7. **Forneça caminhos de recuperação** — Sempre diga aos usuários o que fazer a seguir
 8. **Respeite as decisões do usuário** — Não culpe quem opta por sair
 9. **Erros devem funcionar sem cor** — Leitores de tela precisam de mensagens completas em texto; um ícone vermelho não basta
-10. **Contexto de documento importa** — Campos brasileiros (CPF, CNPJ, CEP, chave PIX) exigem exemplos de formato na mensagem de erro
+10. **Contexto de documento importa** — Campos brasileiros (CPF, CNPJ, CEP, chave Pix) exigem exemplos de formato na mensagem de erro
 
 ## Perguntas de Autoavaliação
 

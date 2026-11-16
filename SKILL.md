@@ -95,6 +95,7 @@ Aplique estes padrões em todo texto, salvo quando o quadro de voz do produto de
 **Termos estrangeiros**
 - Prefira o termo em português quando ele for comum ("senha", não "password"; "baixar", não "fazer download")
 - Mantenha o estrangeiro quando for o mais conhecido pelo público ("e-mail", "login", "app")
+- Escreva nomes de marcas e serviços como na grafia oficial: "Pix" (não "PIX")
 
 **Privacidade (LGPD)**
 - Peça consentimento com linguagem simples, diga para que o dado será usado e deixe opções de marketing desligadas por padrão
@@ -411,6 +412,6 @@ Leia um arquivo de apoio só quando a tarefa pedir. Não carregue todos de uma v
 - **Ver um padrão aplicado em vozes diferentes, ou escrever textos de LGPD, carregamento, busca, formatação brasileira e truncamento** → references/patterns-detailed.md
 - **Revisar acessibilidade em detalhe** (leitores de tela, `aria-live`, WCAG 2.2, nível de leitura) → references/accessibility-guidelines.md
 - **Mostrar antes/depois com análise ou calibrar uma pontuação** → examples/real-world-improvements.md
-- **Escrever mensagens de erro**, incluindo CPF, CNPJ, CEP, PIX e autenticação → templates/error-message-template.md
+- **Escrever mensagens de erro**, incluindo CPF, CNPJ, CEP, Pix e autenticação → templates/error-message-template.md
 - **Escrever estados vazios**, incluindo falha no carregamento e retorno após ausência → templates/empty-state-template.md
 - **Projetar onboarding**, consentimento LGPD, solicitações de permissão ou reengajamento → templates/onboarding-flow-template.md
